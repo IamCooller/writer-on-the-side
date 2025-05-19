@@ -138,12 +138,14 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/doctor-patient.png" alt="Doctor and patient"
 			class="absolute inset-0 w-full h-full object-cover opacity-10" />
 		<div class="container relative z-[1]">
-			<h2 class="font-repo font-extrabold text-[55px] leading-[65px] mb-[36px] text-center text-white">Publish a
+			<h2
+				class="font-repo font-extrabold text-[30px] lg:text-[55px] leading-[40px] lg:leading-[65px] mb-[36px] text-center text-white">
+				Publish a
 				Business
 				Card on
 				Steroids <br />
 				(Not Just a Book)</h2>
-			<div class="max-w-[1000px] mx-auto text-white text-center text-lg font-medium">
+			<div class="max-w-[1000px] mx-auto text-white text-center text-sm lg:text-lg font-medium">
 				<p class=" mb-[32px]">The 4-Week "Write Your Book on the Side" System is an online course for busy
 					employees, coaches, and entrepreneurs who have limited time and are interested in quickly publishing
 					their first nonfiction book to use as a business card on steroids.</p>
@@ -158,16 +160,16 @@
 				<p>Or all of the above.</p>
 			</div>
 			<div
-				class="max-w-[900px] mx-auto bg-[#FFFEF7] rounded-[12px] border-[3px] border-black flex gap-[27px] p-[40px] mt-[68px] relative">
+				class="max-w-[900px] mx-auto bg-[#FFFEF7] rounded-[12px] border-[3px] max-lg:flex-col border-black flex gap-[27px] p-5 lg:p-[40px] mt-[68px] relative max-lg:items-center">
 				<div class=" shrink-0 w-[132px] h-[132px] bg-[#20201D] rounded-full">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-1.png"
 						alt="People faces #1" />
 				</div>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/rounded-red-line.png"
 					alt="Rounded red line"
-					class="absolute -top-6 -right-4 w-[85%] h-[170px] object-fill pointer-events-none" />
+					class="absolute top-[25%] lg:-top-6 max-lg:left-0 lg:-right-4 w-full lg:w-[85%]  lg:h-[170px] object-fill pointer-events-none" />
 				<div class="relative z-[1]">
-					<div class="space-y-[19px]">
+					<div class="space-y-[19px] max-lg:text-sm">
 
 						<p>This course helped me <span class="bg-[#FFF5A5]">go from never having published a book to
 								being a bestselling author in four categories—in just 4 weeks!</span> From coming up
@@ -190,9 +192,10 @@
 					</p>
 				</div>
 			</div>
-			<h2 class="font-repo font-extrabold text-[55px] leading-[65px] mb-[36px] text-center text-white mt-[69px]">
+			<h2
+				class="font-repo font-extrabold text-[30px] lg:text-[55px] leading-[40px] lg:leading-[65px] mb-[36px] text-center text-white mt-[69px]">
 				What will you get?</h2>
-			<div class="max-w-[1000px] mx-auto text-white text-center text-lg font-medium space-y-8">
+			<div class="max-w-[1000px] mx-auto text-white text-center text-sm lg:text-lg font-medium space-y-8">
 				<p>You'll get a step-by-step blueprint that covers everything from A to Z about how to self-publish a
 					short book on Amazon Kindle Direct Publishing (KDP) in just 4 weeks.</p>
 				<p>You can follow along to get your book published during those 4 weeks, or you can take a bit more time
@@ -204,13 +207,13 @@
 					fourth book in the future.</p>
 			</div>
 			<div
-				class="max-w-[900px] mx-auto bg-[#FFFEF7] rounded-[12px] border-[3px] border-black flex gap-[27px] p-[40px] mt-[68px] relative">
+				class="max-w-[900px] mx-auto bg-[#FFFEF7] rounded-[12px] border-[3px] max-lg:flex-col border-black flex gap-[27px] p-5 lg:p-[40px] mt-[68px] relative max-lg:items-center">
 				<div class=" shrink-0 w-[132px] h-[132px] bg-[#20201D] rounded-full">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-2.png"
 						alt="People faces #2" />
 				</div>
 
-				<div class="relative z-[1]">
+				<div class="relative z-[1] max-lg:text-sm">
 					<p>“The 4-Week System truly helped me break through the overwhelm of writing a book while managing a
 						busy schedule. The clear, step-by-step approach allowed me to map out my ideas and maintain a
 						strong focus on what mattered most, moving me from concept to draft in record time. <span

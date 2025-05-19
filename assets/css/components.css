@@ -1,3 +1,12 @@
 @layer components {
+	
 
+	.btn-red{
+		background: linear-gradient(-101deg, #D11217 27%, #A2090D 100%);
+		@apply w-fit rounded-[8px] text-white px-[26px] py-[12px] drop-shadow-lg shadow-xl font-bold text-[21px] leading-[1] h-[56px] flex justify-center items-center transition-colors duration-300 ease-in-out max-lg:w-full max-sm:text-base max-sm:h-[48px] max-sm:px-[16px] max-sm:py-[10px];
+		&:hover{
+			background: linear-gradient(0deg, #D11217 27%, #A2090D 100%);
+		}
+
+	}
 }

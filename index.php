@@ -317,13 +317,14 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/reasons-bg.png" alt="Reasons bg"
 			class="absolute inset-0 w-full h-full object-cover opacity-10" />
 		<div class="container relative z-[1]">
-			<h2 class="heading-primary mb-[36px] text-center text-white">
+			<h2 class="heading-primary mb-12 text-center text-white">
 				Three Reasons Why This Course is Unique
 			</h2>
-			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9">
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 				<div
 					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[35px] pb-[56px] px-3 text-white">
-					<div class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-4">
+					<div
+						class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-4 mb-[23px]">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/book-icon.svg" alt="book" />
 					</div>
 					<div class="text-center font-bold text-[25px] mb-[47px]">
@@ -338,7 +339,58 @@
 						conference invites, and media shout-outs all because of my books. The course focuses on picking
 						the right topic and title to maximize the "business card on steroids" effect for you.</p>
 				</div>
+				<div
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[35px] pb-[56px] px-3 text-white">
+					<div
+						class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-4 mb-[23px]">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/goal-icon.svg" alt="goal" />
+					</div>
+					<div class="text-center font-bold text-[25px] mb-[47px]">
+						<p>"80/20"</p>
+						<p>VS</p>
+						<p> "Every Tactic Under the Sun"</p>
+					</div>
+					<p class="text-lg font-medium">There are hundreds of tactics and strategies that you can use to
+						write and market your book. If you apply every tactic under the sun, there's a good chance
+						you'll be quite successful. But as a busy working professional, you probably don't have the time
+						to do everything. We'll focus on the 80/20, or the 20% of tactics that bring you 80% of the
+						results. In other words, the course focus on the stuff that really matters.</p>
+				</div>
+				<div
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[35px] pb-[56px] px-3 text-white">
+					<div
+						class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-4 mb-[23px]">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/horn.svg" alt="horn" />
+					</div>
+					<div class="text-center font-bold text-[25px] mb-[47px]">
+						<p>"Platform Marketing" </p>
+						<p>VS</p>
+						<p>"Me Marketing"</p>
+					</div>
+					<p class="text-lg font-medium">Instead of relying on your own social media followers and personal
+						network to market your book, this course will leverage Amazon to market the book for you. We'll
+						focus on optimizing your book for Amazon's platform so that you can maximize your book's
+						visibility and reach for organic marketing (this is the strategy I've followed for years, and it
+						has resulted in over 120,000 downloads of my books).</p>
+				</div>
+
 			</div>
+			<a href="#packages" class="mt-5  sm:mt-6 btn-red mx-auto">Explore
+				Packages</a>
+		</div>
+	</section>
+	<section>
+		<div class="rotate-180">
+			<?php get_template_part('template-parts/ui/section-divider'); ?>
+		</div>
+		<div class="container pt-[150px]">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/crowd-icon.png" alt="Crowd"
+				class="w-[100px] mx-auto mb-5" />
+			<h2 class="heading-primary mb-12 text-center">
+				What People are Saying
+			</h2>
+		</div>
+
 	</section>
 </main>
 

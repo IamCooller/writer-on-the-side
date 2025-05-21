@@ -9,4 +9,8 @@
 		}
 
 	}
+
+	.heading-primary {
+		@apply font-repo font-extrabold text-[30px] lg:text-[55px] leading-[40px] lg:leading-[65px] ;
+	}
 }

@@ -138,8 +138,7 @@
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/doctor-patient.png" alt="Doctor and patient"
 			class="absolute inset-0 w-full h-full object-cover opacity-10" />
 		<div class="container relative z-[1]">
-			<h2
-				class="font-repo font-extrabold text-[30px] lg:text-[55px] leading-[40px] lg:leading-[65px] mb-[36px] text-center text-white">
+			<h2 class="heading-primary mb-[36px] text-center text-white">
 				Publish a
 				Business
 				Card on
@@ -186,14 +185,13 @@
 							highly
 							recommend this course.</p>
 					</div>
-					<p class="mt-[24px] font-dm-sans italic text-[17px]">Michael vom Feld, Bestselling author of “Von 0
-						auf Examen”
-						(“From 0 to Exam”)
+					<p class="mt-[24px] font-dm-sans italic text-[17px]">Michael vom Feld, Bestselling author of "Von 0
+						auf Examen"
+						("From 0 to Exam")
 					</p>
 				</div>
 			</div>
-			<h2
-				class="font-repo font-extrabold text-[30px] lg:text-[55px] leading-[40px] lg:leading-[65px] mb-[36px] text-center text-white mt-[69px]">
+			<h2 class="heading-primary mb-[36px] mt-[69px] text-center text-white">
 				What will you get?</h2>
 			<div class="max-w-[1000px] mx-auto text-white text-center text-sm lg:text-lg font-medium space-y-8">
 				<p>You'll get a step-by-step blueprint that covers everything from A to Z about how to self-publish a
@@ -214,18 +212,75 @@
 				</div>
 
 				<div class="relative z-[1] max-lg:text-sm">
-					<p>“The 4-Week System truly helped me break through the overwhelm of writing a book while managing a
+					<p>"The 4-Week System truly helped me break through the overwhelm of writing a book while managing a
 						busy schedule. The clear, step-by-step approach allowed me to map out my ideas and maintain a
 						strong focus on what mattered most, moving me from concept to draft in record time. <span
 							class="bg-[#FFF5A5]">I was able to publish not just one, but three books as a result of this
 							course.</span> This course is an invaluable resource for anyone balancing a demanding
-						workload and writing aspirations!”</p>
+						workload and writing aspirations!"</p>
 					<p class="mt-[34px] font-dm-sans italic text-[17px]">Taz Brown, Enterprise Transformation Coach
 					</p>
 				</div>
 			</div>
 			<a href="#packages" class="mt-5  sm:mt-6 btn-red mx-auto">Explore
 				Packages</a>
+		</div>
+	</section>
+	<section>
+
+		<div class=" rotate-180">
+			<?php get_template_part('template-parts/ui/section-divider'); ?>
+		</div>
+
+		<div class="container pt-[121px]">
+			<div class=" text-center max-w-[900px] mx-auto">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/quill.png" alt="Book cover"
+					class="block mx-auto" />
+				<h2 class="heading-primary mb-[5px] mt-[19px]">
+					Achieve your dream of <br /> becoming an author</h2>
+				<p class="font-repo text-[22px] font-bold mb-[28px]">(Or you'll get your money back - no questions
+					asked)</p>
+				<p class="text-lg font-medium leading-[30px] mb-[34px]">I'll show you the <b>exact system</b> I've used
+					to
+					write <b>over 20+
+						books,</b> including <b>9 Amazon</b> <b>Bestsellers</b>, while <b>working demanding full-time
+						jobs</b> and balancing family
+					life (and without having a large social media following).</p>
+				<p class="font-repo text-[22px] font-bold">Here are some of the books I've published</p>
+			</div>
+
+			<div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-9 mt-[57px] mb-[99px]">
+				<div class="relative">
+					<div
+						class="absolute top-0 translate-y-[-30%] translate-x-[30%] right-0 w-[47px] sm:w-[91px] aspect-square">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/books/Featured.png"
+							alt="featured" />
+					</div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/books/29.png" alt="Book covers"
+						class="w-full h-auto" />
+				</div>
+
+			</div>
+			<div class="text-center max-w-[900px] mx-auto">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ai-icon.png" alt="ai icon" />
+				<h2 class="heading-primary mb-[5px] mt-[19px]">
+					Use AI as an Assistant, NOT as a Replacement
+				</h2>
+				<p class="text-lg font-medium leading-[30px] mb-[34px]">
+					You'll learn how to use AI tools (primarily ChatGPT) to effortlessly research, generate ideas, draft
+					detailed outlines, and market your book.
+
+					You'll also learn how to use <b>custom GPTs</b> (i.e. customized versions of ChatGPT) that will help
+					<b>you write your book quickly</b> and <b>in your own style</b> (don't worry if this sounds
+					confusing; I'll walk you through all of that in the course and you don't need prior technical
+					experience).
+
+					To clarify, the course is <b>not</b> about creating a generic ChatGPT-based book to make a few
+					dollars. This is about mindfully writing and publishing a book you'll be proud of. So the AI tools
+					you'll use will not sacrifice the book's quality. And most importantly, those AI tools will be used
+					to assist you in writing, and not to replace your writing.
+				</p>
+			</div>
 		</div>
 	</section>
 </main>

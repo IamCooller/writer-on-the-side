@@ -296,14 +296,14 @@
 				</div>
 
 				<div class="testimonial-content">
-					<p>“This course exceeded my expectations in every way! Hassan went above and beyond, delivering
+					<p>"This course exceeded my expectations in every way! Hassan went above and beyond, delivering
 						invaluable, unique content that truly set this program apart. <span
 							class="testimonial-highlight">The custom
 							GPT tools he created were a game-changer — from
 							the book title generator to the outline generator, and even an AI-powered tool to draft
 							the book itself.</span> These resources made the process efficient and inspiring.
 						Without a doubt, this course is an outstanding investment for anyone looking to write a book
-						quickly and effectively. Highly recommended!”</p>
+						quickly and effectively. Highly recommended!"</p>
 					<p class="testimonial-author">Terry Schmidt, Founder & President of Management Pro
 					</p>
 				</div>
@@ -389,8 +389,208 @@
 			<h2 class="heading-primary mb-12 text-center">
 				What People are Saying
 			</h2>
+
+			<div class="testimonials-slider-container">
+				<div class="testimonials-slider">
+					<div class="swiper-wrapper">
+						<!-- Slide 1 -->
+						<div class="swiper-slide">
+							<div class="testimonial-card items-center">
+								<div class="testimonial-avatar">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-2.png"
+										alt="People faces #2" />
+								</div>
+
+								<div class="testimonial-content">
+									<p>"The 4-Week System truly helped me break through the overwhelm of writing a book
+										while managing a
+										busy schedule. The clear, step-by-step approach allowed me to map out my ideas
+										and maintain a
+										strong focus on what mattered most, moving me from concept to draft in record
+										time. <span class="testimonial-highlight">I was able to publish not just one,
+											but three books as a
+											result of this
+											course.</span> This course is an invaluable resource for anyone balancing a
+										demanding
+										workload and writing aspirations!"</p>
+									<p class="testimonial-author">Taz Brown, Enterprise Transformation Coach
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slide 2 -->
+						<div class="swiper-slide">
+							<div class="testimonial-card items-center">
+								<div class="testimonial-avatar">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-1.png"
+										alt="People faces #1" />
+								</div>
+
+								<div class="testimonial-content">
+									<p>"This course helped me <span class="testimonial-highlight">go from never having
+											published a book to
+											being a bestselling author in four categories—in just 4 weeks!</span> From
+										coming up
+										with an idea to launching it to my email list, this course covers it all.</p>
+
+									<p>Hassan's step-by-step system made the entire process much easier and honestly, I
+										couldn't
+										have done it without him. What I loved most about the course were the Custom
+										GPTs for
+										brainstorming and outlining, the accountability, and the launch checklist.</p>
+									<p class="testimonial-author">Michael vom Feld, Bestselling author of "Von 0 auf
+										Examen"
+										("From 0 to Exam")
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Slide 3 -->
+						<div class="swiper-slide">
+							<div class="testimonial-card items-center">
+								<div class="testimonial-avatar">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-3.png"
+										alt="People faces #3" />
+								</div>
+
+								<div class="testimonial-content">
+									<p>"This course exceeded my expectations in every way! Hassan went above and beyond,
+										delivering
+										invaluable, unique content that truly set this program apart. <span
+											class="testimonial-highlight">The custom
+											GPT tools he created were a game-changer — from
+											the book title generator to the outline generator, and even an AI-powered
+											tool to draft
+											the book itself.</span> These resources made the process efficient and
+										inspiring.
+										Without a doubt, this course is an outstanding investment for anyone looking to
+										write a book
+										quickly and effectively. Highly recommended!"</p>
+									<p class="testimonial-author">Terry Schmidt, Founder & President of Management Pro
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Navigation -->
+				<div class="testimonials-slider-prev testimonials-slider-nav">
+					<svg width="19" height="53" viewBox="0 0 19 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M0.463835 28.3509L16.2972 51.9342C16.9154 52.8553 17.918 52.8553 18.5364 51.9341C19.1546 51.0131 19.1546 49.5199 18.5363 48.5988L3.82251 26.683L18.5364 4.76613C19.1546 3.84509 19.1546 2.35192 18.5363 1.43089C18.2272 0.970367 17.822 0.740185 17.4167 0.740185C17.0115 0.740185 16.6063 0.970367 16.2971 1.43104L0.463835 25.0156C0.1668 25.4579 2.28882e-05 26.0577 2.28882e-05 26.6832C2.28882e-05 27.3086 0.1668 27.9086 0.463835 28.3509Z"
+							fill="black" />
+					</svg>
+
+				</div>
+				<div class="testimonials-slider-next testimonials-slider-nav">
+					<svg width="19" height="53" viewBox="0 0 19 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M18.5362 25.0124L2.70282 1.42904C2.08458 0.508003 1.08201 0.508003 0.463667 1.42919C-0.154573 2.35023 -0.154573 3.84341 0.463772 4.76444L15.1775 26.6802L0.463667 48.5972C-0.154573 49.5182 -0.154573 51.0114 0.463772 51.9324C0.77284 52.3929 1.17807 52.6231 1.5833 52.6231C1.98853 52.6231 2.39375 52.3929 2.70293 51.9322L18.5362 28.3476C18.8332 27.9054 19 27.3055 19 26.6801C19 26.0546 18.8332 25.4547 18.5362 25.0124Z"
+							fill="black" />
+					</svg>
+
+				</div>
+
+				<!-- Pagination -->
+				<div class="testimonials-slider-pagination"></div>
+			</div>
 		</div>
 
+	</section>
+	<section>
+		<div class="container pb-[110px]">
+			<div class="mt-[104px] max-w-[900px] mx-auto text-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/calendar-icon.png"
+					class="w-[100px] mx-auto mb-5" alt="Calendar icon" />
+				<h2 class="heading-primary text-center">
+					How realistic is it to write a full book in just 4 weeks?
+				</h2>
+				<p class="font-bold font-repo text-lg py-[22px]">It's very realistic</p>
+				<p>In fact, you can do it in less than 4 weeks. I've written three books, and each one took me <b>1 week
+						or less</b> to write and publish them (I explain how in the course).</p>
+				<p class="mt-[27px]">Here's why this is feasible for you:</p>
+			</div>
+			<div class="flex flex-wrap justify-center gap-[74px] mt-[45px]">
+				<div class="">
+					<div
+						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/1.svg" alt="#1" />
+
+					</div>
+					<p class="text-center uppercase">We'll focus on a <br /> <b>small problem</b></p>
+				</div>
+				<div class="">
+					<div
+						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/2.svg" alt="#2" />
+
+
+					</div>
+					<p class="text-center uppercase">We'll write a <br /> <b>short book</b></p>
+				</div>
+				<div class="">
+					<div
+						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/3.svg" alt="#3" />
+						</svg>
+
+
+					</div>
+					<p class="text-center uppercase">We'll apply the <br /> <b>80/20 rule</b></p>
+				</div>
+				<div class="">
+					<div
+						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/4.svg" alt="#4" />
+
+
+					</div>
+					<p class="text-center uppercase">We'll use AI to <br /> <b>write it quickly</b></p>
+				</div>
+				<div class="">
+					<div
+						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/5.svg" alt="#5" />
+
+
+					</div>
+					<p class="text-center uppercase">We'll publish an <br /> <b>ebook first*</b></p>
+				</div>
+			</div>
+			<p class="max-w-[900px] text-center mx-auto my-[45px] text-lg">To be clear, this is an intensive program and
+				you'll
+				need to work hard
+				to complete the tasks during those four weeks (there is no magic button—even with all the advanced AI
+				tools today—nothing can write the whole book for you). How fast you can get your book done also depends
+				on your comfort level and prior experience.</p>
+			<p class="max-w-[900px] text-center mx-auto my-[45px] text-lg text-[#585853]">*While it's possible to also
+				publish paperback and
+				audiobook versions in 4 weeks, those usually take more time to prepare, so the course focuses on getting
+				your ebook version published first, and you can publish other formats later if you want
+				(the course covers that as well)</p>
+
+			<div class="testimonial-card items-center">
+				<div class="testimonial-avatar">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-4.png"
+						alt="People faces #4" />
+				</div>
+
+				<div class="testimonial-content">
+					<p>“The course <span>helped me to overcome the initial inertia</span> and confront the daunting task
+						of focusing my ambition on a fascinating subject in a manageable way. Hassan's sharing of
+						practical examples and insights, and <span>his focus on the 20 percent that gets you 80 percent
+							of the results, were extremely helpful.</span> I recommend this course to anyone who needs
+						support to get started and who wants to learn the tools and mindsets needed to get a first book
+						done on the side.”</p>
+					<p class="testimonial-author">Ingo Rauth, Ph.D., Senior Consultant, Design and Facilitation
+					</p>
+				</div>
+			</div>
+		</div>
+		<?php get_template_part('template-parts/ui/section-divider'); ?>
 	</section>
 </main>
 

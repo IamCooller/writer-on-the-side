@@ -24,11 +24,6 @@ require get_template_directory() . '/inc/inc.vite.php';
 // Enqueue scripts and styles
 function WRITER_ON_THE_SIDE_scripts()
 {
-    // Register Swiper for potential use throughout the site
-    wp_register_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css', [], '10.0.0');
-    wp_register_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js', [], '10.0.0', true);
-
-
     // Localize script with AJAX URL for all AJAX-powered forms
     wp_localize_script('main', 'WRITER_ON_THE_SIDE_data', [
         'ajaxurl' => admin_url('admin-ajax.php'),

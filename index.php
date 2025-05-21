@@ -883,7 +883,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="testimonial-card mt-[68px] items-center">
+			<div class="testimonial-card my-[68px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-7.png"
 						alt="People faces #7">
@@ -898,6 +898,24 @@
 					<p class="testimonial-author">Gillian Leithman, Ph.D., Chief Behavior Scientist at Rewire to Retire
 					</p>
 				</div>
+			</div>
+
+			<div class="text-center max-w-[900px] mx-auto">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/book-2-icon.svg" alt="ai icon"
+					class="block mx-auto" />
+				<h2 class="heading-primary mb-[23px] mt-[19px]">
+					A Little About Me
+				</h2>
+
+				<p class="text-lg font-bold leading-[33px] mb-[25px]">20+ Books | 120,000+ Downloads | 9 Bestsellers</p>
+
+				<p class="font-medium mt-[25px] mb-[40px]">My name is Hassan Osman and I'm an author on the side. I've
+					published over 20 books on Amazon in 4 different categories (including 9 Amazon Bestsellers), all
+					while working demanding full-time jobs.</p>
+				<p class="text-center font-repo text-lg font-bold mb-[20px]">Because of my books, I've been featured in
+					the media and received multiple career opportunities.</p>
+
+
 			</div>
 		</div>
 	</section>

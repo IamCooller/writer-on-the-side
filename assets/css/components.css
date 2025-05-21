@@ -72,4 +72,51 @@
 	.testimonials-slider .swiper-slide {
 		@apply flex items-center justify-center h-auto;
 	}
+
+	.course-accordion {
+		@apply border-2 border-black w-full rounded-[16px] overflow-hidden mb-4 transition-all duration-300;
+	}
+
+
+
+	.course-accordion-header {
+		@apply flex items-center py-[19px] px-[21px] cursor-pointer  transition-all duration-300;
+	}
+
+
+
+	.course-accordion-week {
+		
+		@apply from-[#D11217] to-[#A2090D] text-white bg-gradient-to-r drop-shadow-lg shadow-xl font-semibold text-[22px] py-[19px] px-[25px] rounded-[8px] mr-[19px];
+	}
+
+
+
+	.course-accordion-title {
+		@apply font-semibold text-[22px] flex-1;
+	}
+
+	.course-accordion-icon {
+		@apply transform transition-transform duration-300 ml-auto;
+	}
+
+	.course-accordion.active .course-accordion-icon {
+		@apply rotate-180;
+	}
+
+	.course-accordion-content {
+		@apply max-h-0 overflow-hidden transition-all duration-500 ease-in-out;
+	}
+
+	.course-accordion.active .course-accordion-content {
+		@apply max-h-[1000px] transition-all duration-500 ease-in-out;
+	}
+
+	.course-accordion-body {
+		@apply px-3 py-5 border-t border-black;
+	}
+
+	.course-accordion-list {
+		@apply list-disc pl-5 space-y-4 text-base;
+	}
 }

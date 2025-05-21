@@ -8,6 +8,7 @@ import "./assets/css/style.css";
 import "./assets/js/main.js";
 import "./assets/js/animations.js"; // Добавляем анимации
 import './assets/js/testimonials-slider.js';
+import './assets/js/accordion.js';
 /*
 document.querySelector('#app').innerHTML = `
   <h1>Hello Vite!</h1>

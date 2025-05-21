@@ -25,3 +25,11 @@
 .mobile-menu__nav nav{
  @apply list-none;
 }
+
+.reason-card-bg {
+    background: linear-gradient(-27deg, #3B3939 0%, rgba(59, 57, 57, 0.30) 100%);
+}
+
+.reason-icon-bg {
+    background: linear-gradient(-129deg, #D11217 27%, #A2090D 100%);
+}

@@ -158,19 +158,19 @@
 				</ol>
 				<p>Or all of the above.</p>
 			</div>
-			<div
-				class="max-w-[900px] mx-auto bg-[#FFFEF7] rounded-[12px] border-[3px] max-lg:flex-col border-black flex gap-[27px] p-5 lg:p-[40px] mt-[68px] relative max-lg:items-center">
-				<div class=" shrink-0 w-[132px] h-[132px] bg-[#20201D] rounded-full">
+			<div class="testimonial-card mt-[68px]">
+				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-1.png"
 						alt="People faces #1" />
 				</div>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/rounded-red-line.png"
 					alt="Rounded red line"
 					class="absolute top-[25%] lg:-top-6 max-lg:left-0 lg:-right-4 w-full lg:w-[85%]  lg:h-[170px] object-fill pointer-events-none" />
-				<div class="relative z-[1]">
-					<div class="space-y-[19px] max-lg:text-sm">
+				<div class="testimonial-content">
+					<div class="space-y-[19px]">
 
-						<p>This course helped me <span class="bg-[#FFF5A5]">go from never having published a book to
+						<p>This course helped me <span class="testimonial-highlight">go from never having published a
+								book to
 								being a bestselling author in four categories—in just 4 weeks!</span> From coming up
 							with an idea to launching it to my email list, this course covers it all.</p>
 
@@ -179,13 +179,14 @@
 							done it without him. What I loved most about the course were the Custom GPTs for
 							brainstorming
 							and outlining, the accountability, and the launch checklist.</p>
-						<p>All you need is expertise and some time on your hands, <span class="bg-[#FFF5A5]">and you can
+						<p>All you need is expertise and some time on your hands, <span
+								class="testimonial-highlight">and you can
 								be published in the upcoming
 								weeks.</span> If you've ever dreamed of becoming an author, but just didn't know how, I
 							highly
 							recommend this course.</p>
 					</div>
-					<p class="mt-[24px] font-dm-sans italic text-[17px]">Michael vom Feld, Bestselling author of "Von 0
+					<p class="testimonial-author">Michael vom Feld, Bestselling author of "Von 0
 						auf Examen"
 						("From 0 to Exam")
 					</p>
@@ -204,21 +205,21 @@
 				<p>This is a repeatable system that you can use to also publish your second, third, and
 					fourth book in the future.</p>
 			</div>
-			<div
-				class="max-w-[900px] mx-auto bg-[#FFFEF7] rounded-[12px] border-[3px] max-lg:flex-col border-black flex gap-[27px] p-5 lg:p-[40px] mt-[68px] relative max-lg:items-center">
-				<div class=" shrink-0 w-[132px] h-[132px] bg-[#20201D] rounded-full">
+			<div class="testimonial-card mt-[68px] items-center">
+				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-2.png"
 						alt="People faces #2" />
 				</div>
 
-				<div class="relative z-[1] max-lg:text-sm">
+				<div class="testimonial-content">
 					<p>"The 4-Week System truly helped me break through the overwhelm of writing a book while managing a
 						busy schedule. The clear, step-by-step approach allowed me to map out my ideas and maintain a
 						strong focus on what mattered most, moving me from concept to draft in record time. <span
-							class="bg-[#FFF5A5]">I was able to publish not just one, but three books as a result of this
+							class="testimonial-highlight">I was able to publish not just one, but three books as a
+							result of this
 							course.</span> This course is an invaluable resource for anyone balancing a demanding
 						workload and writing aspirations!"</p>
-					<p class="mt-[34px] font-dm-sans italic text-[17px]">Taz Brown, Enterprise Transformation Coach
+					<p class="testimonial-author">Taz Brown, Enterprise Transformation Coach
 					</p>
 				</div>
 			</div>
@@ -262,26 +263,82 @@
 
 			</div>
 			<div class="text-center max-w-[900px] mx-auto">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ai-icon.png" alt="ai icon" />
-				<h2 class="heading-primary mb-[5px] mt-[19px]">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ai-icon.png" alt="ai icon"
+					class="block mx-auto" />
+				<h2 class="heading-primary mb-[23px] mt-[19px]">
 					Use AI as an Assistant, NOT as a Replacement
 				</h2>
-				<p class="text-lg font-medium leading-[30px] mb-[34px]">
-					You'll learn how to use AI tools (primarily ChatGPT) to effortlessly research, generate ideas, draft
-					detailed outlines, and market your book.
+				<div class="text-lg font-medium leading-[30px] mb-[34px] space-y-4">
+					<p>You'll learn how to use AI tools (primarily ChatGPT) to effortlessly research, generate ideas,
+						draft
+						detailed outlines, and market your book.</p>
 
-					You'll also learn how to use <b>custom GPTs</b> (i.e. customized versions of ChatGPT) that will help
-					<b>you write your book quickly</b> and <b>in your own style</b> (don't worry if this sounds
-					confusing; I'll walk you through all of that in the course and you don't need prior technical
-					experience).
+					<p>You'll also learn how to use <b>custom GPTs</b> (i.e. customized versions of ChatGPT) that will
+						help
+						<b>you write your book quickly</b> and <b>in your own style</b> (don't worry if this sounds
+						confusing; I'll walk you through all of that in the course and you don't need prior technical
+						experience).
+					</p>
 
-					To clarify, the course is <b>not</b> about creating a generic ChatGPT-based book to make a few
-					dollars. This is about mindfully writing and publishing a book you'll be proud of. So the AI tools
-					you'll use will not sacrifice the book's quality. And most importantly, those AI tools will be used
-					to assist you in writing, and not to replace your writing.
-				</p>
+					<p>To clarify, the course is <b>not</b> about creating a generic ChatGPT-based book to make a few
+						dollars. This is about mindfully writing and publishing a book you'll be proud of. So the AI
+						tools
+						you'll use will not sacrifice the book's quality. And most importantly, those AI tools will be
+						used
+						to assist you in writing, and not to replace your writing.</p>
+				</div>
+
 			</div>
+			<div class="testimonial-card mt-[20px] items-center">
+				<div class="testimonial-avatar">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-3.png"
+						alt="People faces #3" class="w-full h-auto" />
+				</div>
+
+				<div class="testimonial-content">
+					<p>“This course exceeded my expectations in every way! Hassan went above and beyond, delivering
+						invaluable, unique content that truly set this program apart. <span
+							class="testimonial-highlight">The custom
+							GPT tools he created were a game-changer — from
+							the book title generator to the outline generator, and even an AI-powered tool to draft
+							the book itself.</span> These resources made the process efficient and inspiring.
+						Without a doubt, this course is an outstanding investment for anyone looking to write a book
+						quickly and effectively. Highly recommended!”</p>
+					<p class="testimonial-author">Terry Schmidt, Founder & President of Management Pro
+					</p>
+				</div>
+			</div>
+			<a href="#packages" class="mt-5  sm:mt-6 btn-red mx-auto">Explore
+				Packages</a>
 		</div>
+		<?php get_template_part('template-parts/ui/section-divider'); ?>
+	</section>
+	<section class="py-[57px]  bg-[#20201D] relative overflow-hidden">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/reasons-bg.png" alt="Reasons bg"
+			class="absolute inset-0 w-full h-full object-cover opacity-10" />
+		<div class="container relative z-[1]">
+			<h2 class="heading-primary mb-[36px] text-center text-white">
+				Three Reasons Why This Course is Unique
+			</h2>
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-9">
+				<div
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[35px] pb-[56px] px-3 text-white">
+					<div class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-4">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/book-icon.svg" alt="book" />
+					</div>
+					<div class="text-center font-bold text-[25px] mb-[47px]">
+						<p>"Business Card on Steroids"</p>
+						<p>VS</p>
+						<p>"Just a Book"</p>
+					</div>
+					<p class="text-lg font-medium">This course focuses on building an asset that will open up many
+						opportunities for you. It'll be like having a business card on steroids that will elevate your
+						status and make you more money because of your book (i.e., via opportunities) than from your
+						book (i.e., via royalties). I have received multiple job offers, speaking engagements,
+						conference invites, and media shout-outs all because of my books. The course focuses on picking
+						the right topic and title to maximize the "business card on steroids" effect for you.</p>
+				</div>
+			</div>
 	</section>
 </main>
 

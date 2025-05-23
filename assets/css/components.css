@@ -120,24 +120,24 @@
 
 
 	.course-accordion-header {
-		@apply flex items-center py-[19px] px-[21px] cursor-pointer  transition-all duration-300;
+		@apply flex items-center py-3 md:py-[19px] px-3 md:px-[21px] cursor-pointer  transition-all duration-300;
 	}
 
 
 
 	.course-accordion-week {
 		
-		@apply from-[#D11217] to-[#A2090D] text-white bg-gradient-to-r drop-shadow-lg shadow-xl font-semibold text-[22px] py-[19px] px-[25px] rounded-[8px] mr-[19px];
+		@apply from-[#D11217] to-[#A2090D] text-white bg-gradient-to-r drop-shadow-lg shadow-xl font-semibold text-sm md:text-[22px] py-2 md:py-[19px] px-3 md:px-[25px] rounded-[8px] mr-3 md:mr-[19px];
 	}
 
 
 
 	.course-accordion-title {
-		@apply font-semibold text-[22px] flex-1;
+		@apply font-semibold text-sm md:text-[22px] flex-1;
 	}
 
 	.course-accordion-icon {
-		@apply transform transition-transform duration-300 ml-auto;
+		@apply transform transition-transform max-md:w-[19px] duration-300 ml-auto shrink-0;
 	}
 
 	.course-accordion.active .course-accordion-icon {

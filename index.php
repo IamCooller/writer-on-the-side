@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="main min-h-screen">
+<main class="main min-h-screen overflow-x-hidden">
 
 	<section class="max-lg:bg-[#F9F8F6]">
 		<div class="container">
@@ -233,7 +233,7 @@
 			<?php get_template_part('template-parts/ui/section-divider'); ?>
 		</div>
 
-		<div class="container pt-[121px]">
+		<div class="container py-[121px]">
 			<div class=" text-center max-w-[900px] mx-auto">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/quill.png" alt="Book cover"
 					class="block mx-auto" />
@@ -608,7 +608,7 @@
 
 			</div>
 
-			<div class="grid grid-cols-2 gap-[30px]">
+			<div class="grid lg:grid-cols-2 gap-[30px]">
 				<div
 					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[23px] text-white px-[37px]">
 					<div class="flex items-center gap-4 mb-[23px]">
@@ -659,7 +659,7 @@
 			<p class="text-center text-white text-lg font-medium mb-5">Here are the two mandatory & optional
 				prerequisites to
 				join the course:</p>
-			<div class="grid grid-cols-2 gap-[30px]">
+			<div class="grid lg:grid-cols-2 gap-[30px]">
 				<div
 					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[23px] text-white px-[37px]">
 					<div class="flex items-center gap-4 mb-[23px]">
@@ -783,11 +783,13 @@
 								Write Your Book Quickly
 							</h3>
 						</div>
-						<svg class="course-accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						<svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
-							<path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-								stroke-linejoin="round" />
+							<path
+								d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+								fill="black" />
 						</svg>
+
 					</div>
 					<div class="course-accordion-content">
 						<div class="course-accordion-body">
@@ -811,11 +813,13 @@
 							<h3 class="course-accordion-title">Editing, Formatting, Designing a Cover, and Publishing
 								Your Book</h3>
 						</div>
-						<svg class="course-accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						<svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
-							<path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-								stroke-linejoin="round" />
+							<path
+								d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+								fill="black" />
 						</svg>
+
 					</div>
 					<div class="course-accordion-content">
 						<div class="course-accordion-body">
@@ -839,11 +843,13 @@
 							<h3 class="course-accordion-title">Launching Your Book, Gathering Reviews, and Marketing It
 							</h3>
 						</div>
-						<svg class="course-accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						<svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
-							<path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-								stroke-linejoin="round" />
+							<path
+								d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+								fill="black" />
 						</svg>
+
 					</div>
 					<div class="course-accordion-content">
 						<div class="course-accordion-body">
@@ -864,11 +870,13 @@
 							<div class="course-accordion-week">Week 5 (Bonus)</div>
 							<h3 class="course-accordion-title">Strategies to Follow After Publishing Your Book</h3>
 						</div>
-						<svg class="course-accordion-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+						<svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
 							xmlns="http://www.w3.org/2000/svg">
-							<path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-								stroke-linejoin="round" />
+							<path
+								d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+								fill="black" />
 						</svg>
+
 					</div>
 					<div class="course-accordion-content">
 						<div class="course-accordion-body">
@@ -918,7 +926,7 @@
 			</div>
 			<div class="relative py-8">
 
-				<div class="flex items-center justify-center">
+				<div class="flex items-center justify-center max-lg:flex-col">
 
 					<!-- Left Column: Profile Picture -->
 					<div class="flex-shrink-0 flex flex-col items-center text-center">
@@ -930,10 +938,10 @@
 
 					<div class="relative flex flex-col gap-16">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-1.png"
-							class="w-[161px] aspect-square" alt="arrow pointing to featured content" />
+							class="w-[161px] aspect-square max-lg:rotate-90" alt="arrow pointing to featured content" />
 
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-2.png"
-							class="w-[161px] aspect-square" alt="arrow pointing to work history" />
+							class="w-[161px] aspect-square max-lg:hidden" alt="arrow pointing to work history" />
 					</div>
 
 					<!-- Right Column: "Featured in" and "Worked at" boxes -->

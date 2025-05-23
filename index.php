@@ -390,8 +390,8 @@
 				What People are Saying
 			</h2>
 
-			<div class="testimonials-slider-container">
-				<div class="testimonials-slider">
+			<div class="swiper-container testimonials-slider-container">
+				<div class="swiper testimonials-slider">
 					<div class="swiper-wrapper">
 						<!-- Slide 1 -->
 						<div class="swiper-slide">
@@ -477,7 +477,7 @@
 				</div>
 
 				<!-- Navigation -->
-				<div class="testimonials-slider-prev testimonials-slider-nav">
+				<div class="swiper-nav swiper-prev testimonials-slider-prev testimonials-slider-nav">
 					<svg width="19" height="53" viewBox="0 0 19 53" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M0.463835 28.3509L16.2972 51.9342C16.9154 52.8553 17.918 52.8553 18.5364 51.9341C19.1546 51.0131 19.1546 49.5199 18.5363 48.5988L3.82251 26.683L18.5364 4.76613C19.1546 3.84509 19.1546 2.35192 18.5363 1.43089C18.2272 0.970367 17.822 0.740185 17.4167 0.740185C17.0115 0.740185 16.6063 0.970367 16.2971 1.43104L0.463835 25.0156C0.1668 25.4579 2.28882e-05 26.0577 2.28882e-05 26.6832C2.28882e-05 27.3086 0.1668 27.9086 0.463835 28.3509Z"
@@ -485,7 +485,7 @@
 					</svg>
 
 				</div>
-				<div class="testimonials-slider-next testimonials-slider-nav">
+				<div class="swiper-nav swiper-next testimonials-slider-next testimonials-slider-nav">
 					<svg width="19" height="53" viewBox="0 0 19 53" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M18.5362 25.0124L2.70282 1.42904C2.08458 0.508003 1.08201 0.508003 0.463667 1.42919C-0.154573 2.35023 -0.154573 3.84341 0.463772 4.76444L15.1775 26.6802L0.463667 48.5972C-0.154573 49.5182 -0.154573 51.0114 0.463772 51.9324C0.77284 52.3929 1.17807 52.6231 1.5833 52.6231C1.98853 52.6231 2.39375 52.3929 2.70293 51.9322L18.5362 28.3476C18.8332 27.9054 19 27.3055 19 26.6801C19 26.0546 18.8332 25.4547 18.5362 25.0124Z"
@@ -495,7 +495,7 @@
 				</div>
 
 				<!-- Pagination -->
-				<div class="testimonials-slider-pagination"></div>
+				<div class="swiper-pagination testimonials-slider-pagination"></div>
 			</div>
 		</div>
 
@@ -579,12 +579,12 @@
 				</div>
 
 				<div class="testimonial-content">
-					<p>“The course <span>helped me to overcome the initial inertia</span> and confront the daunting task
+					<p>"The course <span>helped me to overcome the initial inertia</span> and confront the daunting task
 						of focusing my ambition on a fascinating subject in a manageable way. Hassan's sharing of
 						practical examples and insights, and <span>his focus on the 20 percent that gets you 80 percent
 							of the results, were extremely helpful.</span> I recommend this course to anyone who needs
 						support to get started and who wants to learn the tools and mindsets needed to get a first book
-						done on the side.”</p>
+						done on the side."</p>
 					<p class="testimonial-author">Ingo Rauth, Ph.D., Senior Consultant, Design and Facilitation
 					</p>
 				</div>
@@ -645,10 +645,10 @@
 				</div>
 
 				<div class="testimonial-content">
-					<p>“Hassan shares his knowledge so <span>you don't have to figure this stuff out by yourself.</span>
+					<p>"Hassan shares his knowledge so <span>you don't have to figure this stuff out by yourself.</span>
 						He is busy like me and has 20 books under his belt, so learning how I can do this "on the side"
 						was important to me. And I will be able to take this information and use it for other books.
-						<span>If you are on the fence, get off and join the course</span> and get your book out there.”
+						<span>If you are on the fence, get off and join the course</span> and get your book out there."
 					</p>
 					<p class="testimonial-author">Kim D. Snyder, Founder of MORE Business in a Box
 					</p>
@@ -656,7 +656,8 @@
 			</div>
 			<h2 class="heading-primary mb-[36px] mt-[69px] text-center text-white">
 				What are the prerequisites to join?</h2>
-			<p class="text-center text-white text-lg font-medium">Here are the two mandatory & optional prerequisites to
+			<p class="text-center text-white text-lg font-medium mb-5">Here are the two mandatory & optional
+				prerequisites to
 				join the course:</p>
 			<div class="grid grid-cols-2 gap-[30px]">
 				<div
@@ -697,13 +698,13 @@
 				</div>
 
 				<div class="testimonial-content">
-					<p>“Taking Hassan's course has been a transformative experience in my journey as a writer. This
+					<p>"Taking Hassan's course has been a transformative experience in my journey as a writer. This
 						course provided me with the structure, motivation, and practical tools I needed to finally start
 						and finish my first book, something I had been dreaming of for years but never knew how to
 						accomplish. <span>My favorite part of the course were the action items, tools, and bonuses he
 							provided weekly.</span> These kept me on track and provided a sense of accomplishment as I
 						progressed. Hassan's expertise, generosity, and the supportive environment he fosters are
-						invaluable.”</p>
+						invaluable."</p>
 					<p class="testimonial-author">Cenmar Fuertes, Founder & CEO at Sparkle Restoration Services, Inc.
 					</p>
 				</div>
@@ -890,11 +891,11 @@
 				</div>
 
 				<div class="testimonial-content">
-					<p>“This course is incredibly comprehensive, covering everything you need to know about publishing
+					<p>"This course is incredibly comprehensive, covering everything you need to know about publishing
 						on Amazon without feeling overwhelmed. <span>The lifetime access and bonuses make it well worth
 							the investment.</span> Hassan is an exceptional instructor, providing clear explanations and
 						attentive support. The course helped me overcome obstacles and make progress. I highly recommend
-						it.”</p>
+						it."</p>
 					<p class="testimonial-author">Gillian Leithman, Ph.D., Chief Behavior Scientist at Rewire to Retire
 					</p>
 				</div>
@@ -1014,15 +1015,819 @@
 	</section>
 	<section class="pt-[74px]">
 		<div class="container">
-			<p class="max-w-[900px] mx-auto text-lg font-medium mb-16 text-center">I'm also the host of the "Writer
-				on
-				the Side"
-				podcast, where I've interviewed over 100 successful authors and thought leaders about their book-writing
-				and marketing strategies.
-			</p>
-			<h2 class="font-bold text-[30px] text-center">Some of the People I’ve Interviewed</h2>
-			<p class="font-bold text-lg text-center mb-[42px]">Here are just a few of them.</p>
+			<p class="max-w-[900px] mx-auto text-lg font-medium mb-16 text-center">In this course, I'll share
+				everything
+				I
+				learned from all those great writers and from my 18+ years of experience creating, marketing, and
+				selling
+				successful books on the side.</p>
+			<p class="max-w-[676px] mx-auto text-lg font-medium mb-16 text-center">One of my bestselling books is called
+				"Write Your Book on the Side," and here's what a few folks have said about it.</p>
+
+			<div class="book-testimonials-container relative mb-24">
+				<!-- Center Book -->
+				<div class="book-center relative mx-auto max-w-[321px] z-10">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Featured-book.png"
+						alt="Write Your Book on the Side" class="w-full h-auto" />
+				</div>
+
+				<!-- Top Left Testimonial -->
+				<div class="testimonial-box absolute top-0 left-0 max-w-[400px]">
+					<div class="flex items-center gap-3">
+
+						<div class="testimonial-quote text-sm">
+							<p class="font-medium">"This book completely challenged my misconceptions and
+								deeply motivated me to write a book myself"</p>
+							<p class="font-bold">- Dr. Haytham Kaafarani, Professor of Surgery,
+								Harvard Medical School</p>
+						</div>
+						<div class="testimonial-circle shrink-0">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-9.png"
+								alt="Dr. Haytham Kaafarani" class="w-[141px] aspect-square" />
+						</div>
+					</div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-3.png" alt="Arrow"
+						class="arrow-to-book absolute -top-10 right-[-100px] w-[147px]" />
+				</div>
+
+				<!-- Top Right Testimonial -->
+				<div class="testimonial-box absolute top-0 right-0 max-w-[400px]">
+					<div class="flex items-center gap-3">
+						<div class="testimonial-circle shrink-0">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-10.png"
+								alt="Dave Stachowiak" class="w-[141px] aspect-square" />
+						</div>
+						<div class="testimonial-quote text-sm">
+							<p class="font-medium ">"Publishing your own book will help you clarify the
+								message you want the world to hear. This concise, smart read shows you exactly how to do
+								it."</p>
+							<p class="font-bold">- Dave Stachowiak, Host of Coaching for Leaders</p>
+						</div>
+
+					</div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-4.png" alt="Arrow"
+						class="arrow-to-book absolute -top-5 left-[-100px] w-[118px]" />
+				</div>
+
+				<!-- Middle Left Testimonial -->
+				<div class="testimonial-box absolute top-1/3 left-0 max-w-[400px]">
+					<div class="flex items-center gap-3">
+						<div class="testimonial-circle shrink-0">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-11.png"
+								alt="Teresa Chahine" class="w-[141px] aspect-square" />
+						</div>
+						<div class="testimonial-quote text-sm">
+							<p class="font-medium">"Why didn't anyone create something like this before? I
+								wish I had this guide when I was writing my book!"</p>
+							<p class="font-bold">- Teresa Chahine, Senior Lecturer, Yale University</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Middle Right Testimonial -->
+				<div class="testimonial-box absolute top-1/3 right-0 max-w-[400px]">
+					<div class="flex items-center gap-3">
+						<div class="testimonial-quote text-sm">
+							<p class="font-medium">"I've thought about writing a non-fiction book for a
+								while, and have decided to start using Hassan's book as a step-by-step guide. It's
+								perfect for a first-time writer."</p>
+							<p class="font-bold">- Karan Mishra, Principal at EY</p>
+						</div>
+						<div class="testimonial-circle shrink-0">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-12.png"
+								alt="Karan Mishra" class="w-[141px] aspect-square" />
+						</div>
+					</div>
+				</div>
+
+				<!-- Bottom Left Testimonial -->
+				<div class="testimonial-box absolute bottom-0 left-0 max-w-[400px]">
+					<div class="flex items-center gap-3">
+
+						<div class="testimonial-quote text-sm">
+							<p class="font-medium">"This book made MY book a bestseller. It contained the
+								step-by-step assistance I had been looking for."</p>
+							<p class="font-bold">- Russ Hill, Author of "Decide to Lead"</p>
+						</div>
+						<div class="testimonial-circle shrink-0">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-13.png"
+								alt="Russ Hill" class="w-[141px] aspect-square" />
+						</div>
+					</div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-5.png" alt="Arrow"
+						class="arrow-to-book absolute -bottom-10 right-[-100px] w-[147px]" />
+				</div>
+
+				<!-- Bottom Right Testimonial -->
+				<div class="testimonial-box absolute bottom-0 right-0 max-w-[400px]">
+
+					<div class="flex items-center gap-3">
+						<div class="testimonial-circle shrink-0">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-14.png"
+								alt="Tucker Matheson" class="w-[141px] aspect-square" />
+						</div>
+						<div class="testimonial-quote text-sm">
+							<p class="font-medium">"This is an amazing playbook for first-time authors."
+							</p>
+							<p class="font-bold">- Tucker Matheson, Co-CEO at Markacy</p>
+						</div>
+
+					</div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-6.png" alt="Arrow"
+						class="arrow-to-book absolute -bottom-10 left-[-100px] w-[147px]" />
+				</div>
+			</div>
+
+			<a href="#packages" class="btn-red mx-auto mb-20">Explore Packages</a>
 		</div>
+		<?php get_template_part('template-parts/ui/section-divider'); ?>
+	</section>
+	<section class="py-[57px]  bg-[#20201D] relative overflow-hidden text-white">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/bonuses-bg.png" alt="Bonuses background"
+			class="absolute top-0 left-0 w-full h-full object-cover" />
+		<div class="container relative z-[1]">
+			<h2 class="heading-primary  text-center mb-[50px]">Bonuses (Free with Your Purchase)</h2>
+			<div class="space-y-[23px]">
+				<div
+					class=" bg-gradient-to-br from-[#3B3939] to-[#3B3939]/30 rounded-[8px] border border-[#504F4F]/30 backdrop-blur-[10px] p-[19px] flex gap-[33px]">
+					<div class=" h-full">
+						<div
+							class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-xl flex items-center justify-center rounded-[8px] shrink-0 p-4 ">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/kdp-icon.png" alt="kdp"
+								class="w-[60px] aspect-square" />
+						</div>
+					</div>
+					<div class="py-5">
+						<p class="font-bold text-[25px] leading-[30px] mb-[10px]">Bonus #1: "How to Pick a Bestselling
+							Book Title" Framework ($60 Value)</p>
+						<p class="font-medium text-lg leading-[28px] mb-[17px]">A framework that helps you pick a
+							nonfiction book title that readers want to buy. This will be a deep-dive, step-by-step
+							process on how to come up with an outcome statement and how to narrow the audience & topic
+							of your book (everything will hinge on getting your title right, so this will be a super
+							important bonus)</p>
+						<p class="italic text-lg leading-[28px]">Note: You'll get access to this bonus right after week
+							1.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section>
+		<div class="rotate-180">
+			<?php get_template_part('template-parts/ui/section-divider'); ?>
+		</div>
+		<div class="container pt-[172px]">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/hand-icon.svg" alt="hand icon"
+				class="block mx-auto" />
+			<h2 class="heading-primary mb-[23px] mt-[19px] text-center">
+				Choose One of Three Packages
+			</h2>
+
+			<!-- Pricing Table -->
+			<div class="pricing-table-wrapper mt-8 mb-20">
+				<!-- Desktop Table -->
+				<div class="hidden md:block">
+					<div class="grid grid-cols-4 text-center i">
+						<!-- Empty top-left cell -->
+						<div class="border-b-2 border-r-2 border-black"></div>
+
+						<!-- Table Headers -->
+						<div class="border-b-2 border-r-2 border-black font-semibold flex items-center justify-center">
+							<p>Course Only</p>
+						</div>
+						<div class="border-b-2 border-r-2 border-black font-semibold flex items-center justify-center">
+							<p>Course + 2<br>Coaching Sessions</p>
+						</div>
+						<div class="border-b-2  border-black font-semibold flex items-center justify-center">
+							<p>Course + Unlimited<br>Coaching Sessions</p>
+						</div>
+
+						<!-- Lifetime course access -->
+						<div class="border-b-2 border-r-2  py-2 border-black flex items-center font-medium">
+							<p>Lifetime course access</p>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+						<div class=" border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+
+						<!-- All bonuses -->
+						<div class="border-b-2 border-r-2 py-2 border-black flex items-center font-medium">
+							<p>All bonuses</p>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+						<div class=" border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+
+						<!-- Lifetime course updates -->
+						<div class="border-b-2 border-r-2 py-2 border-black flex items-center font-medium">
+							<p>Lifetime course updates</p>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+						<div class=" border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+
+						<!-- Private "Write Like Me" GPT -->
+						<div class="border-b-2 border-r-2 py-2 border-black flex items-center font-medium">
+							<p>Private "Write Like Me" GPT</p>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<div class="w-8 h-0.5 bg-black"></div>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+						<div class=" border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+
+						<!-- Custom category research -->
+						<div class="border-b-2 border-r-2 py-2 border-black flex items-center font-medium">
+							<p>Custom category research</p>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<div class="w-8 h-0.5 bg-black"></div>
+						</div>
+						<div class=" border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+						<div class=" border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+
+						<!-- Zoom strategycalls -->
+						<div class="border-b-2 border-r-2 py-2 border-black flex items-center font-medium">
+							<p>Zoom strategycalls</p>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<div class="w-8 h-0.5 bg-black"></div>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<span class="font-medium">2 x 60 min</span>
+						</div>
+						<div class=" border-b-2 py-2 border-black  flex justify-center items-center">
+							<span class="font-medium">Unlimited</span>
+						</div>
+
+						<!-- Recordings & AI summaries -->
+						<div class="border-b-2 border-r-2 py-2 border-black flex items-center font-medium">
+							<p>Recordings & AI summaries</p>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<div class="w-8 h-0.5 bg-black"></div>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+						<div class=" border-b-2 py-2 border-black  flex justify-center items-center">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+								alt="Included" class="w-8 h-8">
+						</div>
+
+						<!-- Availability -->
+						<div class="border-b-2 border-r-2 py-2 border-black flex items-center font-medium">
+							<p>Availability</p>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<span class="font-medium">Open</span>
+						</div>
+						<div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
+							<span class="font-medium">7 spots left</span>
+						</div>
+						<div class=" border-b-2 py-2 border-black  flex justify-center items-center">
+							<span class="font-medium">2 spots left -<br>application only</span>
+						</div>
+
+						<!-- Price (today) -->
+						<div class=" border-r-2 py-2 border-black flex items-center font-medium">
+							<p>Price (today)</p>
+						</div>
+						<div class="border-r-2 py-2 border-black  flex justify-center items-center flex-col">
+							<p class="text-gray-400 line-through text-lg">$897</p>
+							<p class="font-bold text-2xl">$497</p>
+						</div>
+						<div class="border-r-2  py-2 border-black  flex justify-center items-center flex-col">
+							<p class="text-gray-400 line-through text-lg">$1,997</p>
+							<p class="font-bold text-2xl">$1,497</p>
+						</div>
+						<div class="  py-2 border-black  flex justify-center items-center flex-col">
+							<p class="text-gray-400 line-through text-lg">$12,997</p>
+							<p class="font-bold text-2xl">$9,997</p>
+						</div>
+
+						<!-- CTA Buttons -->
+						<div class=""></div>
+						<div class=" py-5 px-5 ">
+							<a href="#" class="btn-red">
+								Start Watching Now
+							</a>
+						</div>
+						<div class=" py-5 px-5 ">
+							<a href="#" class="btn-red">
+								Start Watching Now
+							</a>
+						</div>
+						<div class=" py-5 px-5 ">
+							<a href="#" class="btn-red">
+								Schedule a Free Call
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Mobile Table -->
+				<div class="block md:hidden space-y-8">
+					<!-- Course Only -->
+					<div class="border border-black rounded-lg overflow-hidden">
+						<div class="text-center font-bold py-4 border-b border-black bg-gray-50">
+							Course Only
+						</div>
+						<div class="p-4 space-y-3">
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-6 h-6">
+								<span>Lifetime course access</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-6 h-6">
+								<span>All bonuses</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-6 h-6">
+								<span>Lifetime course updates</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<div class="w-6 h-0.5 bg-black"></div>
+								<span>Private "Write Like Me" GPT</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<div class="w-6 h-0.5 bg-black"></div>
+								<span>Custom category research</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<div class="w-6 h-0.5 bg-black"></div>
+								<span>Zoom strategycalls</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<div class="w-6 h-0.5 bg-black"></div>
+								<span>Recordings & AI summaries</span>
+							</div>
+							<div class="flex items-center gap-2 font-medium">
+								<span>Open</span>
+							</div>
+						</div>
+						<div class="border-t border-black p-4 text-center">
+							<p class="text-gray-400 line-through">$897</p>
+							<p class="font-bold text-2xl mb-3">$497</p>
+							<a href="#"
+								class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
+								Start Watching Now
+							</a>
+						</div>
+					</div>
+
+					<!-- Course + 2 Coaching Sessions -->
+					<div class="border border-black rounded-lg overflow-hidden">
+						<div class="text-center font-bold py-4 border-b border-black bg-gray-50">
+							Course + 2<br>Coaching Sessions
+						</div>
+						<div class="p-4 space-y-3">
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-6 h-6">
+								<span>Lifetime course access</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-6 h-6">
+								<span>All bonuses</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-6 h-6">
+								<span>Lifetime course updates</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-6 h-6">
+								<span>Private "Write Like Me" GPT</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-6 h-6">
+								<span>Custom category research</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<span class="font-medium">2 x 60 min</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-6 h-6">
+								<span>Recordings & AI summaries</span>
+							</div>
+							<div class="flex items-center gap-2 font-medium">
+								<span>7 spots left</span>
+							</div>
+						</div>
+						<div class="border-t border-black p-4 text-center">
+							<p class="text-gray-400 line-through">$1,997</p>
+							<p class="font-bold text-2xl mb-3">$1,497</p>
+							<a href="#"
+								class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
+								Start Watching Now
+							</a>
+						</div>
+					</div>
+
+					<!-- Course + Unlimited Coaching Sessions -->
+					<div class="border border-black rounded-lg overflow-hidden">
+						<div class="text-center font-bold py-4 border-b border-black bg-gray-50">
+							Course + Unlimited<br>Coaching Sessions
+						</div>
+						<div class="p-4 space-y-3">
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-[46px] h-[37px]">
+								<span>Lifetime course access</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-[46px] h-[37px]">
+								<span>All bonuses</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-[46px] h-[37px]">
+								<span>Lifetime course updates</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-[46px] h-[37px]">
+								<span>Private "Write Like Me" GPT</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-[46px] h-[37px]">
+								<span>Custom category research</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<span class="font-medium">Unlimited</span>
+							</div>
+							<div class="flex items-center gap-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+									alt="Included" class="w-[46px] h-[37px]">
+								<span>Recordings & AI summaries</span>
+							</div>
+							<div class="flex items-center gap-2 font-medium">
+								<span>2 spots left - application only</span>
+							</div>
+						</div>
+						<div class="border-t border-black p-4 text-center">
+							<p class="text-gray-400 line-through">$12,997</p>
+							<p class="font-bold text-2xl mb-3">$9,997</p>
+							<a href="#"
+								class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
+								Schedule a Free Call
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Pricing Table -->
+	</section>
+	<section class="pt-20">
+		<div class="container">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/package-icon.svg" alt="package icon"
+				class="block mx-auto" />
+			<h2 class="heading-primary mb-[23px] mt-[19px] text-center">
+				Package Details
+			</h2>
+			<p class="text-center max-w-[686px] mx-auto">Here’s exactly what each option includes so you can choose the
+				level of support that fits your goals and budget.</p>
+
+			<div class="course-accordions mt-8 mb-12">
+				<div class="course-accordion active">
+					<div class="course-accordion-header">
+						<div class="flex items-center">
+							<div
+								class="course-accordion-week  flex items-center justify-center h-[63px] min-w-[63px]  px-2 py-0">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/star-2.svg" alt="1"
+									class="w-6 h-6">
+							</div>
+							<h3 class="course-accordion-title">Course Only</h3>
+						</div>
+
+						<svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+								fill="black" />
+						</svg>
+
+					</div>
+					<div class="course-accordion-content">
+						<div class="course-accordion-body">
+							<ul class="course-accordion-list">
+								<li><b>Lifetime access</b> to the 4‑Week Write Your Book on the Side System course
+									(self‑paced). Start Week 1 today; fresh modules unlock every 7 days.</li>
+								<li><b>All bonuses included</b> (frameworks, prompts, checklists, specialized GPTs,
+									etc.).</li>
+								<li>Lifetime course updates so you always have the latest AI and KDP tactics.</li>
+								<li><b>DIY format:</b> no email support, no 1‑on‑1 calls, and no manuscript
+									feedback—perfect if you prefer to work independently at your own pace.</li>
+								<li>Want personal help later? <b>You can upgrade within 12 months.</b> The price you pay
+									today is credited in full to any other package if coaching seats remain and at the
+									then‑current price.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="course-accordion">
+					<div class="course-accordion-header">
+						<div class="flex items-center">
+							<div
+								class="course-accordion-week  flex items-center justify-center h-[63px] min-w-[63px] px-2 py-0">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/star-2.svg" alt="1"
+									class="w-6 h-6"><img
+									src="<?php echo get_template_directory_uri(); ?>/assets/img/star-2.svg" alt="1"
+									class="w-6 h-6">
+							</div>
+							<h3 class="course-accordion-title">Course + 2 Coaching Sessions</h3>
+						</div>
+
+						<svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+								fill="black" />
+						</svg>
+
+					</div>
+					<div class="course-accordion-content">
+						<div class="course-accordion-body">
+							<ul class="course-accordion-list">
+								<li><b>Lifetime access</b> to the 4‑Week Write Your Book on the Side System course
+									(self‑paced). Start Week 1 today. Fresh modules unlock every 7 days.</li>
+								<li><b>All bonuses included</b> (frameworks, prompts, checklists, specialized GPTs,
+									etc.).</li>
+								<li><b>Lifetime course updates</b> so you always have the latest AI and KDP tactics.
+								</li>
+								<li><b>Two private Zoom coaching sessions</b> (60 min each): Use them to refine your
+									title, manuscript, launch plan, or anything else related to your book.</li>
+								<li>Sessions can be scheduled any time in the first 6 months after purchase, but most
+									people book the first call in weeks 1‑2 and the second call right before publishing
+									in week 4.</li>
+								<li>Recordings & AI summaries for each coaching session with be provided for easy
+									reference.</li>
+								<li>No ongoing email support. All questions are handled live on the calls so you get
+									focused, actionable feedback.</li>
+								<li><b>Private "Write Like Me" Custom GPT ($250 Value):</b> I will personally create a
+									"Write Like Me" custom GPT for you that you can use to write your book in your own
+									voice (I'll just need previous samples of your writing style so I can load them in
+									the GPT). You'll get access to this right after week 2.</li>
+								<li><b>Custom Category Research ($250 Value):</b> I will personally research Amazon KDP
+									book category selections to help your book hit the No. 1 Amazon Bestseller list.
+									You'll get access to this whenever you're ready to publish your book.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="course-accordion">
+					<div class="course-accordion-header">
+						<div class="flex items-center">
+							<div
+								class="course-accordion-week  flex items-center justify-center h-[63px] min-w-[63px] px-2 py-0">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/star-2.svg" alt="1"
+									class="w-6 h-6"><img
+									src="<?php echo get_template_directory_uri(); ?>/assets/img/star-2.svg" alt="1"
+									class="w-6 h-6"><img
+									src="<?php echo get_template_directory_uri(); ?>/assets/img/star-2.svg" alt="1"
+									class="w-6 h-6">
+							</div>
+							<h3 class="course-accordion-title">Course + Unlimited Coaching Sessions</h3>
+						</div>
+
+						<svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+								fill="black" />
+						</svg>
+
+					</div>
+					<div class="course-accordion-content">
+						<div class="course-accordion-body">
+							<ul class="course-accordion-list">
+								<li><b>Lifetime access</b> to the 4‑Week Write Your Book on the Side System course
+									(self‑paced). Start Week 1 today. Fresh modules unlock every 7 days.</li>
+								<li><b>All bonuses included</b> (frameworks, prompts, checklists, specialized GPTs,
+									etc.).</li>
+								<li><b>Lifetime course updates</b> so you always have the latest AI and KDP tactics.
+								</li>
+								<li><b>UNLIMITED private Zoom coaching sessions (60 min each)</b> until you get your
+									first book published. Use them to refine your title, manuscript, launch plan, or
+									anything else related to your book. You can book calls as often as you need for
+									brainstorming, live edits, or even launch support.</li>
+								<li>Sessions can be scheduled any time in the first 12 months after purchase or after
+									your first book is published (whichever comes first).</li>
+								<li>Recordings & AI summaries for each coaching session with be provided for easy
+									reference.</li>
+								<li>No ongoing email support. All questions are handled live on the calls so you get
+									focused, actionable feedback.</li>
+								<li><b>Private "Write Like Me" Custom GPT ($250 Value):</b> I will personally create a
+									"Write Like Me" custom GPT for you that you can use to write your book in your own
+									voice (I'll just need previous samples of your writing style so I can load them in
+									the GPT). You'll get access to this right after week 2.</li>
+								<li><b>Custom Category Research ($250 Value):</b> I will personally research Amazon KDP
+									book category selections to help your book hit the No. 1 Amazon Bestseller list.
+									You'll get access to this whenever you're ready to publish your book.</li>
+								<li><i>Please note: Due to the intensive nature of this package, availability is by
+										application. Feel free to schedule a free with me first to confirm fit and
+										reserve your slot.</i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+		</div>
+		<?php get_template_part('template-parts/ui/section-divider'); ?>
+
+	</section>
+
+	<section class="py-[57px]  bg-[#20201D] relative overflow-hidden">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/doctor-patient-2.png" alt="Doctor and patient"
+			class="absolute inset-0 w-full h-full object-cover opacity-10" />
+		<div class="container relative z-[1]">
+			<div class="w-[250px] aspect-square mx-auto">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/4ws.png" alt="Doctor and patient" />
+			</div>
+			<div class="max-w-[1000px] mx-auto text-center text-white">
+				<h2 class="font-repo font-extrabold text-[55px] mb-[55px]">30-Day Money-Back Guarantee</h2>
+				<p class="mb-[35px]">If you're not satisfied for any reason within 30 days of starting the course, I
+					guarantee that you'll get 100% percent of your money back.</p>
+				<p class="mb-[35px]">I'll even pay the processing fees (i.e., I'll pay the ~15% platform & credit card
+					fees, so I would literally lose money with this guarantee).</p>
+				<p class="mb-[35px]">That's how confident I am that this will be a valuable experience for you.</p>
+			</div>
+			<div class="testimonial-card my-[68px] items-center">
+				<div class="testimonial-avatar">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-15.png"
+						alt="People faces #15">
+				</div>
+
+				<div class="testimonial-content">
+					<p>“I really enjoyed the course because the delivery of the lectures is fun, thoughtful and very
+						practical. <span>The whole course is geared towards action,</span> gaining momentum and pushes
+						you to write your book. Hassan is a great teacher and shares his experience openly and candidly.
+						<span>Don't think about it, buy the course!”</span>
+					</p>
+					<p class="testimonial-author">Jose Torres, Partner at Lexia Abogados
+					</p>
+				</div>
+			</div>
+			<div class="course-accordions mt-8 mb-12">
+				<h2 class="font-repo font-extrabold text-[55px] mb-[55px] text-white text-center">FAQs</h2>
+				<div class="course-accordion border-[#3B393933] active text-white bg-[#3B3939]">
+					<div class="course-accordion-header">
+						<div class="flex items-center">
+							<div class="course-accordion-week w-[65px] h-[65px]flex justify-center items-center p-2">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/faq-icon.svg"
+									alt="FAQ icon" class="w-full h-full">
+							</div>
+							<h3 class="course-accordion-title">How long is the course and how much time do I need to
+								commit each week?</h3>
+						</div>
+
+						<svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+								fill="white" />
+						</svg>
+
+					</div>
+					<div class="course-accordion-content ">
+						<div class="course-accordion-body border-white">
+							<p>The course is around 6 hours in total. This does not include some of the bonuses, which
+								include an additional 3 hours of video content. Most students dedicate around 3 to 5
+								hours per week to complete the course and work on their book. The beauty of this system
+								is its flexibility - you can work during lunch breaks, evenings, or weekends. Remember,
+								you have lifetime access, so you can adjust the pace to fit your schedule.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="testimonial-card mt-[23px] items-center">
+				<div class="testimonial-avatar">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-16.png"
+						alt="People faces #16">
+				</div>
+
+				<div class="testimonial-content">
+					<p>“This course is incredibly comprehensive, covering everything you need to know about publishing
+						on Amazon without feeling overwhelmed. <span>The lifetime access and bonuses make it well worth
+							the investment.</span> Hassan is an exceptional instructor, providing clear explanations and
+						attentive support. The course helped me overcome obstacles and make progress. I highly recommend
+						it.”</span>
+					</p>
+					<p class="testimonial-author">Carol Polack, Founder of Dolphin Rock Solutions
+					</p>
+				</div>
+			</div>
+			<div class="testimonial-card mt-[23px] items-center">
+				<div class="testimonial-avatar">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-17.png"
+						alt="People faces #17">
+				</div>
+
+				<div class="testimonial-content">
+					<p>“Hassan's course is the real deal! He provides <span>a detailed, supportive framework for
+							actually finishing a book and ensuring it has the best chance of being seen in the
+							marketplace.</span> He showed us different ways to think about how to write a book that
+						sells and pare it all down to just the essentials that bring the most benefit. I’m very grateful
+						for all the wisdom he’s distilled into this course.”
+					</p>
+					<p class="testimonial-author">Jose Torres, Partner at Lexia Abogados
+					</p>
+				</div>
+			</div>
+			<div class="testimonial-card mt-[23px] items-center">
+				<div class="testimonial-avatar">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-18.png"
+						alt="People faces #18">
+				</div>
+
+				<div class="testimonial-content">
+					<p>“I highly recommend Hassan’s course. It was exceptionally well-constructed and delivered, packed
+						with practical tips that make the writing process clear and manageable. <span>I found his
+							approach to getting at and refining the book title a gamechanger for me,</span> making the
+						entire project feel focused and achievable. The course is extremely useful and <span>worth every
+							penny.”</span></span>
+					</p>
+					<p class="testimonial-author">Michael Klein, General Manager at Sanofi Genzyme
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="">
+		<div class="rotate-180">
+			<?php get_template_part('template-parts/ui/section-divider'); ?>
+		</div>
+		<div class="container py-[100px]">
+			<h2 class="font-repo font-extrabold text-[55px] mb-[32px] text-center">Ready to become a bestselling author?
+			</h2>
+			<p class=" font-medium text-lg
+ text-center mb-[41px]">Enroll now by clicking on one of the course packages and start your journey today.</p>
+			<a href="#packages" class="mt-5 mx-auto   sm:mt-8 btn-red ">Explore
+				Packages</a>
+
+			<h2 class="font-repo mt-[106px] font-extrabold text-[55px] mb-[32px] text-center">Still unsure?</h2>
+			<p class=" font-medium text-lg
+ text-center ">Email me at  <a href="mailto:hassan@writerontheside.com">hassan@writerontheside.com</a> with any
+				questions or concerns you may have.</p>
+		</div>
+		<?php get_template_part('template-parts/ui/section-divider'); ?>
+
 	</section>
 </main>
 

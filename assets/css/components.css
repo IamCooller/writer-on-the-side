@@ -34,43 +34,83 @@
 		@apply mt-[24px] font-dm-sans italic text-[17px];
 	}
 
-	.testimonials-slider-container {
+	/* Slider container styles */
+	.testimonials-slider-container,
+	.swiper-container {
 		@apply relative;
 	}
 
-	.testimonials-slider {
+	/* Slider styles */
+	.testimonials-slider,
+	.swiper {
 		@apply overflow-hidden;
 		& .swiper-slide{
 		@apply my-auto;
 		}
 	}
 
-	.testimonials-slider-nav {
-		@apply absolute top-1/2 -translate-y-1/2 z-10  cursor-pointer  transition-all;
+	/* Navigation button styles */
+	.testimonials-slider-nav,
+	.swiper-nav {
+		@apply absolute top-1/2 -translate-y-1/2 z-10 cursor-pointer transition-all;
 	}
 
-	.testimonials-slider-prev {
+	/* Previous button styles */
+	.testimonials-slider-prev,
+	.swiper-prev {
 		@apply -left-16 -translate-x-1/2;
 	}
 
-	.testimonials-slider-next {
+	/* Next button styles */
+	.testimonials-slider-next,
+	.swiper-next {
 		@apply -right-16 translate-x-1/2;
 	}
 
-	.testimonials-slider-pagination {
-		@apply flex justify-center gap-2 mt-6;
+	/* Pagination styles */
+	.testimonials-slider-pagination,
+	.swiper-pagination {
+		@apply flex justify-center gap-2 mt-14;
 	}
 
-	.testimonials-slider-pagination .swiper-pagination-bullet {
+	/* Pagination bullet styles */
+	.testimonials-slider-pagination .swiper-pagination-bullet,
+	.swiper-pagination .swiper-pagination-bullet {
 		@apply w-[30px] h-[7px] rounded-[5px] bg-[#9E9E9E] opacity-100 cursor-pointer transition-all;
 	}
 
-	.testimonials-slider-pagination .swiper-pagination-bullet-active {
+	/* Active pagination bullet styles */
+	.testimonials-slider-pagination .swiper-pagination-bullet-active,
+	.swiper-pagination .swiper-pagination-bullet-active {
 		background: linear-gradient(-101deg, #D11217 27%, #A2090D 100%);
 	}
 
-	.testimonials-slider .swiper-slide {
+	/* Swiper slide styles */
+	.testimonials-slider .swiper-slide,
+	.swiper .swiper-slide {
 		@apply flex items-center justify-center h-auto;
+	}
+
+	/* People Slider specific styles */
+	.people-slider-container {
+		@apply py-8 px-4;
+	}
+
+	.people-slider .swiper-slide {
+		@apply transition-all duration-300;
+	}
+
+	.people-slider .swiper-slide img {
+		@apply w-full h-auto rounded-lg aspect-square object-cover;
+	}
+
+	/* Position controls for people slider - a bit closer to the content */
+	.people-slider-container .swiper-prev {
+		@apply -left-10 lg:-left-12;
+	}
+
+	.people-slider-container .swiper-next {
+		@apply -right-10 lg:-right-12;
 	}
 
 	.course-accordion {
@@ -119,4 +159,6 @@
 	.course-accordion-list {
 		@apply list-disc pl-5 space-y-4 text-base;
 	}
+
+	
 }

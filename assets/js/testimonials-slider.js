@@ -2,15 +2,15 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
-
 document.addEventListener("DOMContentLoaded", () => {
-    // Initialize the testimonials slider with both new and old class names for backward compatibility
+    // Initialize the testimonials slider
     const testimonialsSlider = new Swiper('.testimonials-slider', {
         modules: [Navigation, Pagination],
-        slidesPerView: 1.5,
+        slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
         autoHeight: true,
+        speed: 600,
         
         navigation: {
             nextEl: '.testimonials-slider-next, .swiper-next',
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         pagination: {
             el: '.testimonials-slider-pagination, .swiper-pagination',
             clickable: true,
-        },
+        }
     });
     
     // Initialize the people slider
@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 3, // Default for mobile
         spaceBetween: 20,
         loop: true,
+        speed: 600,
         
         breakpoints: {
             // When window width is >= 768px
@@ -44,6 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
         pagination: {
             el: '.people-slider-container .swiper-pagination',
             clickable: true,
-        },
+        }
     });
 }); 

@@ -3,6 +3,45 @@
 @import "./components.css";
 @import "./options.css";
 
+
+
+body {
+	overflow-x: hidden;
+}
+
+/* Стили для плавной прокрутки */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Ускорение анимаций с помощью GPU */
+.testimonial-card,
+.reason-card-bg,
+.btn-red,
+.reason-icon-bg,
+.course-accordion,
+.mobile-menu {
+	transform: translateZ(0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+/* Скрываем элементы по умолчанию для анимаций появления */
+.heading-primary,
+.testimonial-card,
+.reason-card-bg {
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+/* Анимации для loaded состояния */
+.gsap-loaded .heading-primary,
+.gsap-loaded .testimonial-card,
+.gsap-loaded .reason-card-bg {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 .header-menu {
     @apply flex items-center gap-[27px] list-none;
 }
@@ -10,6 +49,7 @@
 .header-menu li a {
     @apply font-poppins font-medium text-xl relative;
     @apply hover:text-red transition-colors duration-300;
+	transform: translateZ(0);
 }
 
 .header-menu li a::after {
@@ -21,7 +61,6 @@
     @apply w-full;
 }
 
-
 .mobile-menu__nav nav{
  @apply list-none;
 }
@@ -32,4 +71,23 @@
 
 .reason-icon-bg {
     background: linear-gradient(-129deg, #D11217 27%, #A2090D 100%);
+}
+
+
+
+/* Стили для анимации загрузки */
+.page-loader {
+	transition: opacity 0.5s ease;
+}
+
+/* Улучшение производительности анимаций */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+	
+
 }

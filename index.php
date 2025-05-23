@@ -4,34 +4,36 @@
 	<section class="max-lg:bg-[#F9F8F6]">
 		<div class="container">
 			<div class="grid lg:grid-cols-2  items-center">
-				<div class="relative max-lg:order-1 max-lg:mt-[33px]">
+				<div class="relative max-lg:order-1 max-lg:mt-[20px]">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero-img.png" alt="Hero image"
 						class="w-full h-full object-cover">
 					<div
-						class="absolute bottom-[22px] sm:bottom-[40px] left-0 w-full flex items-center gap-[14px] sm:gap-[28px]">
+						class="absolute bottom-[15px] sm:bottom-[40px] left-0 w-full flex items-center gap-[10px] sm:gap-[28px]">
 						<div
-							class=" bg-gradient-to-br from-[#C4C4C4]/40 to-[#C4C4C4]/20 rounded-[8px] border border-white  py-[11px] sm:py-[18px] px-[14px] sm:px-[21px] text-white max-w-[280px] backdrop-blur-2xl">
-							<p class="font-bold text-xl mb-[11px]">Hassan Osman</p>
-							<p class="font-dm-sans font-medium text-base italic">Amazon #1 Bestselling Author
+							class=" bg-gradient-to-br from-[#C4C4C4]/40 to-[#C4C4C4]/20 rounded-[8px] border border-white  py-[8px] sm:py-[18px] px-[10px] sm:px-[21px] text-white max-w-[280px] backdrop-blur-2xl">
+							<p class="font-bold text-lg sm:text-xl mb-[8px] sm:mb-[11px]">Hassan Osman</p>
+							<p class="font-dm-sans font-medium text-sm sm:text-base italic">Amazon #1 Bestselling Author
 								of 20+ Books on the Side</p>
 						</div>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/agold-author.png"
-							alt="Hero image" class="w-[90px] sm:w-[122px] aspect-square">
+							alt="Hero image" class="w-[70px] sm:w-[122px] aspect-square">
 					</div>
 				</div>
-				<div class=" max-lg:mt-[31px] max-lg:text-center">
+				<div class=" max-lg:mt-[20px] max-lg:text-center">
 					<h1
-						class="font-repo font-extrabold  text-[40px] lg:text-[69px] leading-none lg:leading-[80px] mb-[35px] lg:mb-4">
+						class="font-repo font-extrabold  text-[28px] sm:text-[40px] lg:text-[69px] leading-none lg:leading-[80px] mb-[20px] sm:mb-[35px] lg:mb-4">
 						Write a Bestselling Book in 4
 						Weeks
 					</h1>
 
-					<p class="text-base lg:text-xl lg:mb-[31px]"><b>Learn how to write, publish, and sell a high-quality
+					<p class="text-sm sm:text-base lg:text-xl lg:mb-[31px]"><b>Learn how to write, publish, and sell a
+							high-quality
 							bestselling
 							nonfiction book on the side</b> (using AI tools to write it quickly and in your own voice)
 					</p>
 
-					<p class="text-base lg:text-xl mb-[20px] lg:mb-[32px]"><b>Even if you don't have a lot of time,
+					<p class="text-sm sm:text-base lg:text-xl mb-[15px] sm:mb-[20px] lg:mb-[32px]"><b>Even if you don't
+							have a lot of time,
 							don't know where
 							to start, and don't
 							have a topic yet (without having a social media following).</b></p>
@@ -41,47 +43,49 @@
 						 rounded-[8px] w-full lg:w-fit p-[6px] sm:py-[7px] sm:px-[11px] sm:pr-[27px] justify-between gap-[9px]">
 						<div class="flex items-center relative">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/37.png" alt="Hero image"
-								class="relative z-[1] max-sm:max-w-[58px]" />
+								class="relative z-[1] max-sm:max-w-[45px]" />
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/39.png" alt="Hero image"
-								class="relative z-[2] -ml-4 max-sm:max-w-[58px]" />
+								class="relative z-[2] -ml-4 max-sm:max-w-[45px]" />
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/40.png" alt="Hero image"
-								class="relative z-[3] -ml-4 max-sm:max-w-[58px]" />
+								class="relative z-[3] -ml-4 max-sm:max-w-[45px]" />
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/47.png" alt="Hero image"
-								class="relative z-[4] -ml-4 max-sm:max-w-[58px]" />
+								class="relative z-[4] -ml-4 max-sm:max-w-[45px]" />
 						</div>
 						<div class="space-y-[5px]">
 							<div class="flex gap-2">
 								<div
-									class=" font-dm-sans leading-[31px] sm:leading-[1] font-bold text-lg sm:text-[27px]">
+									class=" font-dm-sans leading-[31px] sm:leading-[1] font-bold text-base sm:text-lg md:text-[27px]">
 									4.9/5.0</div>
 								<div class="flex items-center">
-									<div class="flex items-center gap-[7px]">
+									<div class="flex items-center gap-[5px] sm:gap-[7px]">
 										<?php for ($i = 0; $i < 5; $i++) { ?>
 											<img src="<?php echo get_template_directory_uri(); ?>/assets/img/star.svg"
 												alt="Hero image"
-												class="w-[18px] sm:w-[25px] h-[18px] sm:h-[25px] shrink-0" />
+												class="w-[15px] sm:w-[18px] md:w-[25px] h-[15px] sm:h-[18px] md:h-[25px] shrink-0" />
 										<?php } ?>
 
 									</div>
 								</div>
 							</div>
 							<p
-								class="font-dm-sans italic font-medium text-base sm:text-[21px] text-[#5C5C5C] text-left">
+								class="font-dm-sans italic font-medium text-sm sm:text-base md:text-[21px] text-[#5C5C5C] text-left">
 								750+
 								Happy Students
 							</p>
 						</div>
 
 					</div>
-					<a href="#packages" class="mt-5  sm:mt-8 btn-red ">Explore
+					<a href="#packages" class="mt-4 sm:mt-5 md:mt-8 btn-red ">Explore
 						Packages</a>
 				</div>
 
 			</div>
 		</div>
-		<div class="container mt-[31px]">
-			<p class="font-semibold text-[26px] w-full text-center leading-[31px] mb-8">AS SEEN ON:</p>
-			<div class="flex flex-wrap gap-x-[73px] gap-y-[23px] justify-center">
+		<div class="container mt-[20px] sm:mt-[31px]">
+			<p
+				class="font-semibold text-[20px] sm:text-[26px] w-full text-center leading-[25px] sm:leading-[31px] mb-6 sm:mb-8">
+				AS SEEN ON:</p>
+			<div class="flex flex-wrap gap-x-[40px] sm:gap-x-[73px] gap-y-[16px] sm:gap-y-[23px] justify-center">
 
 				<?php
 				$logos = [
@@ -121,7 +125,7 @@
 
 				foreach ($logos as $logo) {
 					printf(
-						'<img src="%s/assets/img/%s" class="h-[30px] w-auto" alt="%s">',
+						'<img src="%s/assets/img/%s" class="h-[25px] sm:h-[30px] w-auto" alt="%s">',
 						get_template_directory_uri(),
 						$logo['file'],
 						$logo['name']
@@ -134,22 +138,23 @@
 		</div>
 		<?php get_template_part('template-parts/ui/section-divider'); ?>
 	</section>
-	<section class="py-[57px]  bg-[#20201D] relative overflow-hidden">
+	<section class="py-[30px] sm:py-[57px]  bg-[#20201D] relative overflow-hidden">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/doctor-patient.png" alt="Doctor and patient"
 			class="absolute inset-0 w-full h-full object-cover opacity-10" />
 		<div class="container relative z-[1]">
-			<h2 class="heading-primary mb-[36px] text-center text-white">
+			<h2 class="heading-primary mb-[24px] sm:mb-[36px] text-center text-white">
 				Publish a
 				Business
 				Card on
 				Steroids <br />
 				(Not Just a Book)</h2>
-			<div class="max-w-[1000px] mx-auto text-white text-center text-sm lg:text-lg font-medium">
-				<p class=" mb-[32px]">The 4-Week "Write Your Book on the Side" System is an online course for busy
+			<div class="max-w-[1000px] mx-auto text-white text-center text-sm sm:text-sm lg:text-lg font-medium">
+				<p class=" mb-[24px] sm:mb-[32px]">The 4-Week "Write Your Book on the Side" System is an online course
+					for busy
 					employees, coaches, and entrepreneurs who have limited time and are interested in quickly publishing
 					their first nonfiction book to use as a business card on steroids.</p>
-				<p class="mb-[18px]">It's for ambitious thought leaders who want to:</p>
-				<ol class="list-decimal list-inside space-y-4 mb-[22px]">
+				<p class="mb-[14px] sm:mb-[18px]">It's for ambitious thought leaders who want to:</p>
+				<ol class="list-decimal list-inside space-y-3 sm:space-y-4 mb-[18px] sm:mb-[22px]">
 					<li>Improve their brand & credibility (and elevate their careers)</li>
 					<li>Make some money on the side</li>
 					<li>Accomplish a personal goal</li>
@@ -158,7 +163,7 @@
 				</ol>
 				<p>Or all of the above.</p>
 			</div>
-			<div class="testimonial-card mt-[68px]">
+			<div class="testimonial-card mt-[40px] sm:mt-[68px]">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-1.png"
 						alt="People faces #1" />
@@ -167,7 +172,7 @@
 					alt="Rounded red line"
 					class="absolute top-[25%] lg:-top-6 max-lg:left-0 lg:-right-4 w-full lg:w-[85%]  lg:h-[170px] object-fill pointer-events-none" />
 				<div class="testimonial-content">
-					<div class="space-y-[19px]">
+					<div class="space-y-[15px] sm:space-y-[19px]">
 
 						<p>This course helped me <span class="testimonial-highlight">go from never having published a
 								book to
@@ -192,9 +197,10 @@
 					</p>
 				</div>
 			</div>
-			<h2 class="heading-primary mb-[36px] mt-[69px] text-center text-white">
+			<h2 class="heading-primary mb-[24px] sm:mb-[36px] mt-[40px] sm:mt-[69px] text-center text-white">
 				What will you get?</h2>
-			<div class="max-w-[1000px] mx-auto text-white text-center text-sm lg:text-lg font-medium space-y-8">
+			<div
+				class="max-w-[1000px] mx-auto text-white text-center text-sm sm:text-sm lg:text-lg font-medium space-y-6 sm:space-y-8">
 				<p>You'll get a step-by-step blueprint that covers everything from A to Z about how to self-publish a
 					short book on Amazon Kindle Direct Publishing (KDP) in just 4 weeks.</p>
 				<p>You can follow along to get your book published during those 4 weeks, or you can take a bit more time
@@ -205,7 +211,7 @@
 				<p>This is a repeatable system that you can use to also publish your second, third, and
 					fourth book in the future.</p>
 			</div>
-			<div class="testimonial-card mt-[68px] items-center">
+			<div class="testimonial-card mt-[40px] sm:mt-[68px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-2.png"
 						alt="People faces #2" />
@@ -223,7 +229,7 @@
 					</p>
 				</div>
 			</div>
-			<a href="#packages" class="mt-5  sm:mt-6 btn-red mx-auto">Explore
+			<a href="#packages" class="mt-4 sm:mt-5 md:mt-6 btn-red mx-auto">Explore
 				Packages</a>
 		</div>
 	</section>
@@ -233,27 +239,30 @@
 			<?php get_template_part('template-parts/ui/section-divider'); ?>
 		</div>
 
-		<div class="container py-[121px]">
+		<div class="container py-[60px] sm:py-[121px]">
 			<div class=" text-center max-w-[900px] mx-auto">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/quill.png" alt="Book cover"
 					class="block mx-auto" />
-				<h2 class="heading-primary mb-[5px] mt-[19px]">
+				<h2 class="heading-primary mb-[5px] mt-[15px] sm:mt-[19px]">
 					Achieve your dream of <br /> becoming an author</h2>
-				<p class="font-repo text-[22px] font-bold mb-[28px]">(Or you'll get your money back - no questions
+				<p class="font-repo text-[18px] sm:text-[22px] font-bold mb-[20px] sm:mb-[28px]">(Or you'll get your
+					money back - no questions
 					asked)</p>
-				<p class="text-lg font-medium leading-[30px] mb-[34px]">I'll show you the <b>exact system</b> I've used
+				<p class="text-base sm:text-lg font-medium leading-[26px] sm:leading-[30px] mb-[24px] sm:mb-[34px]">I'll
+					show you the <b>exact system</b> I've used
 					to
 					write <b>over 20+
 						books,</b> including <b>9 Amazon</b> <b>Bestsellers</b>, while <b>working demanding full-time
 						jobs</b> and balancing family
 					life (and without having a large social media following).</p>
-				<p class="font-repo text-[22px] font-bold">Here are some of the books I've published</p>
+				<p class="font-repo text-[18px] sm:text-[22px] font-bold">Here are some of the books I've published</p>
 			</div>
 
-			<div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-9 mt-[57px] mb-[99px]">
+			<div
+				class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-9 mt-[40px] sm:mt-[57px] mb-[60px] sm:mb-[99px]">
 				<div class="relative">
 					<div
-						class="absolute top-0 translate-y-[-30%] translate-x-[30%] right-0 w-[47px] sm:w-[91px] aspect-square">
+						class="absolute top-0 translate-y-[-30%] translate-x-[30%] right-0 w-[35px] sm:w-[47px] md:w-[91px] aspect-square">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/books/Featured.png"
 							alt="featured" />
 					</div>
@@ -265,10 +274,11 @@
 			<div class="text-center max-w-[900px] mx-auto">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ai-icon.png" alt="ai icon"
 					class="block mx-auto" />
-				<h2 class="heading-primary mb-[23px] mt-[19px]">
+				<h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px]">
 					Use AI as an Assistant, NOT as a Replacement
 				</h2>
-				<div class="text-lg font-medium leading-[30px] mb-[34px] space-y-4">
+				<div
+					class="text-base sm:text-lg font-medium leading-[26px] sm:leading-[30px] mb-[24px] sm:mb-[34px] space-y-3 sm:space-y-4">
 					<p>You'll learn how to use AI tools (primarily ChatGPT) to effortlessly research, generate ideas,
 						draft
 						detailed outlines, and market your book.</p>
@@ -289,7 +299,7 @@
 				</div>
 
 			</div>
-			<div class="testimonial-card mt-[20px] items-center">
+			<div class="testimonial-card mt-[15px] sm:mt-[20px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-3.png"
 						alt="People faces #3" class="w-full h-auto" />
@@ -308,31 +318,32 @@
 					</p>
 				</div>
 			</div>
-			<a href="#packages" class="mt-5  sm:mt-6 btn-red mx-auto">Explore
+			<a href="#packages" class="mt-4 sm:mt-5 md:mt-6 btn-red mx-auto">Explore
 				Packages</a>
 		</div>
 		<?php get_template_part('template-parts/ui/section-divider'); ?>
 	</section>
-	<section class="py-[57px]  bg-[#20201D] relative overflow-hidden">
+	<section class="py-[30px] sm:py-[57px]  bg-[#20201D] relative overflow-hidden">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/reasons-bg.png" alt="Reasons bg"
 			class="absolute inset-0 w-full h-full object-cover opacity-10" />
 		<div class="container relative z-[1]">
-			<h2 class="heading-primary mb-12 text-center text-white">
+			<h2 class="heading-primary mb-8 sm:mb-12 text-center text-white">
 				Three Reasons Why This Course is Unique
 			</h2>
 			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 				<div
-					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[35px] pb-[56px] px-3 text-white">
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[25px] sm:pt-[35px] pb-[40px] sm:pb-[56px] px-3 text-white">
 					<div
-						class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-4 mb-[23px]">
+						class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-3 sm:p-4 mb-[18px] sm:mb-[23px]">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/book-icon.svg" alt="book" />
 					</div>
-					<div class="text-center font-bold text-[25px] mb-[47px]">
+					<div class="text-center font-bold text-[20px] sm:text-[25px] mb-[30px] sm:mb-[47px]">
 						<p>"Business Card on Steroids"</p>
 						<p>VS</p>
 						<p>"Just a Book"</p>
 					</div>
-					<p class="text-lg font-medium">This course focuses on building an asset that will open up many
+					<p class="text-base sm:text-lg font-medium">This course focuses on building an asset that will open
+						up many
 						opportunities for you. It'll be like having a business card on steroids that will elevate your
 						status and make you more money because of your book (i.e., via opportunities) than from your
 						book (i.e., via royalties). I have received multiple job offers, speaking engagements,
@@ -340,34 +351,36 @@
 						the right topic and title to maximize the "business card on steroids" effect for you.</p>
 				</div>
 				<div
-					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[35px] pb-[56px] px-3 text-white">
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[25px] sm:pt-[35px] pb-[40px] sm:pb-[56px] px-3 text-white">
 					<div
-						class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-4 mb-[23px]">
+						class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-3 sm:p-4 mb-[18px] sm:mb-[23px]">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/goal-icon.svg" alt="goal" />
 					</div>
-					<div class="text-center font-bold text-[25px] mb-[47px]">
+					<div class="text-center font-bold text-[20px] sm:text-[25px] mb-[30px] sm:mb-[47px]">
 						<p>"80/20"</p>
 						<p>VS</p>
 						<p> "Every Tactic Under the Sun"</p>
 					</div>
-					<p class="text-lg font-medium">There are hundreds of tactics and strategies that you can use to
+					<p class="text-base sm:text-lg font-medium">There are hundreds of tactics and strategies that you
+						can use to
 						write and market your book. If you apply every tactic under the sun, there's a good chance
 						you'll be quite successful. But as a busy working professional, you probably don't have the time
 						to do everything. We'll focus on the 80/20, or the 20% of tactics that bring you 80% of the
 						results. In other words, the course focus on the stuff that really matters.</p>
 				</div>
 				<div
-					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[35px] pb-[56px] px-3 text-white">
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 pt-[25px] sm:pt-[35px] pb-[40px] sm:pb-[56px] px-3 text-white">
 					<div
-						class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-4 mb-[23px]">
+						class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-lg rounded-[8px] p-3 sm:p-4 mb-[18px] sm:mb-[23px]">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/horn.svg" alt="horn" />
 					</div>
-					<div class="text-center font-bold text-[25px] mb-[47px]">
+					<div class="text-center font-bold text-[20px] sm:text-[25px] mb-[30px] sm:mb-[47px]">
 						<p>"Platform Marketing" </p>
 						<p>VS</p>
 						<p>"Me Marketing"</p>
 					</div>
-					<p class="text-lg font-medium">Instead of relying on your own social media followers and personal
+					<p class="text-base sm:text-lg font-medium">Instead of relying on your own social media followers
+						and personal
 						network to market your book, this course will leverage Amazon to market the book for you. We'll
 						focus on optimizing your book for Amazon's platform so that you can maximize your book's
 						visibility and reach for organic marketing (this is the strategy I've followed for years, and it
@@ -375,7 +388,7 @@
 				</div>
 
 			</div>
-			<a href="#packages" class="mt-5  sm:mt-6 btn-red mx-auto">Explore
+			<a href="#packages" class="mt-4 sm:mt-5 md:mt-6 btn-red mx-auto">Explore
 				Packages</a>
 		</div>
 	</section>
@@ -383,10 +396,10 @@
 		<div class="rotate-180">
 			<?php get_template_part('template-parts/ui/section-divider'); ?>
 		</div>
-		<div class="container pt-[150px]">
+		<div class="container pt-[80px] sm:pt-[150px]">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/crowd-icon.png" alt="Crowd"
-				class="w-[100px] mx-auto mb-5" />
-			<h2 class="heading-primary mb-12 text-center">
+				class="w-[80px] sm:w-[100px] mx-auto mb-4 sm:mb-5" />
+			<h2 class="heading-primary mb-8 sm:mb-12 text-center">
 				What People are Saying
 			</h2>
 
@@ -501,72 +514,78 @@
 
 	</section>
 	<section>
-		<div class="container pb-[110px]">
-			<div class="mt-[104px] max-w-[900px] mx-auto text-center">
+		<div class="container pb-[70px] sm:pb-[110px]">
+			<div class="mt-[60px] sm:mt-[104px] max-w-[900px] mx-auto text-center">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/calendar-icon.png"
-					class="w-[100px] mx-auto mb-5" alt="Calendar icon" />
+					class="w-[80px] sm:w-[100px] mx-auto mb-4 sm:mb-5" alt="Calendar icon" />
 				<h2 class="heading-primary text-center">
 					How realistic is it to write a full book in just 4 weeks?
 				</h2>
-				<p class="font-bold font-repo text-lg py-[22px]">It's very realistic</p>
-				<p>In fact, you can do it in less than 4 weeks. I've written three books, and each one took me <b>1 week
+				<p class="font-bold font-repo text-base sm:text-lg py-[18px] sm:py-[22px]">It's very realistic</p>
+				<p class="text-sm sm:text-base">In fact, you can do it in less than 4 weeks. I've written three books,
+					and each one took me <b>1 week
 						or less</b> to write and publish them (I explain how in the course).</p>
-				<p class="mt-[27px]">Here's why this is feasible for you:</p>
+				<p class="mt-[20px] sm:mt-[27px] text-sm sm:text-base">Here's why this is feasible for you:</p>
 			</div>
-			<div class="flex flex-wrap justify-center gap-[74px] mt-[45px]">
+			<div class="flex flex-wrap justify-center gap-[40px] sm:gap-[74px] mt-[30px] sm:mt-[45px]">
 				<div class="">
 					<div
-						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						class="reason-icon-bg w-[100px] sm:w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-3 sm:p-4 mb-[18px] sm:mb-[24px] text-[62px] text-white font-repo">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/1.svg" alt="#1" />
 
 					</div>
-					<p class="text-center uppercase">We'll focus on a <br /> <b>small problem</b></p>
+					<p class="text-center uppercase text-sm sm:text-base">We'll focus on a <br /> <b>small problem</b>
+					</p>
 				</div>
 				<div class="">
 					<div
-						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						class="reason-icon-bg w-[100px] sm:w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-3 sm:p-4 mb-[18px] sm:mb-[24px] text-[62px] text-white font-repo">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/2.svg" alt="#2" />
 
 
 					</div>
-					<p class="text-center uppercase">We'll write a <br /> <b>short book</b></p>
+					<p class="text-center uppercase text-sm sm:text-base">We'll write a <br /> <b>short book</b></p>
 				</div>
 				<div class="">
 					<div
-						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						class="reason-icon-bg w-[100px] sm:w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-3 sm:p-4 mb-[18px] sm:mb-[24px] text-[62px] text-white font-repo">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/3.svg" alt="#3" />
 						</svg>
 
 
 					</div>
-					<p class="text-center uppercase">We'll apply the <br /> <b>80/20 rule</b></p>
+					<p class="text-center uppercase text-sm sm:text-base">We'll apply the <br /> <b>80/20 rule</b></p>
 				</div>
 				<div class="">
 					<div
-						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						class="reason-icon-bg w-[100px] sm:w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-3 sm:p-4 mb-[18px] sm:mb-[24px] text-[62px] text-white font-repo">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/4.svg" alt="#4" />
 
 
 					</div>
-					<p class="text-center uppercase">We'll use AI to <br /> <b>write it quickly</b></p>
+					<p class="text-center uppercase text-sm sm:text-base">We'll use AI to <br /> <b>write it quickly</b>
+					</p>
 				</div>
 				<div class="">
 					<div
-						class="reason-icon-bg w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-4 mb-[24px] text-[62px] text-white font-repo">
+						class="reason-icon-bg w-[100px] sm:w-[132px] aspect-square mx-auto drop-shadow-lg rounded-[14px] flex items-center justify-center p-3 sm:p-4 mb-[18px] sm:mb-[24px] text-[62px] text-white font-repo">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/numbers/5.svg" alt="#5" />
 
 
 					</div>
-					<p class="text-center uppercase">We'll publish an <br /> <b>ebook first*</b></p>
+					<p class="text-center uppercase text-sm sm:text-base">We'll publish an <br /> <b>ebook first*</b>
+					</p>
 				</div>
 			</div>
-			<p class="max-w-[900px] text-center mx-auto my-[45px] text-lg">To be clear, this is an intensive program and
+			<p class="max-w-[900px] text-center mx-auto my-[30px] sm:my-[45px] text-base sm:text-lg">To be clear, this
+				is an intensive program and
 				you'll
 				need to work hard
 				to complete the tasks during those four weeks (there is no magic button—even with all the advanced AI
 				tools today—nothing can write the whole book for you). How fast you can get your book done also depends
 				on your comfort level and prior experience.</p>
-			<p class="max-w-[900px] text-center mx-auto my-[45px] text-lg text-[#585853]">*While it's possible to also
+			<p class="max-w-[900px] text-center mx-auto my-[30px] sm:my-[45px] text-base sm:text-lg text-[#585853]">
+				*While it's possible to also
 				publish paperback and
 				audiobook versions in 4 weeks, those usually take more time to prepare, so the course focuses on getting
 				your ebook version published first, and you can publish other formats later if you want
@@ -592,53 +611,57 @@
 		</div>
 		<?php get_template_part('template-parts/ui/section-divider'); ?>
 	</section>
-	<section class="py-[57px]  bg-[#20201D] relative overflow-hidden">
+	<section class="py-[30px] sm:py-[57px]  bg-[#20201D] relative overflow-hidden">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/doctor-patient.png" alt="Doctor and patient"
 			class="absolute inset-0 w-full h-full object-cover opacity-10" />
 		<div class="container relative z-[1] ">
-			<h2 class="heading-primary mb-[36px] text-center text-white ">
+			<h2 class="heading-primary mb-[24px] sm:mb-[36px] text-center text-white ">
 				Can't write & publish the book in 4 weeks?</h2>
-			<p class="font-bold font-repo text-lg py-[22px] text-center text-white">That's totally fine!</p>
-			<div class="max-w-[1000px] mx-auto text-white text-center text-sm lg:text-lg font-medium">
-				<p class=" mb-[32px]">In fact, many people don't publish their book in 4 weeks because they have
+			<p class="font-bold font-repo text-base sm:text-lg py-[18px] sm:py-[22px] text-center text-white">That's
+				totally fine!</p>
+			<div class="max-w-[1000px] mx-auto text-white text-center text-sm sm:text-sm lg:text-lg font-medium">
+				<p class=" mb-[24px] sm:mb-[32px]">In fact, many people don't publish their book in 4 weeks because they
+					have
 					pressing family & work commitments. You can learn the entire system and publish your book at your
 					own pace. It's better to take a bit more time to create a great book than publish something just for
 					the sake of publishing it.</p>
-				<p class="mb-[18px]">The good news is that you'll get:</p>
+				<p class="mb-[14px] sm:mb-[18px]">The good news is that you'll get:</p>
 
 			</div>
 
-			<div class="grid lg:grid-cols-2 gap-[30px]">
+			<div class="grid lg:grid-cols-2 gap-[20px] sm:gap-[30px]">
 				<div
-					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[23px] text-white px-[37px]">
-					<div class="flex items-center gap-4 mb-[23px]">
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[18px] sm:py-[23px] text-white px-[25px] sm:px-[37px]">
+					<div class="flex items-center gap-3 sm:gap-4 mb-[18px] sm:mb-[23px]">
 						<div
-							class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-4 ">
+							class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-3 sm:p-4 ">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/infinity-icon.svg"
 								alt="infinity" />
 						</div>
-						<p class="text-[30px] font-bold flex-1">Lifetime Access</p>
+						<p class="text-[24px] sm:text-[30px] font-bold flex-1">Lifetime Access</p>
 					</div>
-					<p class="text-lg font-medium">You will have lifetime access to all the recordings and bonuses, so
+					<p class="text-base sm:text-lg font-medium">You will have lifetime access to all the recordings and
+						bonuses, so
 						you can reference them at a time that's most convenient for you.</p>
 				</div>
 				<div
-					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[23px]  text-white px-[37px]">
-					<div class="flex items-center gap-4 mb-[23px]">
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[18px] sm:py-[23px]  text-white px-[25px] sm:px-[37px]">
+					<div class="flex items-center gap-3 sm:gap-4 mb-[18px] sm:mb-[23px]">
 						<div
-							class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-4 ">
+							class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-3 sm:p-4 ">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/repear-icon.svg"
 								alt="repear icon" />
 						</div>
-						<p class="text-[30px] font-bold flex-1">A Repeatable System</p>
+						<p class="text-[24px] sm:text-[30px] font-bold flex-1">A Repeatable System</p>
 					</div>
-					<p class="text-lg font-medium">You will learn a system that you can repeat later. So even if your
+					<p class="text-base sm:text-lg font-medium">You will learn a system that you can repeat later. So
+						even if your
 						first book takes longer than 4 weeks to write and publish, your second one will take you a lot
 						less time (and your third even less).</p>
 				</div>
 			</div>
 
-			<div class="testimonial-card mt-[68px] items-center">
+			<div class="testimonial-card mt-[40px] sm:mt-[68px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-5.png"
 						alt="People faces #5" />
@@ -654,44 +677,47 @@
 					</p>
 				</div>
 			</div>
-			<h2 class="heading-primary mb-[36px] mt-[69px] text-center text-white">
+			<h2 class="heading-primary mb-[24px] sm:mb-[36px] mt-[40px] sm:mt-[69px] text-center text-white">
 				What are the prerequisites to join?</h2>
-			<p class="text-center text-white text-lg font-medium mb-5">Here are the two mandatory & optional
+			<p class="text-center text-white text-base sm:text-lg font-medium mb-4 sm:mb-5">Here are the two mandatory &
+				optional
 				prerequisites to
 				join the course:</p>
-			<div class="grid lg:grid-cols-2 gap-[30px]">
+			<div class="grid lg:grid-cols-2 gap-[20px] sm:gap-[30px]">
 				<div
-					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[23px] text-white px-[37px]">
-					<div class="flex items-center gap-4 mb-[23px]">
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[18px] sm:py-[23px] text-white px-[25px] sm:px-[37px]">
+					<div class="flex items-center gap-3 sm:gap-4 mb-[18px] sm:mb-[23px]">
 						<div
-							class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-4 ">
+							class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-3 sm:p-4 ">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/kdp-icon.png" alt="kdp" />
 						</div>
-						<p class="text-[30px] font-bold flex-1">KDP Account [Mandatory]</p>
+						<p class="text-[24px] sm:text-[30px] font-bold flex-1">KDP Account [Mandatory]</p>
 					</div>
-					<p class="text-lg font-medium">You'll need to open a free Amazon Kindle Direct Publishing (KDP)
+					<p class="text-base sm:text-lg font-medium">You'll need to open a free Amazon Kindle Direct
+						Publishing (KDP)
 						account. If you're based out of the US, this shouldn't be a problem because you can use your
 						SSN, EIN or TIN. But if you reside outside the US, please confirm you can create an account on
 						the KDP website here (this is for Amazon tax purposes and to ensure you can get paid for your
 						book sales).</p>
 				</div>
 				<div
-					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[23px] text-white px-[37px]">
-					<div class="flex items-center gap-4 mb-[23px]">
+					class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[18px] sm:py-[23px] text-white px-[25px] sm:px-[37px]">
+					<div class="flex items-center gap-3 sm:gap-4 mb-[18px] sm:mb-[23px]">
 						<div
-							class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-4 ">
+							class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-3 sm:p-4 ">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/gpt-icon.svg"
 								alt="gpt icon" />
 						</div>
-						<p class="text-[30px] font-bold flex-1">ChatGPT Plus [Optional]</p>
+						<p class="text-[24px] sm:text-[30px] font-bold flex-1">ChatGPT Plus [Optional]</p>
 					</div>
-					<p class="text-lg font-medium">You'll need an optional subscription to ChatGPT Plus (currently at
+					<p class="text-base sm:text-lg font-medium">You'll need an optional subscription to ChatGPT Plus
+						(currently at
 						$20 per month). You don't need to have this because you can follow the course by using a free
 						ChatGPT account, but the free account is usually slow and has messaging limits. (As a side note,
 						you can pay for only 1 month for ChatGPT Plus and then unsubscribe)</p>
 				</div>
 			</div>
-			<div class="testimonial-card mt-[68px] items-center">
+			<div class="testimonial-card mt-[40px] sm:mt-[68px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-6.png"
 						alt="People faces #6" />
@@ -709,7 +735,7 @@
 					</p>
 				</div>
 			</div>
-			<a href="#packages" class="mt-5  sm:mt-6 btn-red mx-auto">Explore
+			<a href="#packages" class="mt-4 sm:mt-5 md:mt-6 btn-red mx-auto">Explore
 				Packages</a>
 		</div>
 	</section>
@@ -723,10 +749,11 @@
 			<div class="text-center max-w-[900px] mx-auto">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ai-icon.png" alt="ai icon"
 					class="block mx-auto" />
-				<h2 class="heading-primary mb-[23px] mt-[19px]">
+				<h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px]">
 					What's Covered in the Course?
 				</h2>
-				<div class="text-lg font-medium leading-[30px] mb-[34px] space-y-4">
+				<div
+					class="text-base sm:text-lg font-medium leading-[26px] sm:leading-[30px] mb-[24px] sm:mb-[34px] space-y-3 sm:space-y-4">
 					<p>This is a self-paced online course that you can watch at your own convenience.
 						Every week for four weeks, you'll get a new set of videos to watch and access to special tools
 						and bonuses that will help you write your book quickly.</p>
@@ -892,7 +919,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="testimonial-card my-[68px] items-center">
+			<div class="testimonial-card my-[40px] sm:my-[68px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-7.png"
 						alt="People faces #7">
@@ -912,70 +939,77 @@
 			<div class="text-center max-w-[900px] mx-auto">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/book-2-icon.svg" alt="ai icon"
 					class="block mx-auto" />
-				<h2 class="heading-primary mb-[23px] mt-[19px]">
+				<h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px]">
 					A Little About Me
 				</h2>
 
-				<p class="text-lg font-bold leading-[33px] mb-[25px]">20+ Books | 120,000+ Downloads | 9 Bestsellers</p>
+				<p class="text-base sm:text-lg font-bold leading-[28px] sm:leading-[33px] mb-[20px] sm:mb-[25px]">20+
+					Books | 120,000+ Downloads | 9 Bestsellers</p>
 
-				<p class="font-medium mt-[25px] mb-[40px]">My name is Hassan Osman and I'm an author on the side. I've
+				<p class="font-medium mt-[20px] sm:mt-[25px] mb-[30px] sm:mb-[40px] text-sm sm:text-base">My name is
+					Hassan Osman and I'm an author on the side. I've
 					published over 20 books on Amazon in 4 different categories (including 9 Amazon Bestsellers), all
 					while working demanding full-time jobs.</p>
-				<p class="text-center font-repo text-lg font-bold mb-[20px]">Because of my books, I've been featured in
+				<p class="text-center font-repo text-base sm:text-lg font-bold mb-[16px] sm:mb-[20px]">Because of my
+					books, I've been featured in
 					the media and received multiple career opportunities.</p>
 			</div>
-			<div class="relative py-8">
+			<div class="relative py-6 sm:py-8">
 
 				<div class="flex items-center justify-center max-lg:flex-col">
 
 					<!-- Left Column: Profile Picture -->
 					<div class="flex-shrink-0 flex flex-col items-center text-center">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-8.png"
-							alt="Hassan Osman" class="block mx-auto object-cover w-[267px] aspect-square" />
-						<p class="font-medium text-[22px] sm:text-[25px] mt-3">Hassan Osman</p>
+							alt="Hassan Osman"
+							class="block mx-auto object-cover w-[200px] sm:w-[267px] aspect-square" />
+						<p class="font-medium text-[20px] sm:text-[25px] mt-3">Hassan Osman</p>
 					</div>
 
 
-					<div class="relative flex flex-col gap-16 max-lg:mt-[-76px] max-lg:items-end max-lg:w-full">
+					<div
+						class="relative flex flex-col gap-12 sm:gap-16 max-lg:mt-[-50px] sm:max-lg:mt-[-76px] max-lg:items-end max-lg:w-full">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-1.png"
-							class="w-[161px] aspect-square max-lg:rotate-90" alt="arrow pointing to featured content" />
+							class="w-[120px] sm:w-[161px] aspect-square max-lg:rotate-90"
+							alt="arrow pointing to featured content" />
 
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-2.png"
-							class="w-[161px] aspect-square max-lg:hidden" alt="arrow pointing to work history" />
+							class="w-[120px] sm:w-[161px] aspect-square max-lg:hidden"
+							alt="arrow pointing to work history" />
 					</div>
 
 					<!-- Right Column: "Featured in" and "Worked at" boxes -->
-					<div class="w-full max-w-[740px] flex flex-col gap-6 xl:gap-[21px] lg:pl-6">
+					<div class="w-full max-w-[740px] flex flex-col gap-4 sm:gap-6 xl:gap-[21px] lg:pl-6">
 						<!-- Featured In Box -->
 						<div class="featured-in-box">
-							<h3 class="font-extrabold font-repo text-[20px] sm:text-[24px] md:text-[38px] text-center">
+							<h3 class="font-extrabold font-repo text-[18px] sm:text-[24px] md:text-[38px] text-center">
 								Featured in</h3>
 							<div
-								class="bg-[#FFFEF7] border-[3px] border-black py-[19px] sm:py-5 px-5 sm:px-[33px] rounded-[12px]">
+								class="bg-[#FFFEF7] border-[3px] border-black py-[15px] sm:py-[19px] md:py-5 px-4 sm:px-5 md:px-[33px] rounded-[12px]">
 								<div
-									class="flex flex-wrap justify-center items-center gap-x-4 sm:gap-x-6 md:gap-x-8 gap-y-3 sm:gap-y-4">
+									class="flex flex-wrap justify-center items-center gap-x-3 sm:gap-x-4 md:gap-x-6 lg:gap-x-8 gap-y-2 sm:gap-y-3 md:gap-y-4">
 									<?php // Ensure these logo files exist in /assets/img/logos/ ?>
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/1.png"
 										alt="The Wall Street Journal"
-										class="h-6 sm:h-7 md:h-8 lg:h-[41px] object-contain" />
+										class="h-5 sm:h-6 md:h-8 lg:h-[41px] object-contain" />
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/2.png"
-										alt="Forbes" class="h-6 sm:h-7 md:h-8 lg:h-[51px] object-contain" />
+										alt="Forbes" class="h-5 sm:h-6 md:h-8 lg:h-[51px] object-contain" />
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/3.png"
-										alt="Entrepreneur" class="h-6 sm:h-7 md:h-8 lg:h-[51px] object-contain" />
+										alt="Entrepreneur" class="h-5 sm:h-6 md:h-8 lg:h-[51px] object-contain" />
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/4.png"
-										alt="Reader\'s Digest" class="h-6 sm:h-7 md:h-8 lg:h-[66px] object-contain" />
+										alt="Reader\'s Digest" class="h-5 sm:h-6 md:h-8 lg:h-[66px] object-contain" />
 
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/5.png"
 										alt="American Express"
-										class="h-6 sm:h-7 md:h-8 lg:h-[106px] object-contain aspect-square" />
+										class="h-5 sm:h-6 md:h-8 lg:h-[106px] object-contain aspect-square" />
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/6.png"
-										alt="Bloomberg" class="h-6 sm:h-7 md:h-8 lg:h-[39px] object-contain" />
+										alt="Bloomberg" class="h-5 sm:h-6 md:h-8 lg:h-[39px] object-contain" />
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/7.png"
-										alt="MarketWatch" class="h-6 sm:h-7 md:h-8 lg:h-[37px] object-contain" />
+										alt="MarketWatch" class="h-5 sm:h-6 md:h-8 lg:h-[37px] object-contain" />
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/8.png"
-										alt="U.S. News" class="h-6 sm:h-7 md:h-8 lg:h-[53px] object-contain" />
+										alt="U.S. News" class="h-5 sm:h-6 md:h-8 lg:h-[53px] object-contain" />
 									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/9.png"
-										alt="Success" class="h-6 sm:h-7 md:h-8 lg:h-[48px] object-contain" />
+										alt="Success" class="h-5 sm:h-6 md:h-8 lg:h-[48px] object-contain" />
 								</div>
 							</div>
 						</div>
@@ -1152,30 +1186,35 @@
 		</div>
 		<?php get_template_part('template-parts/ui/section-divider'); ?>
 	</section>
-	<section class="py-[57px]  bg-[#20201D] relative overflow-hidden text-white">
+	<section class="py-[57px]  bg-[#20201D] relative overflow-hidden">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/bonuses-bg.png" alt="Bonuses background"
 			class="absolute top-0 left-0 w-full h-full object-cover" />
-		<div class="container relative z-[1]">
-			<h2 class="heading-primary  text-center mb-[50px]">Bonuses (Free with Your Purchase)</h2>
-			<div class="space-y-[23px]">
+		<div class="container relative z-[1] text-white">
+			<h2 class="heading-primary  text-center mb-[35px] sm:mb-[50px]">Bonuses (Free with Your Purchase)</h2>
+			<div class="space-y-[18px] sm:space-y-[23px]">
 				<div
-					class=" bg-gradient-to-br from-[#3B3939] to-[#3B3939]/30 rounded-[8px] border border-[#504F4F]/30 backdrop-blur-[10px] p-[19px] flex gap-[33px] max-lg:flex-col">
+					class=" bg-gradient-to-br from-[#3B3939] to-[#3B3939]/30 rounded-[8px] border border-[#504F4F]/30 backdrop-blur-[10px] p-[15px] sm:p-[19px] flex gap-[20px] sm:gap-[33px] max-lg:flex-col">
 					<div class=" h-full">
 						<div
-							class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-xl flex items-center justify-center rounded-[8px] shrink-0 p-4 ">
+							class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-xl flex items-center justify-center rounded-[8px] shrink-0 p-3 sm:p-4 ">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/kdp-icon.png" alt="kdp"
-								class="w-[60px] aspect-square" />
+								class="w-[50px] sm:w-[60px] aspect-square" />
 						</div>
 					</div>
-					<div class="py-5">
-						<p class="font-bold text-[25px] leading-[30px] mb-[10px]">Bonus #1: "How to Pick a Bestselling
+					<div class="py-3 sm:py-5">
+						<p
+							class="font-bold text-[20px] sm:text-[25px] leading-[24px] sm:leading-[30px] mb-[8px] sm:mb-[10px]">
+							Bonus #1: "How to Pick a Bestselling
 							Book Title" Framework ($60 Value)</p>
-						<p class="font-medium text-lg leading-[28px] mb-[17px]">A framework that helps you pick a
+						<p
+							class="font-medium text-base sm:text-lg leading-[24px] sm:leading-[28px] mb-[14px] sm:mb-[17px]">
+							A framework that helps you pick a
 							nonfiction book title that readers want to buy. This will be a deep-dive, step-by-step
 							process on how to come up with an outcome statement and how to narrow the audience & topic
 							of your book (everything will hinge on getting your title right, so this will be a super
 							important bonus)</p>
-						<p class="italic text-lg leading-[28px]">Note: You'll get access to this bonus right after week
+						<p class="italic text-base sm:text-lg leading-[24px] sm:leading-[28px]">Note: You'll get access
+							to this bonus right after week
 							1.</p>
 					</div>
 				</div>
@@ -1187,10 +1226,10 @@
 		<div class="rotate-180">
 			<?php get_template_part('template-parts/ui/section-divider'); ?>
 		</div>
-		<div class="container pt-[172px]">
+		<div class="container pt-[100px] sm:pt-[172px]">
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/hand-icon.svg" alt="hand icon"
 				class="block mx-auto" />
-			<h2 class="heading-primary mb-[23px] mt-[19px] text-center">
+			<h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px] text-center">
 				Choose One of Three Packages
 			</h2>
 
@@ -1546,7 +1585,7 @@
 			<h2 class="heading-primary mb-[23px] mt-[19px] text-center">
 				Package Details
 			</h2>
-			<p class="text-center max-w-[686px] mx-auto">Here’s exactly what each option includes so you can choose the
+			<p class="text-center max-w-[686px] mx-auto">Here's exactly what each option includes so you can choose the
 				level of support that fits your goals and budget.</p>
 
 			<div class="course-accordions mt-8 mb-12">
@@ -1573,13 +1612,13 @@
 						<div class="course-accordion-body">
 							<ul class="course-accordion-list">
 								<li><b>Lifetime access</b> to the 4‑Week Write Your Book on the Side System course
-									(self‑paced). Start Week 1 today; fresh modules unlock every 7 days.</li>
+									(self‑paced). Start Week 1 today; fresh modules unlock every 7 days.</li>
 								<li><b>All bonuses included</b> (frameworks, prompts, checklists, specialized GPTs,
 									etc.).</li>
 								<li>Lifetime course updates so you always have the latest AI and KDP tactics.</li>
 								<li><b>DIY format:</b> no email support, no 1‑on‑1 calls, and no manuscript
 									feedback—perfect if you prefer to work independently at your own pace.</li>
-								<li>Want personal help later? <b>You can upgrade within 12 months.</b> The price you pay
+								<li>Want personal help later? <b>You can upgrade within 12 months.</b> The price you pay
 									today is credited in full to any other package if coaching seats remain and at the
 									then‑current price.</li>
 							</ul>
@@ -1611,17 +1650,17 @@
 						<div class="course-accordion-body">
 							<ul class="course-accordion-list">
 								<li><b>Lifetime access</b> to the 4‑Week Write Your Book on the Side System course
-									(self‑paced). Start Week 1 today. Fresh modules unlock every 7 days.</li>
+									(self‑paced). Start Week 1 today. Fresh modules unlock every 7 days.</li>
 								<li><b>All bonuses included</b> (frameworks, prompts, checklists, specialized GPTs,
 									etc.).</li>
 								<li><b>Lifetime course updates</b> so you always have the latest AI and KDP tactics.
 								</li>
 								<li><b>Two private Zoom coaching sessions</b> (60 min each): Use them to refine your
 									title, manuscript, launch plan, or anything else related to your book.</li>
-								<li>Sessions can be scheduled any time in the first 6 months after purchase, but most
-									people book the first call in weeks 1‑2 and the second call right before publishing
+								<li>Sessions can be scheduled any time in the first 6 months after purchase, but most
+									people book the first call in weeks 1‑2 and the second call right before publishing
 									in week 4.</li>
-								<li>Recordings & AI summaries for each coaching session with be provided for easy
+								<li>Recordings & AI summaries for each coaching session with be provided for easy
 									reference.</li>
 								<li>No ongoing email support. All questions are handled live on the calls so you get
 									focused, actionable feedback.</li>
@@ -1663,7 +1702,7 @@
 						<div class="course-accordion-body">
 							<ul class="course-accordion-list">
 								<li><b>Lifetime access</b> to the 4‑Week Write Your Book on the Side System course
-									(self‑paced). Start Week 1 today. Fresh modules unlock every 7 days.</li>
+									(self‑paced). Start Week 1 today. Fresh modules unlock every 7 days.</li>
 								<li><b>All bonuses included</b> (frameworks, prompts, checklists, specialized GPTs,
 									etc.).</li>
 								<li><b>Lifetime course updates</b> so you always have the latest AI and KDP tactics.
@@ -1672,9 +1711,9 @@
 									first book published. Use them to refine your title, manuscript, launch plan, or
 									anything else related to your book. You can book calls as often as you need for
 									brainstorming, live edits, or even launch support.</li>
-								<li>Sessions can be scheduled any time in the first 12 months after purchase or after
+								<li>Sessions can be scheduled any time in the first 12 months after purchase or after
 									your first book is published (whichever comes first).</li>
-								<li>Recordings & AI summaries for each coaching session with be provided for easy
+								<li>Recordings & AI summaries for each coaching session with be provided for easy
 									reference.</li>
 								<li>No ongoing email support. All questions are handled live on the calls so you get
 									focused, actionable feedback.</li>
@@ -1702,47 +1741,55 @@
 
 	</section>
 
-	<section class="py-[57px]  bg-[#20201D] relative overflow-hidden">
+	<section class="py-[30px] sm:py-[57px]  bg-[#20201D] relative overflow-hidden">
 		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/doctor-patient-2.png" alt="Doctor and patient"
 			class="absolute inset-0 w-full h-full object-cover opacity-10" />
 		<div class="container relative z-[1]">
-			<div class="w-[250px] aspect-square mx-auto">
+			<div class="w-[200px] sm:w-[250px] aspect-square mx-auto">
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/4ws.png" alt="Doctor and patient" />
 			</div>
 			<div class="max-w-[1000px] mx-auto text-center text-white">
-				<h2 class="font-repo font-extrabold text-[55px] mb-[55px]">30-Day Money-Back Guarantee</h2>
-				<p class="mb-[35px]">If you're not satisfied for any reason within 30 days of starting the course, I
+				<h2 class="font-repo font-extrabold text-[32px] sm:text-[55px] mb-[35px] sm:mb-[55px]">30-Day Money-Back
+					Guarantee</h2>
+				<p class="mb-[25px] sm:mb-[35px] text-sm sm:text-base">If you're not satisfied for any reason within 30
+					days of starting the course, I
 					guarantee that you'll get 100% percent of your money back.</p>
-				<p class="mb-[35px]">I'll even pay the processing fees (i.e., I'll pay the ~15% platform & credit card
+				<p class="mb-[25px] sm:mb-[35px] text-sm sm:text-base">I'll even pay the processing fees (i.e., I'll pay
+					the ~15% platform & credit card
 					fees, so I would literally lose money with this guarantee).</p>
-				<p class="mb-[35px]">That's how confident I am that this will be a valuable experience for you.</p>
+				<p class="mb-[25px] sm:mb-[35px] text-sm sm:text-base">That's how confident I am that this will be a
+					valuable experience for you.</p>
 			</div>
-			<div class="testimonial-card my-[68px] items-center">
+			<div class="testimonial-card my-[40px] sm:my-[68px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-15.png"
 						alt="People faces #15">
 				</div>
 
 				<div class="testimonial-content">
-					<p>“I really enjoyed the course because the delivery of the lectures is fun, thoughtful and very
+					<p>"I really enjoyed the course because the delivery of the lectures is fun, thoughtful and very
 						practical. <span>The whole course is geared towards action,</span> gaining momentum and pushes
 						you to write your book. Hassan is a great teacher and shares his experience openly and candidly.
-						<span>Don't think about it, buy the course!”</span>
+						<span>Don't think about it, buy the course!"</span>
 					</p>
 					<p class="testimonial-author">Jose Torres, Partner at Lexia Abogados
 					</p>
 				</div>
 			</div>
-			<div class="course-accordions mt-8 mb-12">
-				<h2 class="font-repo font-extrabold text-[55px] mb-[55px] text-white text-center">FAQs</h2>
+			<div class="course-accordions mt-6 sm:mt-8 mb-8 sm:mb-12">
+				<h2
+					class="font-repo font-extrabold text-[32px] sm:text-[55px] mb-[35px] sm:mb-[55px] text-white text-center">
+					FAQs</h2>
 				<div class="course-accordion border-[#3B393933] active text-white bg-[#3B3939]">
 					<div class="course-accordion-header">
 						<div class="flex items-center">
-							<div class="course-accordion-week w-[65px] h-[65px]flex justify-center items-center p-2">
+							<div
+								class="course-accordion-week w-[55px] sm:w-[65px] h-[55px] sm:h-[65px] flex justify-center items-center p-2">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/faq-icon.svg"
 									alt="FAQ icon" class="w-full h-full">
 							</div>
-							<h3 class="course-accordion-title">How long is the course and how much time do I need to
+							<h3 class="course-accordion-title text-sm sm:text-base">How long is the course and how much
+								time do I need to
 								commit each week?</h3>
 						</div>
 
@@ -1756,7 +1803,8 @@
 					</div>
 					<div class="course-accordion-content ">
 						<div class="course-accordion-body border-white">
-							<p>The course is around 6 hours in total. This does not include some of the bonuses, which
+							<p class="text-sm sm:text-base">The course is around 6 hours in total. This does not include
+								some of the bonuses, which
 								include an additional 3 hours of video content. Most students dedicate around 3 to 5
 								hours per week to complete the course and work on their book. The beauty of this system
 								is its flexibility - you can work during lunch breaks, evenings, or weekends. Remember,
@@ -1766,52 +1814,52 @@
 				</div>
 			</div>
 
-			<div class="testimonial-card mt-[23px] items-center">
+			<div class="testimonial-card mt-[18px] sm:mt-[23px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-16.png"
 						alt="People faces #16">
 				</div>
 
 				<div class="testimonial-content">
-					<p>“This course is incredibly comprehensive, covering everything you need to know about publishing
+					<p>"This course is incredibly comprehensive, covering everything you need to know about publishing
 						on Amazon without feeling overwhelmed. <span>The lifetime access and bonuses make it well worth
 							the investment.</span> Hassan is an exceptional instructor, providing clear explanations and
 						attentive support. The course helped me overcome obstacles and make progress. I highly recommend
-						it.”</span>
+						it."</span>
 					</p>
 					<p class="testimonial-author">Carol Polack, Founder of Dolphin Rock Solutions
 					</p>
 				</div>
 			</div>
-			<div class="testimonial-card mt-[23px] items-center">
+			<div class="testimonial-card mt-[18px] sm:mt-[23px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-17.png"
 						alt="People faces #17">
 				</div>
 
 				<div class="testimonial-content">
-					<p>“Hassan's course is the real deal! He provides <span>a detailed, supportive framework for
+					<p>"Hassan's course is the real deal! He provides <span>a detailed, supportive framework for
 							actually finishing a book and ensuring it has the best chance of being seen in the
 							marketplace.</span> He showed us different ways to think about how to write a book that
-						sells and pare it all down to just the essentials that bring the most benefit. I’m very grateful
-						for all the wisdom he’s distilled into this course.”
+						sells and pare it all down to just the essentials that bring the most benefit. I'm very grateful
+						for all the wisdom he's distilled into this course."
 					</p>
 					<p class="testimonial-author">Jose Torres, Partner at Lexia Abogados
 					</p>
 				</div>
 			</div>
-			<div class="testimonial-card mt-[23px] items-center">
+			<div class="testimonial-card mt-[18px] sm:mt-[23px] items-center">
 				<div class="testimonial-avatar">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-18.png"
 						alt="People faces #18">
 				</div>
 
 				<div class="testimonial-content">
-					<p>“I highly recommend Hassan’s course. It was exceptionally well-constructed and delivered, packed
+					<p>"I highly recommend Hassan's course. It was exceptionally well-constructed and delivered, packed
 						with practical tips that make the writing process clear and manageable. <span>I found his
 							approach to getting at and refining the book title a gamechanger for me,</span> making the
 						entire project feel focused and achievable. The course is extremely useful and <span>worth every
-							penny.”</span></span>
+							penny."</span></span>
 					</p>
 					<p class="testimonial-author">Michael Klein, General Manager at Sanofi Genzyme
 					</p>
@@ -1823,19 +1871,24 @@
 		<div class="rotate-180">
 			<?php get_template_part('template-parts/ui/section-divider'); ?>
 		</div>
-		<div class="container py-[100px]">
-			<h2 class="font-repo font-extrabold text-[32px] lg:text-[55px] mb-[32px] text-center">Ready to become a
+		<div class="container py-[60px] sm:py-[100px]">
+			<h2
+				class="font-repo font-extrabold text-[28px] sm:text-[32px] lg:text-[55px] mb-[24px] sm:mb-[32px] text-center">
+				Ready to become a
 				bestselling author?
 			</h2>
-			<p class=" font-medium text-lg
- text-center mb-[41px]">Enroll now by clicking on one of the course packages and start your journey today.</p>
-			<a href="#packages" class="mt-5 mx-auto   sm:mt-8 btn-red ">Explore
+			<p class=" font-medium text-base sm:text-lg
+ text-center mb-[30px] sm:mb-[41px]">Enroll now by clicking on one of the course packages and start your journey today.
+			</p>
+			<a href="#packages" class="mt-4 sm:mt-5 md:mt-8 mx-auto btn-red ">Explore
 				Packages</a>
 
-			<h2 class="font-repo mt-[106px] font-extrabold text-[32px] lg:text-[55px] mb-[32px] text-center">Still
+			<h2
+				class="font-repo mt-[60px] sm:mt-[106px] font-extrabold text-[28px] sm:text-[32px] lg:text-[55px] mb-[24px] sm:mb-[32px] text-center">
+				Still
 				unsure?</h2>
-			<p class=" font-medium text-lg
- text-center ">Email me at  <a href="mailto:hassan@writerontheside.com">hassan@writerontheside.com</a> with any
+			<p class=" font-medium text-base sm:text-lg
+ text-center ">Email me at <a href="mailto:hassan@writerontheside.com">hassan@writerontheside.com</a> with any
 				questions or concerns you may have.</p>
 		</div>
 		<?php get_template_part('template-parts/ui/section-divider'); ?>

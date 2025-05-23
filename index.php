@@ -936,7 +936,7 @@
 					</div>
 
 
-					<div class="relative flex flex-col gap-16">
+					<div class="relative flex flex-col gap-16 max-lg:mt-[-76px] max-lg:items-end max-lg:w-full">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-1.png"
 							class="w-[161px] aspect-square max-lg:rotate-90" alt="arrow pointing to featured content" />
 
@@ -945,7 +945,7 @@
 					</div>
 
 					<!-- Right Column: "Featured in" and "Worked at" boxes -->
-					<div class="w-full max-w-[740px] flex flex-col gap-6 xl:gap-[21px] pl-6">
+					<div class="w-full max-w-[740px] flex flex-col gap-6 xl:gap-[21px] lg:pl-6">
 						<!-- Featured In Box -->
 						<div class="featured-in-box">
 							<h3 class="font-extrabold font-repo text-[20px] sm:text-[24px] md:text-[38px] text-center">
@@ -991,24 +991,24 @@
 									<?php // Ensure these logo files exist in /assets/img/logos/ ?>
 									<div class="flex flex-col justify-center items-center text-center">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/10.png"
-											alt="EY" class="h-8 sm:h-9 md:h-10 lg:h-[132px] object-contain " />
-										<div class="text-center font-repo font-semibold text-xl">
+											alt="EY" class="h-[76px] lg:h-[132px] object-contain " />
+										<div class="text-center font-repo font-semibold text-xs sm:text-sm md:text-xl">
 											<p>Manager</p>
 											<p>(Consulting)</p>
 										</div>
 									</div>
 									<div class="flex flex-col justify-center items-center text-center">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/11.png"
-											alt="Cisco" class="h-8 sm:h-9 md:h-10 lg:h-[124px] object-contain " />
-										<div class="text-center font-repo font-semibold text-xl">
+											alt="Cisco" class="h-[72px] lg:h-[124px] object-contain " />
+										<div class="text-center font-repo font-semibold text-xs sm:text-sm md:text-xl">
 											<p>Director</p>
 											<p>(PMO)</p>
 										</div>
 									</div>
 									<div class="flex flex-col justify-center items-center text-center">
 										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logos/12.png"
-											alt="nwn carousel" class="h-8 sm:h-9 md:h-10 lg:h-[95px] object-contain " />
-										<div class="text-center font-repo font-semibold text-xl">
+											alt="nwn carousel" class="h-[54px] lg:h-[95px] object-contain " />
+										<div class="text-center font-repo font-semibold text-xs sm:text-sm md:text-xl">
 											<p>SVP</p>
 											<p>(Professional Services)</p>
 										</div>
@@ -1032,7 +1032,7 @@
 			<p class="max-w-[676px] mx-auto text-lg font-medium mb-16 text-center">One of my bestselling books is called
 				"Write Your Book on the Side," and here's what a few folks have said about it.</p>
 
-			<div class="book-testimonials-container relative mb-24">
+			<div class="book-testimonials-container relative mb-24 max-lg:flex flex-col">
 				<!-- Center Book -->
 				<div class="book-center relative mx-auto max-w-[321px] z-10">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/Featured-book.png"
@@ -1040,7 +1040,7 @@
 				</div>
 
 				<!-- Top Left Testimonial -->
-				<div class="testimonial-box absolute top-0 left-0 max-w-[400px]">
+				<div class="testimonial-box max-lg:hidden absolute top-0 left-0 max-w-[400px]">
 					<div class="flex items-center gap-3">
 
 						<div class="testimonial-quote text-sm">
@@ -1059,13 +1059,13 @@
 				</div>
 
 				<!-- Top Right Testimonial -->
-				<div class="testimonial-box absolute top-0 right-0 max-w-[400px]">
-					<div class="flex items-center gap-3">
+				<div class="testimonial-box max-lg:-order-1 lg:absolute top-0 right-0 max-w-[400px]">
+					<div class="flex items-center gap-3 max-lg:justify-end">
 						<div class="testimonial-circle shrink-0">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-10.png"
-								alt="Dave Stachowiak" class="w-[141px] aspect-square" />
+								alt="Dave Stachowiak" class="w-[122px] lg:w-[141px] aspect-square" />
 						</div>
-						<div class="testimonial-quote text-sm">
+						<div class="testimonial-quote text-xs lg:text-sm max-lg:max-w-[200px]">
 							<p class="font-medium ">"Publishing your own book will help you clarify the
 								message you want the world to hear. This concise, smart read shows you exactly how to do
 								it."</p>
@@ -1074,26 +1074,28 @@
 
 					</div>
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-4.png" alt="Arrow"
-						class="arrow-to-book absolute -top-5 left-[-100px] w-[118px]" />
+						class="arrow-to-book absolute max-lg:left-0 max-lg:rotate-305 max-lg:top-auto lg:-top-5 left-[-100px] w-[118px]" />
 				</div>
 
 				<!-- Middle Left Testimonial -->
-				<div class="testimonial-box absolute top-1/3 left-0 max-w-[400px]">
-					<div class="flex items-center gap-3">
+				<div class="testimonial-box relative lg:absolute top-1/3 left-0 max-w-[400px]">
+					<div class="flex items-center gap-3 max-lg:justify-end">
 						<div class="testimonial-circle shrink-0">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-11.png"
-								alt="Teresa Chahine" class="w-[141px] aspect-square" />
+								alt="Teresa Chahine" class="w-[122px] lg:w-[141px] aspect-square" />
 						</div>
-						<div class="testimonial-quote text-sm">
+						<div class="testimonial-quote text-xs lg:text-sm max-lg:max-w-[200px]">
 							<p class="font-medium">"Why didn't anyone create something like this before? I
 								wish I had this guide when I was writing my book!"</p>
 							<p class="font-bold">- Teresa Chahine, Senior Lecturer, Yale University</p>
 						</div>
 					</div>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-6.png" alt="Arrow"
+						class="arrow-to-book absolute top-0 left-0 rotate-68  lg:hidden  w-[118px] transform -transform-y-1/2" />
 				</div>
 
 				<!-- Middle Right Testimonial -->
-				<div class="testimonial-box absolute top-1/3 right-0 max-w-[400px]">
+				<div class="testimonial-box max-lg:hidden absolute top-1/3 right-0 max-w-[400px]">
 					<div class="flex items-center gap-3">
 						<div class="testimonial-quote text-sm">
 							<p class="font-medium">"I've thought about writing a non-fiction book for a
@@ -1109,7 +1111,7 @@
 				</div>
 
 				<!-- Bottom Left Testimonial -->
-				<div class="testimonial-box absolute bottom-0 left-0 max-w-[400px]">
+				<div class="testimonial-box max-lg:hidden absolute bottom-0 left-0 max-w-[400px]">
 					<div class="flex items-center gap-3">
 
 						<div class="testimonial-quote text-sm">
@@ -1127,7 +1129,7 @@
 				</div>
 
 				<!-- Bottom Right Testimonial -->
-				<div class="testimonial-box absolute bottom-0 right-0 max-w-[400px]">
+				<div class="testimonial-box max-lg:hidden absolute bottom-0 right-0 max-w-[400px]">
 
 					<div class="flex items-center gap-3">
 						<div class="testimonial-circle shrink-0">
@@ -1157,7 +1159,7 @@
 			<h2 class="heading-primary  text-center mb-[50px]">Bonuses (Free with Your Purchase)</h2>
 			<div class="space-y-[23px]">
 				<div
-					class=" bg-gradient-to-br from-[#3B3939] to-[#3B3939]/30 rounded-[8px] border border-[#504F4F]/30 backdrop-blur-[10px] p-[19px] flex gap-[33px]">
+					class=" bg-gradient-to-br from-[#3B3939] to-[#3B3939]/30 rounded-[8px] border border-[#504F4F]/30 backdrop-blur-[10px] p-[19px] flex gap-[33px] max-lg:flex-col">
 					<div class=" h-full">
 						<div
 							class="reason-icon-bg w-[79px] aspect-square mx-auto drop-shadow-xl flex items-center justify-center rounded-[8px] shrink-0 p-4 ">
@@ -1822,14 +1824,16 @@
 			<?php get_template_part('template-parts/ui/section-divider'); ?>
 		</div>
 		<div class="container py-[100px]">
-			<h2 class="font-repo font-extrabold text-[55px] mb-[32px] text-center">Ready to become a bestselling author?
+			<h2 class="font-repo font-extrabold text-[32px] lg:text-[55px] mb-[32px] text-center">Ready to become a
+				bestselling author?
 			</h2>
 			<p class=" font-medium text-lg
  text-center mb-[41px]">Enroll now by clicking on one of the course packages and start your journey today.</p>
 			<a href="#packages" class="mt-5 mx-auto   sm:mt-8 btn-red ">Explore
 				Packages</a>
 
-			<h2 class="font-repo mt-[106px] font-extrabold text-[55px] mb-[32px] text-center">Still unsure?</h2>
+			<h2 class="font-repo mt-[106px] font-extrabold text-[32px] lg:text-[55px] mb-[32px] text-center">Still
+				unsure?</h2>
 			<p class=" font-medium text-lg
  text-center ">Email me at  <a href="mailto:hassan@writerontheside.com">hassan@writerontheside.com</a> with any
 				questions or concerns you may have.</p>

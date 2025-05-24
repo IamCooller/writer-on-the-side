@@ -3,17 +3,14 @@
         class="absolute inset-0 w-full h-full object-cover opacity-10" />
     <div class="container relative z-[1]">
         <h2 class="heading-primary mb-[24px] sm:mb-[36px] text-center text-white">
-            Can't write & publish the book in 4 weeks?</h2>
-        <p class="font-bold font-repo text-base sm:text-lg py-[18px] sm:py-[22px] text-center text-white">That's
-            totally fine!</p>
+            <?php echo get_field('additional_sections_title'); ?>
+        </h2>
+        <p class="font-bold font-repo text-base sm:text-lg py-[18px] sm:py-[22px] text-center text-white">
+            <?php echo get_field('additional_sections_subtitle'); ?>
+        </p>
         <div class="max-w-[1000px] mx-auto text-white text-center text-sm sm:text-sm lg:text-lg font-medium">
-            <p class=" mb-[24px] sm:mb-[32px]">In fact, many people don't publish their book in 4 weeks because they
-                have
-                pressing family & work commitments. You can learn the entire system and publish your book at your
-                own pace. It's better to take a bit more time to create a great book than publish something just for
-                the sake of publishing it.</p>
-            <p class="mb-[14px] sm:mb-[18px]">The good news is that you'll get:</p>
-
+            <p class="mb-[24px] sm:mb-[32px]"><?php echo get_field('additional_sections_description'); ?></p>
+            <p class="mb-[14px] sm:mb-[18px]"><?php echo get_field('additional_sections_benefits_title'); ?></p>
         </div>
 
         <div class="grid lg:grid-cols-2 gap-[20px] sm:gap-[30px]">
@@ -25,11 +22,10 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/infinity-icon.svg"
                             alt="infinity" />
                     </div>
-                    <p class="text-[24px] sm:text-[30px] font-bold flex-1">Lifetime Access</p>
+                    <p class="text-[24px] sm:text-[30px] font-bold flex-1">
+                        <?php echo get_field('lifetime_access_title'); ?></p>
                 </div>
-                <p class="text-base sm:text-lg font-medium">You will have lifetime access to all the recordings and
-                    bonuses, so
-                    you can reference them at a time that's most convenient for you.</p>
+                <p class="text-base sm:text-lg font-medium"><?php echo get_field('lifetime_access_description'); ?></p>
             </div>
             <div
                 class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[18px] sm:py-[23px]  text-white px-[25px] sm:px-[37px]">
@@ -39,12 +35,11 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/repear-icon.svg"
                             alt="repear icon" />
                     </div>
-                    <p class="text-[24px] sm:text-[30px] font-bold flex-1">A Repeatable System</p>
+                    <p class="text-[24px] sm:text-[30px] font-bold flex-1">
+                        <?php echo get_field('repeatable_system_title'); ?></p>
                 </div>
-                <p class="text-base sm:text-lg font-medium">You will learn a system that you can repeat later. So
-                    even if your
-                    first book takes longer than 4 weeks to write and publish, your second one will take you a lot
-                    less time (and your third even less).</p>
+                <p class="text-base sm:text-lg font-medium"><?php echo get_field('repeatable_system_description'); ?>
+                </p>
             </div>
         </div>
 
@@ -65,11 +60,11 @@
             </div>
         </div>
         <h2 class="heading-primary mb-[24px] sm:mb-[36px] mt-[40px] sm:mt-[69px] text-center text-white">
-            What are the prerequisites to join?</h2>
-        <p class="text-center text-white text-base sm:text-lg font-medium mb-4 sm:mb-5">Here are the two mandatory &
-            optional
-            prerequisites to
-            join the course:</p>
+            <?php echo get_field('prerequisites_title'); ?>
+        </h2>
+        <p class="text-center text-white text-base sm:text-lg font-medium mb-4 sm:mb-5">
+            <?php echo get_field('prerequisites_subtitle'); ?>
+        </p>
         <div class="grid lg:grid-cols-2 gap-[20px] sm:gap-[30px]">
             <div
                 class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[18px] sm:py-[23px] text-white px-[25px] sm:px-[37px]">
@@ -78,14 +73,10 @@
                         class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-3 sm:p-4 ">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kdp-icon.png" alt="kdp" />
                     </div>
-                    <p class="text-[24px] sm:text-[30px] font-bold flex-1">KDP Account [Mandatory]</p>
+                    <p class="text-[24px] sm:text-[30px] font-bold flex-1"><?php echo get_field('kdp_account_title'); ?>
+                    </p>
                 </div>
-                <p class="text-base sm:text-lg font-medium">You'll need to open a free Amazon Kindle Direct
-                    Publishing (KDP)
-                    account. If you're based out of the US, this shouldn't be a problem because you can use your
-                    SSN, EIN or TIN. But if you reside outside the US, please confirm you can create an account on
-                    the KDP website here (this is for Amazon tax purposes and to ensure you can get paid for your
-                    book sales).</p>
+                <p class="text-base sm:text-lg font-medium"><?php echo get_field('kdp_account_description'); ?></p>
             </div>
             <div
                 class="reason-card-bg backdrop-blur-sm rounded-[8px] border border-white/10 py-[18px] sm:py-[23px] text-white px-[25px] sm:px-[37px]">
@@ -94,13 +85,10 @@
                         class="reason-icon-bg w-[65px] sm:w-[79px] aspect-square mx-auto drop-shadow-lg flex items-center justify-center rounded-[8px] shrink-0 p-3 sm:p-4 ">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gpt-icon.svg" alt="gpt icon" />
                     </div>
-                    <p class="text-[24px] sm:text-[30px] font-bold flex-1">ChatGPT Plus [Optional]</p>
+                    <p class="text-[24px] sm:text-[30px] font-bold flex-1">
+                        <?php echo get_field('chatgpt_plus_title'); ?></p>
                 </div>
-                <p class="text-base sm:text-lg font-medium">You'll need an optional subscription to ChatGPT Plus
-                    (currently at
-                    $20 per month). You don't need to have this because you can follow the course by using a free
-                    ChatGPT account, but the free account is usually slow and has messaging limits. (As a side note,
-                    you can pay for only 1 month for ChatGPT Plus and then unsubscribe)</p>
+                <p class="text-base sm:text-lg font-medium"><?php echo get_field('chatgpt_plus_description'); ?></p>
             </div>
         </div>
         <div class="testimonial-card mt-[40px] sm:mt-[68px] items-center">

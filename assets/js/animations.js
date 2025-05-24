@@ -15,6 +15,7 @@ const initAnimations = () => {
 	initCounterAnimations();
 	initParallaxAnimations();
 	initInteractiveElements();
+	initUniversalScrollAnimations();
 
 	// Функция для обновления ScrollTrigger при изменении размеров окна
 	window.addEventListener("resize", () => {
@@ -39,7 +40,12 @@ const initHeroAnimations = () => {
 			scale: 1,
 			duration: 1.2,
 			ease: "power3.out",
-			delay: 0.3
+			scrollTrigger: {
+				trigger: heroTitle,
+				start: "top 80%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			}
 		});
 	}
 
@@ -56,38 +62,57 @@ const initHeroAnimations = () => {
 			scale: 1,
 			duration: 1.5,
 			ease: "power3.out",
-			delay: 0.6
+			scrollTrigger: {
+				trigger: heroImage,
+				start: "top 85%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			}
 		});
 	}
 
 	// Анимация текстовых блоков героя
 	const heroTexts = document.querySelectorAll("section p");
-	gsap.fromTo(heroTexts, {
-		y: 50,
-		opacity: 0
-	}, {
-		y: 0,
-		opacity: 1,
-		duration: 0.8,
-		stagger: 0.2,
-		ease: "power2.out",
-		delay: 1
+	heroTexts.forEach((text, index) => {
+		gsap.fromTo(text, {
+			y: 50,
+			opacity: 0
+		}, {
+			y: 0,
+			opacity: 1,
+			duration: 0.8,
+			ease: "power2.out",
+			scrollTrigger: {
+				trigger: text,
+				start: "top 85%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse",
+				delay: index * 0.2
+			}
+		});
 	});
 
 	// Анимация кнопок
 	const buttons = document.querySelectorAll(".btn-red");
-	gsap.fromTo(buttons, {
-		y: 30,
-		opacity: 0,
-		scale: 0.9
-	}, {
-		y: 0,
-		opacity: 1,
-		scale: 1,
-		duration: 0.6,
-		stagger: 0.1,
-		ease: "back.out(1.7)",
-		delay: 1.4
+	buttons.forEach((button, index) => {
+		gsap.fromTo(button, {
+			y: 30,
+			opacity: 0,
+			scale: 0.9
+		}, {
+			y: 0,
+			opacity: 1,
+			scale: 1,
+			duration: 0.6,
+			ease: "back.out(1.7)",
+			scrollTrigger: {
+				trigger: button,
+				start: "top 85%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse",
+				delay: index * 0.1
+			}
+		});
 	});
 
 	// Анимация рейтинговых звезд
@@ -101,7 +126,13 @@ const initHeroAnimations = () => {
 			rotation: 0,
 			duration: 0.5,
 			ease: "back.out(1.7)",
-			delay: 1.8 + (index * 0.1)
+			scrollTrigger: {
+				trigger: star,
+				start: "top 85%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse",
+				delay: index * 0.1
+			}
 		});
 	});
 };
@@ -535,6 +566,135 @@ const initMobileMenuAnimations = () => {
 		openTimeline.pause();
 		closeTimeline.restart();
 		console.log("GSAP closing animation started");
+	});
+};
+
+// Универсальная функция для scroll-анимаций
+const initUniversalScrollAnimations = () => {
+	// Анимация для всех элементов с data-animate атрибутом
+	const animatedElements = document.querySelectorAll('[data-animate]');
+	
+	animatedElements.forEach((element, index) => {
+		const animationType = element.getAttribute('data-animate');
+		const delay = element.getAttribute('data-delay') || 0;
+		
+		let fromVars = {};
+		let toVars = {
+			duration: 1,
+			ease: "power3.out",
+			scrollTrigger: {
+				trigger: element,
+				start: "top 85%",
+				end: "bottom 20%",
+				toggleActions: "play none none reverse"
+			}
+		};
+		
+		switch(animationType) {
+			case 'fadeInUp':
+				fromVars = { y: 50, opacity: 0 };
+				toVars = { ...toVars, y: 0, opacity: 1 };
+				break;
+			case 'fadeInDown':
+				fromVars = { y: -50, opacity: 0 };
+				toVars = { ...toVars, y: 0, opacity: 1 };
+				break;
+			case 'fadeInLeft':
+				fromVars = { x: -50, opacity: 0 };
+				toVars = { ...toVars, x: 0, opacity: 1 };
+				break;
+			case 'fadeInRight':
+				fromVars = { x: 50, opacity: 0 };
+				toVars = { ...toVars, x: 0, opacity: 1 };
+				break;
+			case 'scaleIn':
+				fromVars = { scale: 0.8, opacity: 0 };
+				toVars = { ...toVars, scale: 1, opacity: 1 };
+				break;
+			case 'rotateIn':
+				fromVars = { rotation: -180, scale: 0, opacity: 0 };
+				toVars = { ...toVars, rotation: 0, scale: 1, opacity: 1, ease: "back.out(1.7)" };
+				break;
+		}
+		
+		if (delay > 0) {
+			toVars.scrollTrigger.delay = parseFloat(delay);
+		}
+		
+		gsap.fromTo(element, fromVars, toVars);
+	});
+	
+	// Автоматическая анимация для секций
+	const sections = document.querySelectorAll('section:not([data-no-animate])');
+	sections.forEach((section, index) => {
+		// Анимация заголовков в секции
+		const headings = section.querySelectorAll('h1, h2, h3, .heading-primary');
+		headings.forEach((heading, i) => {
+			if (!heading.hasAttribute('data-animate')) {
+				gsap.fromTo(heading, {
+					y: 50,
+					opacity: 0
+				}, {
+					y: 0,
+					opacity: 1,
+					duration: 1,
+					ease: "power3.out",
+					scrollTrigger: {
+						trigger: heading,
+						start: "top 85%",
+						end: "bottom 20%",
+						toggleActions: "play none none reverse",
+						delay: i * 0.2
+					}
+				});
+			}
+		});
+		
+		// Анимация изображений в секции
+		const images = section.querySelectorAll('img:not([data-no-animate])');
+		images.forEach((img, i) => {
+			if (!img.hasAttribute('data-animate')) {
+				gsap.fromTo(img, {
+					scale: 0.8,
+					opacity: 0
+				}, {
+					scale: 1,
+					opacity: 1,
+					duration: 0.8,
+					ease: "power2.out",
+					scrollTrigger: {
+						trigger: img,
+						start: "top 90%",
+						end: "bottom 20%",
+						toggleActions: "play none none reverse",
+						delay: i * 0.1
+					}
+				});
+			}
+		});
+		
+		// Анимация параграфов в секции
+		const paragraphs = section.querySelectorAll('p:not([data-no-animate])');
+		paragraphs.forEach((p, i) => {
+			if (!p.hasAttribute('data-animate')) {
+				gsap.fromTo(p, {
+					y: 30,
+					opacity: 0
+				}, {
+					y: 0,
+					opacity: 1,
+					duration: 0.6,
+					ease: "power2.out",
+					scrollTrigger: {
+						trigger: p,
+						start: "top 85%",
+						end: "bottom 20%",
+						toggleActions: "play none none reverse",
+						delay: i * 0.1
+					}
+				});
+			}
+		});
 	});
 };
 

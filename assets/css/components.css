@@ -158,7 +158,7 @@
 		@apply px-3 py-5 border-t border-black;
 	}
 
-	.course-accordion-list {
+	.course-accordion-body ul {
 		@apply list-disc pl-5 space-y-4 text-base;
 	}
 

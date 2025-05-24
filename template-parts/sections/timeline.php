@@ -4,13 +4,15 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/calendar-icon.png"
                 class="w-[80px] sm:w-[100px] mx-auto mb-4 sm:mb-5" alt="Calendar icon" />
             <h2 class="heading-primary text-center">
-                How realistic is it to write a full book in just 4 weeks?
+                <?php echo get_field('timeline_title'); ?>
             </h2>
-            <p class="font-bold font-repo text-base sm:text-lg py-[18px] sm:py-[22px]">It's very realistic</p>
-            <p class="text-sm sm:text-base">In fact, you can do it in less than 4 weeks. I've written three books,
-                and each one took me <b>1 week
-                    or less</b> to write and publish them (I explain how in the course).</p>
-            <p class="mt-[20px] sm:mt-[27px] text-sm sm:text-base">Here's why this is feasible for you:</p>
+            <p class="font-bold font-repo text-base sm:text-lg py-[18px] sm:py-[22px]">
+                <?php echo get_field('timeline_subtitle'); ?>
+            </p>
+            <p class="text-sm sm:text-base"><?php echo get_field('timeline_description'); ?></p>
+            <p class="mt-[20px] sm:mt-[27px] text-sm sm:text-base">
+                <?php echo get_field('timeline_feasibility_title'); ?>
+            </p>
         </div>
         <div class="flex flex-wrap justify-center gap-[40px] sm:gap-[74px] mt-[30px] sm:mt-[45px]">
             <div class="">
@@ -62,19 +64,13 @@
                 </p>
             </div>
         </div>
-        <p class="max-w-[900px] text-center mx-auto my-[30px] sm:my-[45px] text-base sm:text-lg">To be clear, this
-            is an intensive program and
-            you'll
-            need to work hard
-            to complete the tasks during those four weeks (there is no magic button—even with all the advanced AI
-            tools today—nothing can write the whole book for you). How fast you can get your book done also depends
-            on your comfort level and prior experience.</p>
-        <p class="max-w-[900px] text-center mx-auto my-[30px] sm:my-[45px] text-base sm:text-lg text-[#585853]">
-            *While it's possible to also
-            publish paperback and
-            audiobook versions in 4 weeks, those usually take more time to prepare, so the course focuses on getting
-            your ebook version published first, and you can publish other formats later if you want
-            (the course covers that as well)</p>
+        <div class="max-w-[900px] text-center mx-auto my-[30px] sm:my-[45px] text-base sm:text-lg">
+            <?php echo get_field('timeline_intensive_note'); ?>
+        </div>
+        <div
+            class="max-w-[900px] text-center mx-auto my-[30px] sm:my-[45px] text-base sm:text-lg text-[#585853] italic">
+            <?php echo get_field('timeline_publishing_note'); ?>
+        </div>
 
         <div class="testimonial-card items-center">
             <div class="testimonial-avatar">

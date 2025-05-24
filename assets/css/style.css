@@ -26,20 +26,13 @@ html {
 	perspective: 1000px;
 }
 
-/* Скрываем элементы по умолчанию для анимаций появления */
+/* Скрываем элементы по умолчанию для scroll-анимаций */
 .heading-primary,
 .testimonial-card,
 .reason-card-bg {
 	opacity: 0;
 	transform: translateY(50px);
-}
-
-/* Анимации для loaded состояния */
-.gsap-loaded .heading-primary,
-.gsap-loaded .testimonial-card,
-.gsap-loaded .reason-card-bg {
-	opacity: 1;
-	transform: translateY(0);
+	/* Убираем .gsap-loaded зависимость - анимации будут управляться ScrollTrigger */
 }
 
 .header-menu {
@@ -73,8 +66,6 @@ html {
     background: linear-gradient(-129deg, #D11217 27%, #A2090D 100%);
 }
 
-
-
 /* Стили для анимации загрузки */
 .page-loader {
 	transition: opacity 0.5s ease;
@@ -88,6 +79,15 @@ html {
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
 	}
-	
+}
 
+/* Стили для кастомных анимаций */
+[data-animate] {
+	opacity: 0;
+}
+
+/* Индикатор для отладки ScrollTrigger */
+.gsap-marker-start,
+.gsap-marker-end {
+	display: none !important;
 }

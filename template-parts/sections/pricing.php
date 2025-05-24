@@ -3,7 +3,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hand-icon.svg" alt="hand icon"
             class="block mx-auto" />
         <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px] text-center" id="packages">
-            Choose One of Three Packages
+            <?php echo get_field('pricing_section_title') ?: 'Choose One of Three Packages'; ?>
         </h2>
 
         <!-- Pricing Table -->
@@ -16,13 +16,13 @@
 
                     <!-- Table Headers -->
                     <div class="border-b-2 border-r-2 border-black font-semibold flex items-center justify-center">
-                        <p>Course Only</p>
+                        <p><?php echo get_field('package_1_name') ?: 'Course Only'; ?></p>
                     </div>
                     <div class="border-b-2 border-r-2 border-black font-semibold flex items-center justify-center">
-                        <p>Course + 2<br>Coaching Sessions</p>
+                        <p><?php echo get_field('package_2_name') ?: 'Course + 2<br>Coaching Sessions'; ?></p>
                     </div>
                     <div class="border-b-2  border-black font-semibold flex items-center justify-center">
-                        <p>Course + Unlimited<br>Coaching Sessions</p>
+                        <p><?php echo get_field('package_3_name') ?: 'Course + Unlimited<br>Coaching Sessions'; ?></p>
                     </div>
 
                     <!-- Lifetime course access -->
@@ -143,13 +143,15 @@
                         <p>Availability</p>
                     </div>
                     <div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
-                        <span class="font-medium">Open</span>
+                        <span class="font-medium"><?php echo get_field('package_1_availability') ?: 'Open'; ?></span>
                     </div>
                     <div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
-                        <span class="font-medium">7 spots left</span>
+                        <span
+                            class="font-medium"><?php echo get_field('package_2_availability') ?: '7 spots left'; ?></span>
                     </div>
                     <div class=" border-b-2 py-2 border-black  flex justify-center items-center">
-                        <span class="font-medium">2 spots left -<br>application only</span>
+                        <span
+                            class="font-medium"><?php echo get_field('package_3_availability') ?: '2 spots left -<br>application only'; ?></span>
                     </div>
 
                     <!-- Price (today) -->
@@ -157,33 +159,36 @@
                         <p>Price (today)</p>
                     </div>
                     <div class="border-r-2 py-2 border-black  flex justify-center items-center flex-col">
-                        <p class="text-gray-400 line-through text-lg">$897</p>
-                        <p class="font-bold text-2xl">$497</p>
+                        <p class="text-gray-400 line-through text-lg">
+                            $<?php echo get_field('package_1_regular_price') ?: '897'; ?></p>
+                        <p class="font-bold text-2xl">$<?php echo get_field('package_1_sale_price') ?: '497'; ?></p>
                     </div>
                     <div class="border-r-2  py-2 border-black  flex justify-center items-center flex-col">
-                        <p class="text-gray-400 line-through text-lg">$1,997</p>
-                        <p class="font-bold text-2xl">$1,497</p>
+                        <p class="text-gray-400 line-through text-lg">
+                            $<?php echo get_field('package_2_regular_price') ?: '1,997'; ?></p>
+                        <p class="font-bold text-2xl">$<?php echo get_field('package_2_sale_price') ?: '1,497'; ?></p>
                     </div>
                     <div class="  py-2 border-black  flex justify-center items-center flex-col">
-                        <p class="text-gray-400 line-through text-lg">$12,997</p>
-                        <p class="font-bold text-2xl">$9,997</p>
+                        <p class="text-gray-400 line-through text-lg">
+                            $<?php echo get_field('package_3_regular_price') ?: '12,997'; ?></p>
+                        <p class="font-bold text-2xl">$<?php echo get_field('package_3_sale_price') ?: '9,997'; ?></p>
                     </div>
 
                     <!-- CTA Buttons -->
                     <div class=""></div>
                     <div class=" py-5 px-5 ">
-                        <a href="#" class="btn-red">
-                            Start Watching Now
+                        <a href="<?php echo get_field('package_1_button_link') ?: '#'; ?>" class="btn-red">
+                            <?php echo get_field('package_1_button_text') ?: 'Start Watching Now'; ?>
                         </a>
                     </div>
                     <div class=" py-5 px-5 ">
-                        <a href="#" class="btn-red">
-                            Start Watching Now
+                        <a href="<?php echo get_field('package_2_button_link') ?: '#'; ?>" class="btn-red">
+                            <?php echo get_field('package_2_button_text') ?: 'Start Watching Now'; ?>
                         </a>
                     </div>
                     <div class=" py-5 px-5 ">
-                        <a href="#" class="btn-red">
-                            Schedule a Free Call
+                        <a href="<?php echo get_field('package_3_button_link') ?: '#'; ?>" class="btn-red">
+                            <?php echo get_field('package_3_button_text') ?: 'Schedule a Free Call'; ?>
                         </a>
                     </div>
                 </div>
@@ -194,7 +199,7 @@
                 <!-- Course Only -->
                 <div class="border border-black rounded-lg overflow-hidden">
                     <div class="text-center font-bold py-4 border-b border-black bg-gray-50">
-                        Course Only
+                        <?php echo get_field('package_1_name') ?: 'Course Only'; ?>
                     </div>
                     <div class="p-4 space-y-3">
                         <div class="flex items-center gap-2">
@@ -233,10 +238,13 @@
                         </div>
                     </div>
                     <div class="border-t border-black p-4 text-center">
-                        <p class="text-gray-400 line-through">$897</p>
-                        <p class="font-bold text-2xl mb-3">$497</p>
-                        <a href="#" class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
-                            Start Watching Now
+                        <p class="text-gray-400 line-through">
+                            $<?php echo get_field('package_1_regular_price') ?: '897'; ?></p>
+                        <p class="font-bold text-2xl mb-3">$<?php echo get_field('package_1_sale_price') ?: '497'; ?>
+                        </p>
+                        <a href="<?php echo get_field('package_1_button_link') ?: '#'; ?>"
+                            class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
+                            <?php echo get_field('package_1_button_text') ?: 'Start Watching Now'; ?>
                         </a>
                     </div>
                 </div>
@@ -244,7 +252,7 @@
                 <!-- Course + 2 Coaching Sessions -->
                 <div class="border border-black rounded-lg overflow-hidden">
                     <div class="text-center font-bold py-4 border-b border-black bg-gray-50">
-                        Course + 2<br>Coaching Sessions
+                        <?php echo get_field('package_2_name') ?: 'Course + 2<br>Coaching Sessions'; ?>
                     </div>
                     <div class="p-4 space-y-3">
                         <div class="flex items-center gap-2">
@@ -285,10 +293,13 @@
                         </div>
                     </div>
                     <div class="border-t border-black p-4 text-center">
-                        <p class="text-gray-400 line-through">$1,997</p>
-                        <p class="font-bold text-2xl mb-3">$1,497</p>
-                        <a href="#" class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
-                            Start Watching Now
+                        <p class="text-gray-400 line-through">
+                            $<?php echo get_field('package_2_regular_price') ?: '1,997'; ?></p>
+                        <p class="font-bold text-2xl mb-3">$<?php echo get_field('package_2_sale_price') ?: '1,497'; ?>
+                        </p>
+                        <a href="<?php echo get_field('package_2_button_link') ?: '#'; ?>"
+                            class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
+                            <?php echo get_field('package_2_button_text') ?: 'Start Watching Now'; ?>
                         </a>
                     </div>
                 </div>
@@ -296,7 +307,7 @@
                 <!-- Course + Unlimited Coaching Sessions -->
                 <div class="border border-black rounded-lg overflow-hidden">
                     <div class="text-center font-bold py-4 border-b border-black bg-gray-50">
-                        Course + Unlimited<br>Coaching Sessions
+                        <?php echo get_field('package_3_name') ?: 'Course + Unlimited<br>Coaching Sessions'; ?>
                     </div>
                     <div class="p-4 space-y-3">
                         <div class="flex items-center gap-2">
@@ -337,10 +348,13 @@
                         </div>
                     </div>
                     <div class="border-t border-black p-4 text-center">
-                        <p class="text-gray-400 line-through">$12,997</p>
-                        <p class="font-bold text-2xl mb-3">$9,997</p>
-                        <a href="#" class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
-                            Schedule a Free Call
+                        <p class="text-gray-400 line-through">
+                            $<?php echo get_field('package_3_regular_price') ?: '12,997'; ?></p>
+                        <p class="font-bold text-2xl mb-3">$<?php echo get_field('package_3_sale_price') ?: '9,997'; ?>
+                        </p>
+                        <a href="<?php echo get_field('package_3_button_link') ?: '#'; ?>"
+                            class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
+                            <?php echo get_field('package_3_button_text') ?: 'Schedule a Free Call'; ?>
                         </a>
                     </div>
                 </div>

@@ -26,13 +26,12 @@ html {
 	perspective: 1000px;
 }
 
-/* Скрываем элементы по умолчанию для scroll-анимаций */
+/* Элементы теперь видны по умолчанию - scroll-анимации отключены */
 .heading-primary,
 .testimonial-card,
 .reason-card-bg {
-	opacity: 0;
-	transform: translateY(50px);
-	/* Убираем .gsap-loaded зависимость - анимации будут управляться ScrollTrigger */
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .header-menu {
@@ -81,9 +80,9 @@ html {
 	}
 }
 
-/* Стили для кастомных анимаций */
+/* Стили для кастомных анимаций - теперь элементы видны по умолчанию */
 [data-animate] {
-	opacity: 0;
+	opacity: 1;
 }
 
 /* Индикатор для отладки ScrollTrigger */

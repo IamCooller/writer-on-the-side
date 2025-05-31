@@ -2,7 +2,7 @@
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/doctor-patient-2.png" alt="Doctor and patient"
         class="absolute inset-0 w-full h-full object-cover opacity-10" />
     <div class="container relative z-[1]">
-        <div class="w-[200px] sm:w-[250px] aspect-square mx-auto">
+        <div class="w-[100px] sm:w-[250px] aspect-square mx-auto">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/4ws.png" alt="Doctor and patient" />
         </div>
         <div class="max-w-[1000px] mx-auto text-center text-white">
@@ -62,7 +62,7 @@
                             <svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+                                    d="M15.4876 10.7315L28.0327 1.56479C28.5226 1.20686 28.5226 0.626428 28.0326 0.268439C27.5427 -0.0894897 26.7484 -0.0894898 26.2584 0.2685L14.6004 8.78698L2.94174 0.268439C2.4518 -0.0894897 1.6575 -0.0894898 1.16756 0.2685C0.92259 0.447434 0.800148 0.68204 0.800148 0.916646C0.800148 1.15125 0.922592 1.38586 1.16765 1.56485L13.7134 10.7315C13.9487 10.9034 14.2678 11 14.6005 11C14.9332 11 15.2523 10.9034 15.4876 10.7315Z"
                                     fill="white" />
                             </svg>
                         </div>

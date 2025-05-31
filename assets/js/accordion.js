@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Открываем аккордеон
                 accordion.classList.add('active');
                 content.style.maxHeight = content.scrollHeight + 'px';
-                icon.style.transform = 'rotate(180deg)';
+                icon.style.transform = 'rotate(360deg)';
             } else {
                 // Закрываем аккордеон
                 accordion.classList.remove('active');

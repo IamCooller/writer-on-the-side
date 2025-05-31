@@ -1,4 +1,4 @@
-<section class="py-[30px] sm:py-[57px]  bg-[#20201D] relative overflow-hidden">
+<section class="py-[57px]  bg-[#20201D] relative overflow-hidden">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/doctor-patient.png" alt="Doctor and patient"
         class="absolute inset-0 w-full h-full object-cover opacity-10" />
     <div class="container relative z-[1]">
@@ -27,7 +27,7 @@
             </div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/rounded-red-line.png"
                 alt="Rounded red line"
-                class="absolute top-[25%] lg:-top-6 max-lg:left-0 lg:-right-4 w-full lg:w-[85%]  lg:h-[170px] object-fill pointer-events-none" />
+                class="absolute top-[25%] lg:-top-6 max-lg:left-0 lg:-right-4 w-full lg:w-[85%]  lg:h-[170px] object-fill pointer-events-none max-lg:hidden" />
             <div class="testimonial-content">
                 <div class="space-y-[15px] sm:space-y-[19px]">
 

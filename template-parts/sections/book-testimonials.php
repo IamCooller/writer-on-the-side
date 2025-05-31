@@ -51,7 +51,7 @@
 
                 </div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-4.png" alt="Arrow"
-                    class="arrow-to-book absolute max-lg:left-0 max-lg:rotate-305 max-lg:top-auto lg:-top-5 left-[-100px] w-[118px]" />
+                    class="arrow-to-book absolute max-lg:hidden lg:-top-5 left-[-100px] w-[118px]" />
             </div>
 
             <!-- Middle Left Testimonial -->
@@ -67,8 +67,7 @@
                         <p class="font-bold">- Teresa Chahine, Senior Lecturer, Yale University</p>
                     </div>
                 </div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-6.png" alt="Arrow"
-                    class="arrow-to-book absolute top-0 left-0 rotate-68  lg:hidden  w-[118px] transform -transform-y-1/2" />
+
             </div>
 
             <!-- Middle Right Testimonial -->

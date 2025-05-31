@@ -7,7 +7,7 @@
     <div class="container py-[60px] sm:py-[121px]">
         <div class=" text-center max-w-[900px] mx-auto">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/quill.png" alt="Book cover"
-                class="block mx-auto" />
+                class="block mx-auto max-sm:w-[100px]" />
             <h2 class="heading-primary mb-[5px] mt-[15px] sm:mt-[19px]">
                 <?php echo get_field('ai_section_title'); ?>
             </h2>
@@ -49,7 +49,7 @@
         </div>
         <div class="text-center max-w-[900px] mx-auto">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ai-icon.png" alt="ai icon"
-                class="block mx-auto" />
+                class="block mx-auto max-sm:w-[100px]" />
             <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px]">
                 <?php echo get_field('ai_assistant_title'); ?>
             </h2>

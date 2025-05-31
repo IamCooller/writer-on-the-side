@@ -1,7 +1,7 @@
 <section class="pt-20">
     <div class="container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/package-icon.svg" alt="package icon"
-            class="block mx-auto" />
+            class="block mx-auto max-sm:w-[100px]" />
         <h2 class="heading-primary mb-[23px] mt-[19px] text-center">
             <?php echo get_field('package_details_title') ?: 'Package Details'; ?>
         </h2>
@@ -22,7 +22,7 @@
                         <div class="course-accordion-header">
                             <div class="flex items-center">
                                 <div
-                                    class="course-accordion-week flex items-center justify-center h-[63px] min-w-[63px] px-2 py-0">
+                                    class="course-accordion-week flex items-center justify-center h-[40px] sm:h-[63px] min-w-[40px] sm:min-w-[63px] px-2 py-0">
                                     <?php for ($i = 0; $i < $row_index; $i++): ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/star-2.svg" alt="star"
                                             class="w-6 h-6">
@@ -34,7 +34,7 @@
                             <svg class="course-accordion-icon" width="29" height="11" viewBox="0 0 29 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M13.7126 0.268523L1.16749 9.43521C0.677553 9.79314 0.677553 10.3736 1.16758 10.7316C1.65752 11.0895 2.45181 11.0895 2.94175 10.7315L14.5998 2.21302L26.2585 10.7316C26.7484 11.0895 27.5427 11.0895 28.0326 10.7315C28.2776 10.5526 28.4 10.318 28.4 10.0834C28.4 9.84875 28.2776 9.61414 28.0325 9.43515L15.4868 0.268523C15.2515 0.0965557 14.9324 0 14.5997 0C14.267 0 13.9479 0.0965557 13.7126 0.268523Z"
+                                    d="M15.4876 10.7315L28.0327 1.56479C28.5226 1.20686 28.5226 0.626428 28.0326 0.268439C27.5427 -0.0894897 26.7484 -0.0894898 26.2584 0.2685L14.6004 8.78698L2.94174 0.268439C2.4518 -0.0894897 1.6575 -0.0894898 1.16756 0.2685C0.92259 0.447434 0.800148 0.68204 0.800148 0.916646C0.800148 1.15125 0.922592 1.38586 1.16765 1.56485L13.7134 10.7315C13.9487 10.9034 14.2678 11 14.6005 11C14.9332 11 15.2523 10.9034 15.4876 10.7315Z"
                                     fill="black" />
                             </svg>
                         </div>

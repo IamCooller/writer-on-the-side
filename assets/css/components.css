@@ -19,7 +19,7 @@
 	}
 
 	.testimonial-avatar {
-		@apply shrink-0 w-[132px] h-[132px] bg-[#20201D] rounded-full;
+		@apply shrink-0 lg:w-[132px] lg:h-[132px] w-[100px] h-[100px] bg-[#20201D] rounded-full;
 	}
 
 	.testimonial-content {

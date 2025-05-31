@@ -7,7 +7,7 @@ import "./assets/css/style.css";
 // get scripts
 import "./assets/js/main.js";
 import "./assets/js/animations.js"; // Базовые анимации
-import "./assets/js/advanced-animations.js"; // Продвинутые анимации
+// import "./assets/js/advanced-animations.js"; // Продвинутые анимации - ОТКЛЮЧЕНО по просьбе клиента
 import './assets/js/testimonials-slider.js';
 import './assets/js/accordion.js';
 /*

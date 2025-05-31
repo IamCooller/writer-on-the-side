@@ -1,7 +1,7 @@
 <section class="pt-[100px] sm:pt-[172px]">
     <div class="container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hand-icon.svg" alt="hand icon"
-            class="block mx-auto" />
+            class="block mx-auto max-sm:w-[100px]" />
         <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px] text-center" id="packages">
             <?php echo get_field('pricing_section_title') ?: 'Choose One of Three Packages'; ?>
         </h2>
@@ -204,17 +204,17 @@
                     <div class="p-4 space-y-3">
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-6 h-6">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Lifetime course access</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-6 h-6">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>All bonuses</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-6 h-6">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Lifetime course updates</span>
                         </div>
                         <div class="flex items-center gap-2">
@@ -257,27 +257,27 @@
                     <div class="p-4 space-y-3">
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-6 h-6">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Lifetime course access</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-6 h-6">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>All bonuses</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-6 h-6">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Lifetime course updates</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-6 h-6">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Private "Write Like Me" GPT</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-6 h-6">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Custom category research</span>
                         </div>
                         <div class="flex items-center gap-2">
@@ -285,7 +285,7 @@
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-6 h-6">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Recordings & AI summaries</span>
                         </div>
                         <div class="flex items-center gap-2 font-medium">
@@ -312,27 +312,27 @@
                     <div class="p-4 space-y-3">
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-[46px] h-[37px]">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Lifetime course access</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-[46px] h-[37px]">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>All bonuses</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-[46px] h-[37px]">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Lifetime course updates</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-[46px] h-[37px]">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Private "Write Like Me" GPT</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-[46px] h-[37px]">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Custom category research</span>
                         </div>
                         <div class="flex items-center gap-2">
@@ -340,7 +340,7 @@
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
-                                alt="Included" class="w-[46px] h-[37px]">
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Recordings & AI summaries</span>
                         </div>
                         <div class="flex items-center gap-2 font-medium">

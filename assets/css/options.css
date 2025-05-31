@@ -16,7 +16,7 @@
 
 @layer base {
 	body {
-		@apply font-poppins  text-[18px] text-secondary;
+		@apply font-poppins  text-base text-secondary;
 	}
 
 	html {

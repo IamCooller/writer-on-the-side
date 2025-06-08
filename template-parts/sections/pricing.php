@@ -2,9 +2,11 @@
     <div class="container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hand-icon.svg" alt="hand icon"
             class="block mx-auto max-sm:w-[100px]" id="packages" />
-        <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px] text-center">
-            <?php echo get_field('pricing_section_title') ?: 'Choose One of Three Packages'; ?>
-        </h2>
+        <?php if (get_field('pricing_section_title')): ?>
+            <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px] text-center">
+                <?php echo get_field('pricing_section_title'); ?>
+            </h2>
+        <?php endif; ?>
 
         <!-- Pricing Table -->
         <div class="pricing-table-wrapper mt-8 mb-20">
@@ -16,13 +18,19 @@
 
                     <!-- Table Headers -->
                     <div class="border-b-2 border-r-2 border-black font-semibold flex items-center justify-center">
-                        <p><?php echo get_field('package_1_name') ?: 'Course Only'; ?></p>
+                        <?php if (get_field('package_1_name')): ?>
+                            <p><?php echo get_field('package_1_name'); ?></p>
+                        <?php endif; ?>
                     </div>
                     <div class="border-b-2 border-r-2 border-black font-semibold flex items-center justify-center">
-                        <p><?php echo get_field('package_2_name') ?: 'Course + 2<br>Coaching Sessions'; ?></p>
+                        <?php if (get_field('package_2_name')): ?>
+                            <p><?php echo get_field('package_2_name'); ?></p>
+                        <?php endif; ?>
                     </div>
                     <div class="border-b-2  border-black font-semibold flex items-center justify-center">
-                        <p><?php echo get_field('package_3_name') ?: 'Course + Unlimited<br>Coaching Sessions'; ?></p>
+                        <?php if (get_field('package_3_name')): ?>
+                            <p><?php echo get_field('package_3_name'); ?></p>
+                        <?php endif; ?>
                     </div>
 
                     <!-- Lifetime course access -->
@@ -143,15 +151,19 @@
                         <p>Availability</p>
                     </div>
                     <div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
-                        <span class="font-medium"><?php echo get_field('package_1_availability') ?: 'Open'; ?></span>
+                        <?php if (get_field('package_1_availability')): ?>
+                            <span class="font-medium"><?php echo get_field('package_1_availability'); ?></span>
+                        <?php endif; ?>
                     </div>
                     <div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
-                        <span
-                            class="font-medium"><?php echo get_field('package_2_availability') ?: '7 spots left'; ?></span>
+                        <?php if (get_field('package_2_availability')): ?>
+                            <span class="font-medium"><?php echo get_field('package_2_availability'); ?></span>
+                        <?php endif; ?>
                     </div>
                     <div class=" border-b-2 py-2 border-black  flex justify-center items-center">
-                        <span
-                            class="font-medium"><?php echo get_field('package_3_availability') ?: '2 spots left -<br>application only'; ?></span>
+                        <?php if (get_field('package_3_availability')): ?>
+                            <span class="font-medium"><?php echo get_field('package_3_availability'); ?></span>
+                        <?php endif; ?>
                     </div>
 
                     <!-- Price (today) -->
@@ -159,27 +171,43 @@
                         <p>Price (today)</p>
                     </div>
                     <div class="border-r-2 py-2 border-black  flex justify-center items-center flex-col">
-                        <p class="text-gray-400 line-through text-lg">
-                            $<?php echo get_field('package_1_regular_price') ?: '897'; ?></p>
-                        <p class="font-bold text-2xl">$<?php echo get_field('package_1_sale_price') ?: '497'; ?></p>
+                        <?php if (get_field('package_1_regular_price')): ?>
+                            <p class="text-gray-400 line-through text-lg">
+                                $<?php echo get_field('package_1_regular_price'); ?></p>
+                        <?php endif; ?>
+                        <?php if (get_field('package_1_sale_price')): ?>
+                            <p class="font-bold text-2xl">$<?php echo get_field('package_1_sale_price'); ?></p>
+                        <?php endif; ?>
                     </div>
                     <div class="border-r-2  py-2 border-black  flex justify-center items-center flex-col">
-                        <p class="text-gray-400 line-through text-lg">
-                            $<?php echo get_field('package_2_regular_price') ?: '1,997'; ?></p>
-                        <p class="font-bold text-2xl">$<?php echo get_field('package_2_sale_price') ?: '1,497'; ?></p>
+                        <?php if (get_field('package_2_regular_price')): ?>
+                            <p class="text-gray-400 line-through text-lg">
+                                $<?php echo get_field('package_2_regular_price'); ?></p>
+                        <?php endif; ?>
+                        <?php if (get_field('package_2_sale_price')): ?>
+                            <p class="font-bold text-2xl">$<?php echo get_field('package_2_sale_price'); ?></p>
+                        <?php endif; ?>
                     </div>
                     <div class="  py-2 border-black  flex justify-center items-center flex-col">
-                        <p class="text-gray-400 line-through text-lg">
-                            $<?php echo get_field('package_3_regular_price') ?: '12,997'; ?></p>
-                        <p class="font-bold text-2xl">$<?php echo get_field('package_3_sale_price') ?: '9,997'; ?></p>
+                        <?php if (get_field('package_3_regular_price')): ?>
+                            <p class="text-gray-400 line-through text-lg">
+                                $<?php echo get_field('package_3_regular_price'); ?></p>
+                        <?php endif; ?>
+                        <?php if (get_field('package_3_sale_price')): ?>
+                            <p class="font-bold text-2xl">$<?php echo get_field('package_3_sale_price'); ?></p>
+                        <?php endif; ?>
                     </div>
 
                     <!-- CTA Buttons -->
                     <div class=""></div>
                     <div class=" py-5 px-5 ">
-                        <a href="<?php echo get_field('package_1_button_link') ?: '#'; ?>" class="btn-red mx-auto">
-                            <?php echo get_field('package_1_button_text') ?: 'Start Watching Now'; ?>
-                        </a>
+                        <?php if (get_field('package_1_button_link')): ?>
+                            <a href="<?php echo get_field('package_1_button_link'); ?>" class="btn-red mx-auto">
+                                <?php if (get_field('package_1_button_text')): ?>
+                                    <?php echo get_field('package_1_button_text'); ?>
+                                <?php endif; ?>
+                            </a>
+                        <?php endif; ?>
                         <?php if (get_field('package_1_under_link')): ?>
                             <a href="<?php echo get_field('package_1_under_link'); ?>"
                                 class="block text-center mt-2 text-sm underline italic">
@@ -188,19 +216,28 @@
                         <?php endif; ?>
                     </div>
                     <div class=" py-5 px-5 ">
-                        <a href="<?php echo get_field('package_2_button_link') ?: '#'; ?>" class="btn-red mx-auto">
-                            <?php echo get_field('package_2_button_text') ?: 'Start Watching Now'; ?>
-                        </a>
+                        <?php if (get_field('package_2_button_link')): ?>
+                            <a href="<?php echo get_field('package_2_button_link'); ?>" class="btn-red mx-auto">
+                                <?php if (get_field('package_2_button_text')): ?>
+                                    <?php echo get_field('package_2_button_text'); ?>
+                                <?php endif; ?>
+                            </a>
+                        <?php endif; ?>
                         <?php if (get_field('package_2_under_link')): ?>
-                            <a href="<?php echo get_field('package_2_under_link'); ?>" class="block text-center mt-2 text-sm underline italic>
+                            <a href="<?php echo get_field('package_2_under_link'); ?>"
+                                class="block text-center mt-2 text-sm underline italic">
                                 <?php echo get_field('package_2_under_text'); ?>
                             </a>
                         <?php endif; ?>
                     </div>
                     <div class=" py-5 px-5 ">
-                        <a href=" <?php echo get_field('package_3_button_link') ?: '#'; ?>" class="btn-red mx-auto">
-                            <?php echo get_field('package_3_button_text') ?: 'Schedule a Free Call'; ?>
-                        </a>
+                        <?php if (get_field('package_3_button_link')): ?>
+                            <a href="<?php echo get_field('package_3_button_link'); ?>" class="btn-red mx-auto">
+                                <?php if (get_field('package_3_button_text')): ?>
+                                    <?php echo get_field('package_3_button_text'); ?>
+                                <?php endif; ?>
+                            </a>
+                        <?php endif; ?>
                         <?php if (get_field('package_3_under_link')): ?>
                             <a href="<?php echo get_field('package_3_under_link'); ?>"
                                 class="block text-center mt-2 text-sm underline italic">
@@ -215,9 +252,11 @@
             <div class="block md:hidden space-y-8">
                 <!-- Course Only -->
                 <div class="border border-black rounded-lg overflow-hidden">
-                    <div class="text-center font-bold py-4 border-b border-black bg-gray-50">
-                        <?php echo get_field('package_1_name') ?: 'Course Only'; ?>
-                    </div>
+                    <?php if (get_field('package_1_name')): ?>
+                        <div class="text-center font-bold py-4 border-b border-black bg-gray-50">
+                            <?php echo get_field('package_1_name'); ?>
+                        </div>
+                    <?php endif; ?>
                     <div class="p-4 space-y-3">
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
@@ -251,26 +290,42 @@
                             <span>Recordings & AI summaries</span>
                         </div>
                         <div class="flex items-center gap-2 font-medium">
-                            <span>Open</span>
+                            <span><?php echo get_field('package_1_availability') ?: 'Open'; ?></span>
                         </div>
                     </div>
                     <div class="border-t border-black p-4 text-center">
-                        <p class="text-gray-400 line-through">
-                            $<?php echo get_field('package_1_regular_price') ?: '897'; ?></p>
-                        <p class="font-bold text-2xl mb-3">$<?php echo get_field('package_1_sale_price') ?: '497'; ?>
-                        </p>
-                        <a href="<?php echo get_field('package_1_button_link') ?: '#'; ?>"
-                            class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
-                            <?php echo get_field('package_1_button_text') ?: 'Start Watching Now'; ?>
-                        </a>
+                        <?php if (get_field('package_1_regular_price')): ?>
+                            <p class="text-gray-400 line-through">
+                                $<?php echo get_field('package_1_regular_price'); ?></p>
+                        <?php endif; ?>
+                        <?php if (get_field('package_1_sale_price')): ?>
+                            <p class="font-bold text-2xl mb-3">$<?php echo get_field('package_1_sale_price'); ?>
+                            </p>
+                        <?php endif; ?>
+                        <?php if (get_field('package_1_button_link')): ?>
+                            <a href="<?php echo get_field('package_1_button_link'); ?>"
+                                class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
+                                <?php if (get_field('package_1_button_text')): ?>
+                                    <?php echo get_field('package_1_button_text'); ?>
+                                <?php endif; ?>
+                            </a>
+                        <?php endif; ?>
+                        <?php if (get_field('package_1_under_link')): ?>
+                            <a href="<?php echo get_field('package_1_under_link'); ?>"
+                                class="block text-center mt-2 text-sm underline italic">
+                                <?php echo get_field('package_1_under_text'); ?>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
 
                 <!-- Course + 2 Coaching Sessions -->
                 <div class="border border-black rounded-lg overflow-hidden">
-                    <div class="text-center font-bold py-4 border-b border-black bg-gray-50">
-                        <?php echo get_field('package_2_name') ?: 'Course + 2<br>Coaching Sessions'; ?>
-                    </div>
+                    <?php if (get_field('package_2_name')): ?>
+                        <div class="text-center font-bold py-4 border-b border-black bg-gray-50">
+                            <?php echo get_field('package_2_name'); ?>
+                        </div>
+                    <?php endif; ?>
                     <div class="p-4 space-y-3">
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
@@ -306,26 +361,42 @@
                             <span>Recordings & AI summaries</span>
                         </div>
                         <div class="flex items-center gap-2 font-medium">
-                            <span>7 spots left</span>
+                            <span><?php echo get_field('package_2_availability') ?: '7 spots left'; ?></span>
                         </div>
                     </div>
                     <div class="border-t border-black p-4 text-center">
-                        <p class="text-gray-400 line-through">
-                            $<?php echo get_field('package_2_regular_price') ?: '1,997'; ?></p>
-                        <p class="font-bold text-2xl mb-3">$<?php echo get_field('package_2_sale_price') ?: '1,497'; ?>
-                        </p>
-                        <a href="<?php echo get_field('package_2_button_link') ?: '#'; ?>"
-                            class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
-                            <?php echo get_field('package_2_button_text') ?: 'Start Watching Now'; ?>
-                        </a>
+                        <?php if (get_field('package_2_regular_price')): ?>
+                            <p class="text-gray-400 line-through">
+                                $<?php echo get_field('package_2_regular_price'); ?></p>
+                        <?php endif; ?>
+                        <?php if (get_field('package_2_sale_price')): ?>
+                            <p class="font-bold text-2xl mb-3">$<?php echo get_field('package_2_sale_price'); ?>
+                            </p>
+                        <?php endif; ?>
+                        <?php if (get_field('package_2_button_link')): ?>
+                            <a href="<?php echo get_field('package_2_button_link'); ?>"
+                                class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
+                                <?php if (get_field('package_2_button_text')): ?>
+                                    <?php echo get_field('package_2_button_text'); ?>
+                                <?php endif; ?>
+                            </a>
+                        <?php endif; ?>
+                        <?php if (get_field('package_2_under_link')): ?>
+                            <a href="<?php echo get_field('package_2_under_link'); ?>"
+                                class="block text-center mt-2 text-sm underline italic">
+                                <?php echo get_field('package_2_under_text'); ?>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
 
                 <!-- Course + Unlimited Coaching Sessions -->
                 <div class="border border-black rounded-lg overflow-hidden">
-                    <div class="text-center font-bold py-4 border-b border-black bg-gray-50">
-                        <?php echo get_field('package_3_name') ?: 'Course + Unlimited<br>Coaching Sessions'; ?>
-                    </div>
+                    <?php if (get_field('package_3_name')): ?>
+                        <div class="text-center font-bold py-4 border-b border-black bg-gray-50">
+                            <?php echo get_field('package_3_name'); ?>
+                        </div>
+                    <?php endif; ?>
                     <div class="p-4 space-y-3">
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
@@ -361,18 +432,34 @@
                             <span>Recordings & AI summaries</span>
                         </div>
                         <div class="flex items-center gap-2 font-medium">
-                            <span>2 spots left - application only</span>
+                            <?php if (get_field('package_3_availability')): ?>
+                                <span><?php echo get_field('package_3_availability'); ?></span>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="border-t border-black p-4 text-center">
-                        <p class="text-gray-400 line-through">
-                            $<?php echo get_field('package_3_regular_price') ?: '12,997'; ?></p>
-                        <p class="font-bold text-2xl mb-3">$<?php echo get_field('package_3_sale_price') ?: '9,997'; ?>
-                        </p>
-                        <a href="<?php echo get_field('package_3_button_link') ?: '#'; ?>"
-                            class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
-                            <?php echo get_field('package_3_button_text') ?: 'Schedule a Free Call'; ?>
-                        </a>
+                        <?php if (get_field('package_3_regular_price')): ?>
+                            <p class="text-gray-400 line-through">
+                                $<?php echo get_field('package_3_regular_price'); ?></p>
+                        <?php endif; ?>
+                        <?php if (get_field('package_3_sale_price')): ?>
+                            <p class="font-bold text-2xl mb-3">$<?php echo get_field('package_3_sale_price'); ?>
+                            </p>
+                        <?php endif; ?>
+                        <?php if (get_field('package_3_button_link')): ?>
+                            <a href="<?php echo get_field('package_3_button_link'); ?>"
+                                class="bg-red-600 text-white font-bold py-3 px-4 rounded-md inline-block text-sm">
+                                <?php if (get_field('package_3_button_text')): ?>
+                                    <?php echo get_field('package_3_button_text'); ?>
+                                <?php endif; ?>
+                            </a>
+                        <?php endif; ?>
+                        <?php if (get_field('package_3_under_link')): ?>
+                            <a href="<?php echo get_field('package_3_under_link'); ?>"
+                                class="block text-center mt-2 text-sm underline italic">
+                                <?php echo get_field('package_3_under_text'); ?>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

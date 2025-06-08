@@ -59,22 +59,21 @@
             </div>
         </div>
         <div class="testimonial-card mt-[15px] sm:mt-[20px] items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-3.png"
-                    alt="People faces #3" class="w-full h-auto" />
-            </div>
+            <?php $ai_testimonial_avatar = get_field('ai_testimonial_avatar'); ?>
+            <?php if ($ai_testimonial_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $ai_testimonial_avatar['url']; ?>"
+                        alt="<?php echo $ai_testimonial_avatar['alt']; ?>" class="w-full h-auto" />
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"This course exceeded my expectations in every way! Hassan went above and beyond, delivering
-                    invaluable, unique content that truly set this program apart. <span
-                        class="testimonial-highlight">The custom
-                        GPT tools he created were a game-changer — from
-                        the book title generator to the outline generator, and even an AI-powered tool to draft
-                        the book itself.</span> These resources made the process efficient and inspiring.
-                    Without a doubt, this course is an outstanding investment for anyone looking to write a book
-                    quickly and effectively. Highly recommended!"</p>
-                <p class="testimonial-author">Terry Schmidt, Founder & President of Management Pro
-                </p>
+                <?php if (get_field('ai_testimonial_content')): ?>
+                    <p><?php echo get_field('ai_testimonial_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('ai_testimonial_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('ai_testimonial_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <a href="#packages" class="mt-4 sm:mt-5 md:mt-6 btn-red mx-auto">Explore

@@ -21,37 +21,25 @@
             <p><?php echo get_field('business_card_conclusion'); ?></p>
         </div>
         <div class="testimonial-card mt-[40px] sm:mt-[68px]">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-1.png"
-                    alt="People faces #1" />
-            </div>
+            <?php $business_testimonial_1_avatar = get_field('business_testimonial_1_avatar'); ?>
+            <?php if ($business_testimonial_1_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $business_testimonial_1_avatar['url']; ?>"
+                        alt="<?php echo $business_testimonial_1_avatar['alt']; ?>" />
+                </div>
+            <?php endif; ?>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/rounded-red-line.png"
                 alt="Rounded red line"
                 class="absolute top-[25%] lg:-top-6 max-lg:left-0 lg:-right-4 w-full lg:w-[85%]  lg:h-[170px] object-fill pointer-events-none max-lg:hidden" />
             <div class="testimonial-content">
-                <div class="space-y-[15px] sm:space-y-[19px]">
-
-                    <p>This course helped me <span class="highlight">go from never having published a
-                            book to
-                            being a bestselling author in four categories—in just 4 weeks!</span> From coming up
-                        with an idea to launching it to my email list, this course covers it all.</p>
-
-                    <p>Hassan's step-by-step system made the entire process much easier and honestly, I couldn't
-                        have
-                        done it without him. What I loved most about the course were the Custom GPTs for
-                        brainstorming
-                        and outlining, the accountability, and the launch checklist.</p>
-                    <p>All you need is expertise and some time on your hands, <span class="testimonial-highlight">and
-                            you can
-                            be published in the upcoming
-                            weeks.</span> If you've ever dreamed of becoming an author, but just didn't know how, I
-                        highly
-                        recommend this course.</p>
-                </div>
-                <p class="testimonial-author">Michael vom Feld, Bestselling author of "Von 0
-                    auf Examen"
-                    ("From 0 to Exam")
-                </p>
+                <?php if (get_field('business_testimonial_1_content')): ?>
+                    <div class="space-y-[15px] sm:space-y-[19px]">
+                        <?php echo get_field('business_testimonial_1_content'); ?>
+                    </div>
+                <?php endif; ?>
+                <?php if (get_field('business_testimonial_1_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('business_testimonial_1_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <h2 class="heading-primary mb-[24px] sm:mb-[36px] mt-[40px] sm:mt-[69px] text-center text-white">
@@ -62,21 +50,21 @@
             <?php echo get_field('what_you_get_content'); ?>
         </div>
         <div class="testimonial-card mt-[40px] sm:mt-[68px] items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-2.png"
-                    alt="People faces #2" />
-            </div>
+            <?php $business_testimonial_2_avatar = get_field('business_testimonial_2_avatar'); ?>
+            <?php if ($business_testimonial_2_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $business_testimonial_2_avatar['url']; ?>"
+                        alt="<?php echo $business_testimonial_2_avatar['alt']; ?>" />
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"The 4-Week System truly helped me break through the overwhelm of writing a book while managing a
-                    busy schedule. The clear, step-by-step approach allowed me to map out my ideas and maintain a
-                    strong focus on what mattered most, moving me from concept to draft in record time. <span
-                        class="testimonial-highlight">I was able to publish not just one, but three books as a
-                        result of this
-                        course.</span> This course is an invaluable resource for anyone balancing a demanding
-                    workload and writing aspirations!"</p>
-                <p class="testimonial-author">Taz Brown, Enterprise Transformation Coach
-                </p>
+                <?php if (get_field('business_testimonial_2_content')): ?>
+                    <p><?php echo get_field('business_testimonial_2_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('business_testimonial_2_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('business_testimonial_2_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <a href="#packages" class="mt-4 sm:mt-5 md:mt-6 btn-red mx-auto">Explore

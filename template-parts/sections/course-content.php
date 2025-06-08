@@ -50,19 +50,21 @@
             <?php endif; ?>
         </div>
         <div class="testimonial-card my-[40px] sm:my-[68px] items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-7.png"
-                    alt="People faces #7">
-            </div>
+            <?php $course_testimonial_avatar = get_field('course_testimonial_avatar'); ?>
+            <?php if ($course_testimonial_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $course_testimonial_avatar['url']; ?>"
+                        alt="<?php echo $course_testimonial_avatar['alt']; ?>">
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"This course is incredibly comprehensive, covering everything you need to know about publishing
-                    on Amazon without feeling overwhelmed. <span>The lifetime access and bonuses make it well worth
-                        the investment.</span> Hassan is an exceptional instructor, providing clear explanations and
-                    attentive support. The course helped me overcome obstacles and make progress. I highly recommend
-                    it."</p>
-                <p class="testimonial-author">Gillian Leithman, Ph.D., Chief Behavior Scientist at Rewire to Retire
-                </p>
+                <?php if (get_field('course_testimonial_content')): ?>
+                    <p><?php echo get_field('course_testimonial_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('course_testimonial_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('course_testimonial_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
     </div>

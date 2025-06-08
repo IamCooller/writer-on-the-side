@@ -23,7 +23,8 @@
                             alt="infinity" />
                     </div>
                     <p class="text-[24px] sm:text-[30px] font-bold flex-1">
-                        <?php echo get_field('lifetime_access_title'); ?></p>
+                        <?php echo get_field('lifetime_access_title'); ?>
+                    </p>
                 </div>
                 <p class="text-base sm:text-lg font-medium"><?php echo get_field('lifetime_access_description'); ?></p>
             </div>
@@ -36,7 +37,8 @@
                             alt="repear icon" />
                     </div>
                     <p class="text-[24px] sm:text-[30px] font-bold flex-1">
-                        <?php echo get_field('repeatable_system_title'); ?></p>
+                        <?php echo get_field('repeatable_system_title'); ?>
+                    </p>
                 </div>
                 <p class="text-base sm:text-lg font-medium"><?php echo get_field('repeatable_system_description'); ?>
                 </p>
@@ -44,19 +46,21 @@
         </div>
 
         <div class="testimonial-card mt-[40px] sm:mt-[68px] items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-5.png"
-                    alt="People faces #5" />
-            </div>
+            <?php $additional_testimonial_1_avatar = get_field('additional_testimonial_1_avatar'); ?>
+            <?php if ($additional_testimonial_1_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $additional_testimonial_1_avatar['url']; ?>"
+                        alt="<?php echo $additional_testimonial_1_avatar['alt']; ?>" />
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"Hassan shares his knowledge so <span>you don't have to figure this stuff out by yourself.</span>
-                    He is busy like me and has 20 books under his belt, so learning how I can do this "on the side"
-                    was important to me. And I will be able to take this information and use it for other books.
-                    <span>If you are on the fence, get off and join the course</span> and get your book out there."
-                </p>
-                <p class="testimonial-author">Kim D. Snyder, Founder of MORE Business in a Box
-                </p>
+                <?php if (get_field('additional_testimonial_1_content')): ?>
+                    <p><?php echo get_field('additional_testimonial_1_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('additional_testimonial_1_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('additional_testimonial_1_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <h2 class="heading-primary mb-[24px] sm:mb-[36px] mt-[40px] sm:mt-[69px] text-center text-white">
@@ -86,27 +90,28 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gpt-icon.svg" alt="gpt icon" />
                     </div>
                     <p class="text-[24px] sm:text-[30px] font-bold flex-1">
-                        <?php echo get_field('chatgpt_plus_title'); ?></p>
+                        <?php echo get_field('chatgpt_plus_title'); ?>
+                    </p>
                 </div>
                 <p class="text-base sm:text-lg font-medium"><?php echo get_field('chatgpt_plus_description'); ?></p>
             </div>
         </div>
         <div class="testimonial-card mt-[40px] sm:mt-[68px] items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-6.png"
-                    alt="People faces #6" />
-            </div>
+            <?php $additional_testimonial_2_avatar = get_field('additional_testimonial_2_avatar'); ?>
+            <?php if ($additional_testimonial_2_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $additional_testimonial_2_avatar['url']; ?>"
+                        alt="<?php echo $additional_testimonial_2_avatar['alt']; ?>" />
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"Taking Hassan's course has been a transformative experience in my journey as a writer. This
-                    course provided me with the structure, motivation, and practical tools I needed to finally start
-                    and finish my first book, something I had been dreaming of for years but never knew how to
-                    accomplish. <span>My favorite part of the course were the action items, tools, and bonuses he
-                        provided weekly.</span> These kept me on track and provided a sense of accomplishment as I
-                    progressed. Hassan's expertise, generosity, and the supportive environment he fosters are
-                    invaluable."</p>
-                <p class="testimonial-author">Cenmar Fuertes, Founder & CEO at Sparkle Restoration Services, Inc.
-                </p>
+                <?php if (get_field('additional_testimonial_2_content')): ?>
+                    <p><?php echo get_field('additional_testimonial_2_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('additional_testimonial_2_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('additional_testimonial_2_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <a href="#packages" class="mt-4 sm:mt-5 md:mt-6 btn-red mx-auto">Explore

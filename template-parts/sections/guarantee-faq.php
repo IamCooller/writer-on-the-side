@@ -20,19 +20,21 @@
             </p>
         </div>
         <div class="testimonial-card my-[40px] sm:my-[68px] items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-15.png"
-                    alt="People faces #15">
-            </div>
+            <?php $guarantee_testimonial_1_avatar = get_field('guarantee_testimonial_1_avatar'); ?>
+            <?php if ($guarantee_testimonial_1_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $guarantee_testimonial_1_avatar['url']; ?>"
+                        alt="<?php echo $guarantee_testimonial_1_avatar['alt']; ?>">
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"I really enjoyed the course because the delivery of the lectures is fun, thoughtful and very
-                    practical. <span>The whole course is geared towards action,</span> gaining momentum and pushes
-                    you to write your book. Hassan is a great teacher and shares his experience openly and candidly.
-                    <span>Don't think about it, buy the course!"</span>
-                </p>
-                <p class="testimonial-author">Jose Torres, Partner at Lexia Abogados
-                </p>
+                <?php if (get_field('guarantee_testimonial_1_content')): ?>
+                    <p><?php echo get_field('guarantee_testimonial_1_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('guarantee_testimonial_1_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('guarantee_testimonial_1_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <div class="course-accordions mt-6 sm:mt-8 mb-8 sm:mb-12">
@@ -78,54 +80,57 @@
         </div>
 
         <div class="testimonial-card mt-[18px] sm:mt-[23px] items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-16.png"
-                    alt="People faces #16">
-            </div>
+            <?php $guarantee_testimonial_2_avatar = get_field('guarantee_testimonial_2_avatar'); ?>
+            <?php if ($guarantee_testimonial_2_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $guarantee_testimonial_2_avatar['url']; ?>"
+                        alt="<?php echo $guarantee_testimonial_2_avatar['alt']; ?>">
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"This course is incredibly comprehensive, covering everything you need to know about publishing
-                    on Amazon without feeling overwhelmed. <span>The lifetime access and bonuses make it well worth
-                        the investment.</span> Hassan is an exceptional instructor, providing clear explanations and
-                    attentive support. The course helped me overcome obstacles and make progress. I highly recommend
-                    it."</span>
-                </p>
-                <p class="testimonial-author">Carol Polack, Founder of Dolphin Rock Solutions
-                </p>
+                <?php if (get_field('guarantee_testimonial_2_content')): ?>
+                    <p><?php echo get_field('guarantee_testimonial_2_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('guarantee_testimonial_2_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('guarantee_testimonial_2_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <div class="testimonial-card mt-[18px] sm:mt-[23px] items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-17.png"
-                    alt="People faces #17">
-            </div>
+            <?php $guarantee_testimonial_3_avatar = get_field('guarantee_testimonial_3_avatar'); ?>
+            <?php if ($guarantee_testimonial_3_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $guarantee_testimonial_3_avatar['url']; ?>"
+                        alt="<?php echo $guarantee_testimonial_3_avatar['alt']; ?>">
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"Hassan's course is the real deal! He provides <span>a detailed, supportive framework for
-                        actually finishing a book and ensuring it has the best chance of being seen in the
-                        marketplace.</span> He showed us different ways to think about how to write a book that
-                    sells and pare it all down to just the essentials that bring the most benefit. I'm very grateful
-                    for all the wisdom he's distilled into this course."
-                </p>
-                <p class="testimonial-author">Jose Torres, Partner at Lexia Abogados
-                </p>
+                <?php if (get_field('guarantee_testimonial_3_content')): ?>
+                    <p><?php echo get_field('guarantee_testimonial_3_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('guarantee_testimonial_3_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('guarantee_testimonial_3_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
         <div class="testimonial-card mt-[18px] sm:mt-[23px] items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-18.png"
-                    alt="People faces #18">
-            </div>
+            <?php $guarantee_testimonial_4_avatar = get_field('guarantee_testimonial_4_avatar'); ?>
+            <?php if ($guarantee_testimonial_4_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $guarantee_testimonial_4_avatar['url']; ?>"
+                        alt="<?php echo $guarantee_testimonial_4_avatar['alt']; ?>">
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"I highly recommend Hassan's course. It was exceptionally well-constructed and delivered, packed
-                    with practical tips that make the writing process clear and manageable. <span>I found his
-                        approach to getting at and refining the book title a gamechanger for me,</span> making the
-                    entire project feel focused and achievable. The course is extremely useful and <span>worth every
-                        penny."</span></span>
-                </p>
-                <p class="testimonial-author">Michael Klein, General Manager at Sanofi Genzyme
-                </p>
+                <?php if (get_field('guarantee_testimonial_4_content')): ?>
+                    <p><?php echo get_field('guarantee_testimonial_4_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('guarantee_testimonial_4_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('guarantee_testimonial_4_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
     </div>

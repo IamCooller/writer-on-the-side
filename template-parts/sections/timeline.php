@@ -73,20 +73,21 @@
         </div>
 
         <div class="testimonial-card items-center">
-            <div class="testimonial-avatar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/people-faces-4.png"
-                    alt="People faces #4" />
-            </div>
+            <?php $timeline_testimonial_avatar = get_field('timeline_testimonial_avatar'); ?>
+            <?php if ($timeline_testimonial_avatar): ?>
+                <div class="testimonial-avatar">
+                    <img src="<?php echo $timeline_testimonial_avatar['url']; ?>"
+                        alt="<?php echo $timeline_testimonial_avatar['alt']; ?>" />
+                </div>
+            <?php endif; ?>
 
             <div class="testimonial-content">
-                <p>"The course <span>helped me to overcome the initial inertia</span> and confront the daunting task
-                    of focusing my ambition on a fascinating subject in a manageable way. Hassan's sharing of
-                    practical examples and insights, and <span>his focus on the 20 percent that gets you 80 percent
-                        of the results, were extremely helpful.</span> I recommend this course to anyone who needs
-                    support to get started and who wants to learn the tools and mindsets needed to get a first book
-                    done on the side."</p>
-                <p class="testimonial-author">Ingo Rauth, Ph.D., Senior Consultant, Design and Facilitation
-                </p>
+                <?php if (get_field('timeline_testimonial_content')): ?>
+                    <p><?php echo get_field('timeline_testimonial_content'); ?></p>
+                <?php endif; ?>
+                <?php if (get_field('timeline_testimonial_author')): ?>
+                    <p class="testimonial-author"><?php echo get_field('timeline_testimonial_author'); ?></p>
+                <?php endif; ?>
             </div>
         </div>
     </div>

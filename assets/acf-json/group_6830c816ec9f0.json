@@ -419,7 +419,7 @@
             "label": "business_testimonial_2_content",
             "name": "business_testimonial_2_content",
             "aria-label": "",
-            "type": "acfe_code_editor",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -429,15 +429,11 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "mode": "text\/html",
-            "lines": 1,
-            "indent_unit": 4,
-            "maxlength": "",
-            "rows": 4,
-            "max_rows": "",
-            "return_format": [],
-            "allow_in_bindings": 0
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_6844ddefa4b72",
@@ -3681,5 +3677,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1749347444
+    "modified": 1749354378
 }

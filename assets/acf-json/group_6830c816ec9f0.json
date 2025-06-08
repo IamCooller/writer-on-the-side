@@ -147,6 +147,27 @@
             "append": ""
         },
         {
+            "key": "field_6844ec6ee9908",
+            "label": "students_count",
+            "name": "students_count",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6830cb46ef917",
             "label": "Business card",
             "name": "",
@@ -3660,5 +3681,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1749344182
+    "modified": 1749347444
 }

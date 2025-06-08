@@ -6,7 +6,7 @@
 
     <div class="container">
         <div class="text-center max-w-[900px] mx-auto">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ai-icon.png" alt="ai icon"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/info-icon.svg" alt="ai icon" id="course"
                 class="block mx-auto max-sm:w-[100px]" />
             <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px]">
                 <?php echo get_field('course_content_title'); ?>
@@ -21,11 +21,11 @@
 
 
         </div>
-        <div class="course-accordions mt-8 mb-12" id="course">
+        <div class="course-accordions mt-8 mb-12">
             <?php if (have_rows('course_weeks')): ?>
                 <?php while (have_rows('course_weeks')):
                     the_row(); ?>
-                    <div class="course-accordion <?php echo get_sub_field('is_active') ? 'active' : ''; ?>">
+                    <div class="course-accordion">
                         <div class="course-accordion-header">
                             <div class="flex items-center">
                                 <div class="course-accordion-week"><?php echo get_sub_field('week_number'); ?></div>

@@ -1,4 +1,4 @@
-<section id="using-ai">
+<section>
 
     <div class=" rotate-180">
         <?php get_template_part('template-parts/ui/section-divider'); ?>
@@ -7,7 +7,7 @@
     <div class="container py-[60px] sm:py-[121px]">
         <div class=" text-center max-w-[900px] mx-auto">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/quill.png" alt="Book cover"
-                class="block mx-auto max-sm:w-[100px]" />
+                class="block mx-auto max-sm:w-[100px]" id="using-ai" />
             <h2 class="heading-primary mb-[5px] mt-[15px] sm:mt-[19px]">
                 <?php echo get_field('ai_section_title'); ?>
             </h2>

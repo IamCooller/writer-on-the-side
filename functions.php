@@ -13,7 +13,7 @@ if (!defined('_S_VERSION')) {
     define('_S_VERSION', '1.0.0');
 }
 
-define('IS_VITE_DEVELOPMENT', false);
+define('IS_VITE_DEVELOPMENT', true);
 
 // Подключаем функции
 require get_template_directory() . '/inc/acf-blocks.php';
@@ -101,3 +101,99 @@ add_filter('acf/settings/row_index_offset', '__return_zero');
 add_filter('admin_init', function () {
     set_time_limit(120);
 });
+
+// Theme Update Checker
+function check_theme_updates($transient)
+{
+    if (empty($transient->checked)) {
+        return $transient;
+    }
+
+    // Get current theme version
+    $current_version = $transient->checked['writer-on-the-side'];
+
+    // GitHub repository information
+    $github_username = 'IamCooller';
+    $github_repo = 'writer-on-the-side';
+    $github_api_url = "https://api.github.com/repos/{$github_username}/{$github_repo}/releases/latest";
+
+    // Get latest release information from GitHub
+    $response = wp_remote_get($github_api_url, array(
+        'headers' => array(
+            'Accept' => 'application/vnd.github.v3+json',
+            'User-Agent' => 'WordPress Theme Update Checker'
+        )
+    ));
+
+    if (is_wp_error($response)) {
+        return $transient;
+    }
+
+    $release_data = json_decode(wp_remote_retrieve_body($response), true);
+
+    if (!$release_data || !isset($release_data['tag_name'])) {
+        return $transient;
+    }
+
+    // Remove 'v' prefix if present in version
+    $latest_version = ltrim($release_data['tag_name'], 'v');
+
+    // Compare versions
+    if (version_compare($current_version, $latest_version, '<')) {
+        $transient->response['writer-on-the-side'] = array(
+            'theme' => 'writer-on-the-side',
+            'new_version' => $latest_version,
+            'url' => $release_data['html_url'],
+            'package' => $release_data['zipball_url'],
+        );
+    }
+
+    return $transient;
+}
+add_filter('pre_set_site_transient_update_themes', 'check_theme_updates');
+
+// Add theme update information to the theme details screen
+function theme_update_information($false, $action, $args)
+{
+    if ($action !== 'theme_information' || !isset($args->slug) || $args->slug !== 'writer-on-the-side') {
+        return $false;
+    }
+
+    // GitHub repository information
+    $github_username = 'IamCooller';
+    $github_repo = 'writer-on-the-side';
+    $github_api_url = "https://api.github.com/repos/{$github_username}/{$github_repo}/releases/latest";
+
+    $response = wp_remote_get($github_api_url, array(
+        'headers' => array(
+            'Accept' => 'application/vnd.github.v3+json',
+            'User-Agent' => 'WordPress Theme Update Checker'
+        )
+    ));
+
+    if (is_wp_error($response)) {
+        return $false;
+    }
+
+    $release_data = json_decode(wp_remote_retrieve_body($response), true);
+
+    if (!$release_data) {
+        return $false;
+    }
+
+    $theme_info = new stdClass();
+    $theme_info->name = 'Writer on the Side';
+    $theme_info->slug = 'writer-on-the-side';
+    $theme_info->version = ltrim($release_data['tag_name'], 'v');
+    $theme_info->author = 'Ilya';
+    $theme_info->author_profile = "https://github.com/{$github_username}";
+    $theme_info->last_updated = $release_data['published_at'];
+    $theme_info->homepage = $release_data['html_url'];
+    $theme_info->sections = array(
+        'description' => $release_data['body'],
+        'changelog' => $release_data['body'],
+    );
+
+    return $theme_info;
+}
+add_filter('themes_api', 'theme_update_information', 10, 3);

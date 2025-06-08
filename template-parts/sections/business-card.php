@@ -31,7 +31,7 @@
             <div class="testimonial-content">
                 <div class="space-y-[15px] sm:space-y-[19px]">
 
-                    <p>This course helped me <span class="testimonial-highlight">go from never having published a
+                    <p>This course helped me <span class="highlight">go from never having published a
                             book to
                             being a bestselling author in four categories—in just 4 weeks!</span> From coming up
                         with an idea to launching it to my email list, this course covers it all.</p>

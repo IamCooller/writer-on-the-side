@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             prevEl: '.testimonials-slider-prev, .swiper-prev',
         },
         pagination: {
-            el: '.testimonials-slider-pagination, .swiper-pagination',
+            el: '.testimonials-slider-pagination',
             clickable: true,
         }
     });

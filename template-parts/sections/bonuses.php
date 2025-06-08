@@ -3,7 +3,7 @@
         class="absolute top-0 left-0 w-full h-full object-cover" />
     <div class="container relative z-[1] text-white">
         <h2 class="heading-primary  text-center mb-[35px] sm:mb-[50px]">Bonuses (Free with Your Purchase)</h2>
-        <div class="space-y-[18px] sm:space-y-[23px]">
+        <div class="space-y-[18px] sm:space-y-[23px] list-dots">
             <?php if (have_rows('bonuses')): ?>
                 <?php while (have_rows('bonuses')):
                     the_row(); ?>

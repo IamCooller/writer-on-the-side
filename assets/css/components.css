@@ -22,6 +22,10 @@
 		@apply shrink-0 lg:w-[132px] lg:h-[132px] w-[100px] h-[100px] bg-[#20201D] rounded-full;
 	}
 
+	.list-dots > * ul {
+		@apply list-disc pl-4 list-inside;
+	}
+
 	.testimonial-content {
 		@apply relative z-[1] max-lg:text-sm;
 	}

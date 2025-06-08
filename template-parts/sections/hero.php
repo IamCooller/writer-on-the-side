@@ -9,11 +9,10 @@
                     <div
                         class=" bg-gradient-to-br from-[#C4C4C4]/40 to-[#C4C4C4]/20 rounded-[8px] border border-white  py-[8px] sm:py-[18px] px-[10px] sm:px-[21px] text-white max-w-[280px] backdrop-blur-2xl">
                         <p class="font-bold text-lg sm:text-xl mb-[8px] sm:mb-[11px]">
-                            Hassan Osman
+                            <?php echo get_field('author_name'); ?>
                         </p>
                         <p class="font-dm-sans font-medium text-sm sm:text-base italic">
-                            Amazon #1 Bestselling Author
-                            of 20+ Books on the Side
+                            <?php echo get_field('author_title'); ?>
                         </p>
                     </div>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/agold-author.png" alt="Hero image"
@@ -22,7 +21,7 @@
             </div>
             <div class=" max-lg:mt-[20px] max-lg:text-center">
                 <h1
-                    class="font-repo font-extrabold  text-[28px] sm:text-[40px] lg:text-[69px] leading-none lg:leading-[80px] mb-[20px] sm:mb-[35px] lg:mb-4">
+                    class="font-repo font-extrabold  text-[28px] sm:text-[40px] lg:text-[69px] leading-none lg:leading-[80px] mb-[20px] sm:mb-[35px] lg:mb-4  tracking-[-2px] lg:tracking-[-4px]">
                     <?php echo get_field('hero_title'); ?>
                 </h1>
 
@@ -52,7 +51,8 @@
                         <div class="flex gap-2">
                             <div
                                 class=" font-dm-sans leading-[31px] sm:leading-[1] font-bold text-base sm:text-lg md:text-[27px]">
-                                4.9/5.0</div>
+                                <?php echo get_field('rating'); ?>
+                            </div>
                             <div class="flex items-center">
                                 <div class="flex items-center gap-[5px] sm:gap-[7px]">
                                     <?php for ($i = 0; $i < 5; $i++) { ?>
@@ -66,8 +66,7 @@
                         </div>
                         <p
                             class="font-dm-sans italic font-medium text-sm sm:text-base md:text-[21px] text-[#5C5C5C] text-left">
-                            750+
-                            Happy Students
+                            <?php echo get_field('students_count'); ?>
                         </p>
                     </div>
 

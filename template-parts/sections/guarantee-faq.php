@@ -47,8 +47,7 @@
                     $question = get_sub_field('question');
                     $answer = get_sub_field('answer');
                     ?>
-                    <div
-                        class="course-accordion border-[#3B393933] <?php echo get_row_index() === 1 ? 'active' : ''; ?> text-white bg-[#3B3939]">
+                    <div class="course-accordion border-[#3B393933]  text-white bg-[#3B3939]">
                         <div class="course-accordion-header">
                             <div class="flex items-center">
                                 <div

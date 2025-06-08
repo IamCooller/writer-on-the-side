@@ -1,9 +1,9 @@
-<section id="testimonials">
+<section>
     <div class="rotate-180">
         <?php get_template_part('template-parts/ui/section-divider'); ?>
     </div>
     <div class="container pt-[80px] sm:pt-[150px]">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/crowd-icon.png" alt="Crowd"
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/crowd-icon.png" alt="Crowd" id="testimonials"
             class="w-[80px] sm:w-[100px] mx-auto mb-4 sm:mb-5" />
         <h2 class="heading-primary mb-8 sm:mb-12 text-center">
             <?php echo get_field('testimonials_title'); ?>
@@ -31,7 +31,7 @@
                                     </div>
                                 </div>
                             </div>
-                        <?php
+                            <?php
                         endwhile;
                     endif;
                     ?>

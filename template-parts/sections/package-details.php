@@ -18,7 +18,7 @@
                     $features_content = get_sub_field('features_content');
                     $row_index = get_row_index() + 1;
                     ?>
-                    <div class="course-accordion <?php echo $row_index === 1 ? 'active' : ''; ?>">
+                    <div class="course-accordion">
                         <div class="course-accordion-header">
                             <div class="flex items-center">
                                 <div

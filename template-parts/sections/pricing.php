@@ -1,8 +1,8 @@
 <section class="pt-[100px] sm:pt-[172px]">
     <div class="container">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hand-icon.svg" alt="hand icon"
-            class="block mx-auto max-sm:w-[100px]" />
-        <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px] text-center" id="packages">
+            class="block mx-auto max-sm:w-[100px]" id="packages" />
+        <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px] text-center">
             <?php echo get_field('pricing_section_title') ?: 'Choose One of Three Packages'; ?>
         </h2>
 
@@ -177,19 +177,36 @@
                     <!-- CTA Buttons -->
                     <div class=""></div>
                     <div class=" py-5 px-5 ">
-                        <a href="<?php echo get_field('package_1_button_link') ?: '#'; ?>" class="btn-red">
+                        <a href="<?php echo get_field('package_1_button_link') ?: '#'; ?>" class="btn-red mx-auto">
                             <?php echo get_field('package_1_button_text') ?: 'Start Watching Now'; ?>
                         </a>
+                        <?php if (get_field('package_1_under_link')): ?>
+                            <a href="<?php echo get_field('package_1_under_link'); ?>"
+                                class="block text-center mt-2 text-sm underline italic">
+                                <?php echo get_field('package_1_under_text'); ?>
+                            </a>
+                        <?php endif; ?>
                     </div>
                     <div class=" py-5 px-5 ">
-                        <a href="<?php echo get_field('package_2_button_link') ?: '#'; ?>" class="btn-red">
+                        <a href="<?php echo get_field('package_2_button_link') ?: '#'; ?>" class="btn-red mx-auto">
                             <?php echo get_field('package_2_button_text') ?: 'Start Watching Now'; ?>
                         </a>
+                        <?php if (get_field('package_2_under_link')): ?>
+                            <a href="<?php echo get_field('package_2_under_link'); ?>" class="block text-center mt-2 text-sm underline italic>
+                                <?php echo get_field('package_2_under_text'); ?>
+                            </a>
+                        <?php endif; ?>
                     </div>
                     <div class=" py-5 px-5 ">
-                        <a href="<?php echo get_field('package_3_button_link') ?: '#'; ?>" class="btn-red">
+                        <a href=" <?php echo get_field('package_3_button_link') ?: '#'; ?>" class="btn-red mx-auto">
                             <?php echo get_field('package_3_button_text') ?: 'Schedule a Free Call'; ?>
                         </a>
+                        <?php if (get_field('package_3_under_link')): ?>
+                            <a href="<?php echo get_field('package_3_under_link'); ?>"
+                                class="block text-center mt-2 text-sm underline italic">
+                                <?php echo get_field('package_3_under_text'); ?>
+                            </a>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 <section>
     <div class="container">
         <div class="text-center max-w-[900px] mx-auto">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/book-2-icon.svg" alt="ai icon"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/book-2-icon.svg" alt="ai icon" id="about"
                 class="block mx-auto max-sm:w-[100px]" />
-            <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px]" id="about">
+            <h2 class="heading-primary mb-[18px] sm:mb-[23px] mt-[15px] sm:mt-[19px]">
                 <?php echo get_field('about_me_title'); ?>
             </h2>
 

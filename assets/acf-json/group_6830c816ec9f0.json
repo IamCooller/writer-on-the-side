@@ -2417,7 +2417,7 @@
         {
             "key": "field_68313df8269c4",
             "label": "pricing_section_title",
-            "name": "pricing_title",
+            "name": "pricing_section_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -3277,7 +3277,7 @@
             "label": "guarantee_testimonial_2_content",
             "name": "guarantee_testimonial_2_content",
             "aria-label": "",
-            "type": "acfe_code_editor",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -3287,15 +3287,11 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "mode": "text\/html",
-            "lines": 1,
-            "indent_unit": 4,
-            "maxlength": "",
-            "rows": 4,
-            "max_rows": "",
-            "return_format": [],
-            "allow_in_bindings": 0
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_6844dec4a4b84",
@@ -3677,5 +3673,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1749354378
+    "modified": 1749427985
 }

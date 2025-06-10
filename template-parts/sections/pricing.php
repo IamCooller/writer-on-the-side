@@ -273,24 +273,9 @@
                                 alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
                             <span>Lifetime course updates</span>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <div class="w-6 h-0.5 bg-black"></div>
-                            <span>Private "Write Like Me" GPT</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <div class="w-6 h-0.5 bg-black"></div>
-                            <span>Custom category research</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <div class="w-6 h-0.5 bg-black"></div>
-                            <span>Zoom strategycalls</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <div class="w-6 h-0.5 bg-black"></div>
-                            <span>Recordings & AI summaries</span>
-                        </div>
+
                         <div class="flex items-center gap-2 font-medium">
-                            <span><?php echo get_field('package_1_availability') ?: 'Open'; ?></span>
+                            <span><?php echo get_field('package_1_availability'); ?></span>
                         </div>
                     </div>
                     <div class="border-t border-black p-4 text-center">
@@ -361,7 +346,7 @@
                             <span>Recordings & AI summaries</span>
                         </div>
                         <div class="flex items-center gap-2 font-medium">
-                            <span><?php echo get_field('package_2_availability') ?: '7 spots left'; ?></span>
+                            <span><?php echo get_field('package_2_availability'); ?></span>
                         </div>
                     </div>
                     <div class="border-t border-black p-4 text-center">
@@ -424,7 +409,9 @@
                             <span>Custom category research</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <span class="font-medium">Unlimited</span>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
+                            <span>Zoom strategy calls: Unlimited times</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"

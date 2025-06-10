@@ -4,7 +4,7 @@
     </div>
     <div class="container py-[60px] sm:py-[100px]">
         <h2
-            class="font-repo font-extrabold text-[28px] sm:text-[32px] lg:text-[55px] mb-[24px] sm:mb-[32px] text-center">
+            class="font-repo font-extrabold text-[28px] heading-primary sm:text-[32px] lg:text-[55px] mb-[24px] sm:mb-[32px] text-center">
             <?php echo get_field('final_cta_title') ?: 'Ready to become a bestselling author?'; ?>
         </h2>
         <p class="font-medium text-base sm:text-lg text-center mb-[30px] sm:mb-[41px]">

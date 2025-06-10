@@ -38,6 +38,10 @@ html {
     @apply flex items-center gap-[27px] list-none;
 }
 
+.heading-primary {
+	@apply tracking-[-2px] lg:tracking-[-4px];
+}
+
 .header-menu li a {
     @apply font-poppins font-medium text-xl relative;
     @apply hover:text-red transition-colors duration-300;

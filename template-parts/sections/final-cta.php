@@ -16,7 +16,7 @@
         </div>
 
         <h2
-            class="font-repo mt-[60px] sm:mt-[106px] font-extrabold text-[28px] sm:text-[32px] lg:text-[55px] mb-[24px] sm:mb-[32px] text-center">
+            class="font-repo mt-[60px] sm:mt-[106px] font-extrabold text-[28px] sm:text-[32px] lg:text-[55px] mb-[24px] sm:mb-[32px] text-center heading-primary">
             <?php echo get_field('final_cta_unsure_title') ?: 'Still unsure?'; ?>
         </h2>
         <div class="font-medium text-base sm:text-lg text-center">

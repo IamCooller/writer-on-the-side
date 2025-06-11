@@ -6,7 +6,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/4ws.png" alt="Doctor and patient" />
         </div>
         <div class="max-w-[1000px] mx-auto text-center text-white">
-            <h2 class="font-repo font-extrabold text-[32px] sm:text-[55px] mb-[35px] sm:mb-[55px]">
+            <h2 class="font-repo font-extrabold text-[32px] sm:text-[55px] mb-[35px] sm:mb-[55px] heading-primary">
                 <?php echo get_field('guarantee_title') ?: '30-Day Money-Back Guarantee'; ?>
             </h2>
             <p class="mb-[25px] sm:mb-[35px] text-sm sm:text-base">
@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="course-accordions mt-6 sm:mt-8 mb-8 sm:mb-12">
-            <h2 class="font-repo font-extrabold text-[32px] sm:text-[55px] mb-[35px] sm:mb-[55px] text-white text-center"
+            <h2 class="font-repo font-extrabold text-[32px] sm:text-[55px] mb-[35px] sm:mb-[55px] heading-primary  text-white text-center"
                 id="faqs">
                 <?php echo get_field('faq_section_title') ?: 'FAQs'; ?>
             </h2>

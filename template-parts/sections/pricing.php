@@ -118,7 +118,7 @@
 
                     <!-- Zoom strategycalls -->
                     <div class="border-b-2 border-r-2 py-2 border-black flex items-center font-medium">
-                        <p>Zoom strategycalls</p>
+                        <p>Zoom strategy calls</p>
                     </div>
                     <div class="border-r-2 border-b-2 py-2 border-black  flex justify-center items-center">
                         <div class="w-8 h-0.5 bg-black"></div>
@@ -338,8 +338,11 @@
                             <span>Custom category research</span>
                         </div>
                         <div class="flex items-center gap-2">
-                            <span class="font-medium">2 x 60 min</span>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
+                                alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
+                            <span>Zoom strategy calls: 2 times x 60 min</span>
                         </div>
+
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
                                 alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
@@ -411,7 +414,7 @@
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
                                 alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
-                            <span>Zoom strategy calls: Unlimited times</span>
+                            <span>Zoom strategy calls: Unlimited</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"

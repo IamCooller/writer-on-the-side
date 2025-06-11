@@ -25,7 +25,7 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <header class="border-t-[7px] sm:border-t-[11px] border-red bg-white">
+    <header class="border-t-[7px] sm:border-t-[11px] border-red bg-white max-lg:sticky max-lg:top-0 w-full max-lg:z-10">
         <div class="container py-[23px] flex justify-between items-center">
             <!-- custom logo -->
             <?php

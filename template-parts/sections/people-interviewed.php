@@ -3,7 +3,7 @@
         <div class="my-[74px] text-center text-lg font-medium">
             <?php echo get_field('people_intro_text'); ?>
         </div>
-        <div class="text-center font-repo font-bold text-[30px] heading-primary">
+        <div class="text-center font-repo font-bold text-[30px] tracking-[-2px]">
             <?php echo get_field('people_section_title'); ?>
         </div>
         <div class="font-repo font-bold text-lg text-center">

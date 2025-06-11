@@ -45,8 +45,8 @@
                 <div class="w-full max-w-[740px] flex flex-col gap-4 sm:gap-6 xl:gap-[21px] lg:pl-6">
                     <!-- Featured In Box -->
                     <div class="featured-in-box">
-                        <h3
-                            class="font-extrabold font-repo text-[18px] sm:text-[24px] md:text-[38px] text-center heading-primary">
+                        <h3 class="font-extrabold font-repo text-[18px] sm:text-[24px] md:text-[38px] text-center tracking-[-3px]
+">
                             Featured in</h3>
                         <div
                             class="bg-[#FFFEF7] border-[3px] border-black py-[15px] sm:py-[19px] md:py-5 px-4 sm:px-5 md:px-[33px] rounded-[12px]">
@@ -81,7 +81,7 @@
                     <!-- Worked At Box -->
                     <div class="worked-at-box">
                         <h3
-                            class="font-extrabold font-repo text-[20px] sm:text-[24px] md:text-[38px] text-center heading-primary">
+                            class="font-extrabold font-repo text-[20px] sm:text-[24px] md:text-[38px] text-center tracking-[-3px]">
                             Worked at</h3>
                         <div
                             class="bg-[#FFFEF7] border-[3px] border-black py-[19px] sm:py-5 px-5 sm:px-[33px] rounded-[12px]">

@@ -340,7 +340,7 @@
                         <div class="flex items-center gap-2">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/checkmark.png"
                                 alt="Included" class="w-3 h-3 sm:w-6 sm:h-6">
-                            <span>Zoom strategy calls: 2 times x 60 min</span>
+                            <span>Zoom strategy calls: 2 x 60 min</span>
                         </div>
 
                         <div class="flex items-center gap-2">
